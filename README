@@ -1,0 +1,7 @@
+  This is a stepper motor controller. Based on DRV8825 by Texas Instruments. The programme is made with Netbeans v7.2 
+and the schematic with KiCAD v2.8.12. 
+
+This is my first project. It has two elements. The first one is the schematic and the PCB under CC license and firmware under GPL v2. It is used for controlling stepper motor up to 2.5Amps
+via serial interface RS232/RS485 for home or ingustrial automation or parallel galvanic opto isolated interface compatible with RepRap printers, Milling machines Mach3, LinuxCNC.
+
+The PCB and schematic is under CC license.

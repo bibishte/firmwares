@@ -1,1 +1,2 @@
 This is a stepper motor controller. Based on DRV8825 by Texas Instruments.
+The schematic and PCB is published with CC licens on https://github.com/bibishte/firmwares/tree/master/stepper_schematic
