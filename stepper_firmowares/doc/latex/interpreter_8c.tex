@@ -1,0 +1,128 @@
+\hypertarget{interpreter_8c}{\section{interpreter.\-c File Reference}
+\label{interpreter_8c}\index{interpreter.\-c@{interpreter.\-c}}
+}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}interpreter.\-h\char`\"{}}\\*
+Include dependency graph for interpreter.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{interpreter_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcmd__struct}{cmd\-\_\-struct}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{interpreter_8c_a70379adfcbe9ce00e996ac1bfc1b12c6}{get\-\_\-cmd\-\_\-id} (char $\ast$name)
+\item 
+char const $\ast$ \hyperlink{interpreter_8c_a290f954ecc7694751a55343897b8ff26}{get\-\_\-cmd\-\_\-name} (char id)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcmd__struct}{cmd\-\_\-struct} \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\-\_\-tbl} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{interpreter_8c_a70379adfcbe9ce00e996ac1bfc1b12c6}{\index{interpreter.\-c@{interpreter.\-c}!get\-\_\-cmd\-\_\-id@{get\-\_\-cmd\-\_\-id}}
+\index{get\-\_\-cmd\-\_\-id@{get\-\_\-cmd\-\_\-id}!interpreter.c@{interpreter.\-c}}
+\subsubsection[{get\-\_\-cmd\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}char get\-\_\-cmd\-\_\-id (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}}\label{interpreter_8c_a70379adfcbe9ce00e996ac1bfc1b12c6}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 60 of file interpreter.\-c.
+
+
+\begin{DoxyCode}
+61 \{
+62     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} i = 0;
+63 
+64     \textcolor{keywordflow}{if} (name[0] == 0)
+65         \textcolor{keywordflow}{return} -2;
+66 
+67     \textcolor{keywordflow}{for} (i = 0; \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].\hyperlink{structcmd__struct_aef60eff615b829ce802d4c60aef7b9d2}{id} != -1; i++)
+68         \textcolor{keywordflow}{if} (!strncmp(name, \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].name,strlen(\hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].name)))
+69             \textcolor{keywordflow}{return} \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].\hyperlink{structcmd__struct_aef60eff615b829ce802d4c60aef7b9d2}{id};
+70 
+71     \textcolor{keywordflow}{return} -1;
+72 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{interpreter_8c_a70379adfcbe9ce00e996ac1bfc1b12c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{interpreter_8c_a290f954ecc7694751a55343897b8ff26}{\index{interpreter.\-c@{interpreter.\-c}!get\-\_\-cmd\-\_\-name@{get\-\_\-cmd\-\_\-name}}
+\index{get\-\_\-cmd\-\_\-name@{get\-\_\-cmd\-\_\-name}!interpreter.c@{interpreter.\-c}}
+\subsubsection[{get\-\_\-cmd\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}char const$\ast$ get\-\_\-cmd\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{char}]{id}
+\end{DoxyParamCaption}
+)}}\label{interpreter_8c_a290f954ecc7694751a55343897b8ff26}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+command name or N\-U\-L\-L if not found 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file interpreter.\-c.
+
+
+\begin{DoxyCode}
+80 \{
+81     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} i;
+82 
+83     \textcolor{keywordflow}{for} (i = 0; \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].\hyperlink{structcmd__struct_aef60eff615b829ce802d4c60aef7b9d2}{id} != -1; i++)
+84         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].\textcolor{keywordtype}{id})
+85             \textcolor{keywordflow}{return} \hyperlink{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{cmd\_tbl}[i].\hyperlink{structcmd__struct_a35071dc464890b0c7aa50fa6d8cab54c}{name};
+86 
+87     \textcolor{keywordflow}{return} NULL;
+88 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{interpreter_8c_a290f954ecc7694751a55343897b8ff26_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}{\index{interpreter.\-c@{interpreter.\-c}!cmd\-\_\-tbl@{cmd\-\_\-tbl}}
+\index{cmd\-\_\-tbl@{cmd\-\_\-tbl}!interpreter.c@{interpreter.\-c}}
+\subsubsection[{cmd\-\_\-tbl}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf cmd\-\_\-struct}  cmd\-\_\-tbl\mbox{[}$\,$\mbox{]}}}\label{interpreter_8c_a298c6b7406a09661fcde064ac4d344e0}

@@ -1,0 +1,2030 @@
+\hypertarget{group__biba__drv}{\section{D\-R\-V8825 Library}
+\label{group__biba__drv}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}}
+}
+
+
+Driver for stepper motor controller based on D\-R\-V8825 by Texas Instruments.  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \{ \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}, 
+\hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}, 
+\hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for decay status. \end{DoxyCompactList}\item 
+enum \hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \{ \\*
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+\\*
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for mode status. \end{DoxyCompactList}\item 
+enum \hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} \{ \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}, 
+\hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for the direction status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{Cal\-Work\-Param} (void)
+\item 
+void \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\-\_\-\-Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step, uint64\-\_\-t step\-\_\-count)
+\item 
+void \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay} (\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} decay)
+\item 
+void \hyperlink{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{Disabled\-\_\-\-Stepper} (void)
+\item 
+void \hyperlink{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}{Enable\-\_\-\-Stepper} (void)
+\item 
+\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \hyperlink{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}{Get\-\_\-\-Decay} (void)
+\item 
+\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \hyperlink{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}{Get\-\_\-\-Mode} (void)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}{Get\-\_\-\-Start} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}{Get\-\_\-\-Steps\-\_\-revol} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}{Get\-Acceleration} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga56c30e2b82a23aed1c9febd704166090}{Get\-Current\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga356f958c8327643ae22d240493ae7747}{Get\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}{Get\-Min\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}{Get\-Real\-Acc} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}{Get\-Real\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}{Get\-Real\-Min\-Speed} (void)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{Helper\-Rto\-T} (uint64\-\_\-t)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{Helper\-Tto\-R} (uint64\-\_\-t)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134}{Home} (void)
+\item 
+void \hyperlink{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}{Init\-Stepper} (void)
+\item 
+void \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode} (\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} mode)
+\item 
+void \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{Real\-To\-Time} (void)
+\item 
+void \hyperlink{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}{Set\-\_\-\-Steps\-\_\-revol} (uint16\-\_\-t step\-\_\-rev)
+\item 
+void \hyperlink{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}{Set\-Acceleration} (uint16\-\_\-t accel)
+\item 
+void \hyperlink{group__biba__drv_ga91f64f1e8f2b67bfcf24f6d2a2249373}{Set\-Current\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}{Set\-Max\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}{Set\-Min\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}{Set\-Real\-Acc} (uint16\-\_\-t realacc)
+\item 
+void \hyperlink{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}{Set\-Real\-Max\-Speed} (uint16\-\_\-t maxspd)
+\item 
+void \hyperlink{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}{Set\-Real\-Min\-Speed} (uint16\-\_\-t minspd)
+\item 
+void \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\item 
+void \hyperlink{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}{Stop\-\_\-\-Motion\-\_\-fast} (void)
+\item 
+void \hyperlink{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}{Stop\-\_\-\-Motion\-\_\-normal} (void)
+\item 
+void \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store} (void)
+\item 
+void \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{Time\-To\-Real} (void)
+\item 
+void \hyperlink{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{Way\-\_\-\-Speed} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Driver for stepper motor controller based on D\-R\-V8825 by Texas Instruments. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{drv__8825_8h}{drv\_8825.h}>} 
+\end{DoxyCode}
+
+
+This modul contains basic functions for controlling stepper motor with the Texas Instruments D\-R\-V8825
+
+\begin{DoxyNote}{Note}
+Typical application based on D\-R\-V8825 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Bilyana Borisova \href{mailto:bibishte@gmail.com}{\tt bibishte@gmail.\-com} 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!decay\-\_\-type@{decay\-\_\-type}}
+\index{decay\-\_\-type@{decay\-\_\-type}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{decay\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf decay\-\_\-type}}}\label{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}
+
+
+Type for decay status. 
+
+Defines the status of the decay modes. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y@{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y@{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}}\item[{\em 
+\hypertarget{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}\label{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}
+}]Status for setting slow decay. \index{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y@{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y@{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}}\item[{\em 
+\hypertarget{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}\label{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}
+}]Status for setting fast decay. \index{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y@{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y@{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}}\item[{\em 
+\hypertarget{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}\label{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}
+}]Status for setting auto decay. \end{description}
+\end{Desc}
+
+
+Definition at line 52 of file drv\-\_\-8825.\-h.
+
+
+\begin{DoxyCode}
+52              \{\hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{SLOW\_DECAY},       \textcolor{comment}{/**< Status for setting slow decay. */}
+53         \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{FAST\_DECAY},             \textcolor{comment}{/**< Status for setting fast decay. */}
+54         \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{AUTO\_DECAY}              \textcolor{comment}{/**< Status for setting auto decay. */}
+55         \} \hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\_type};
+\end{DoxyCode}
+\hypertarget{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!mode\-\_\-type@{mode\-\_\-type}}
+\index{mode\-\_\-type@{mode\-\_\-type}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{mode\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mode\-\_\-type}}}\label{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}
+
+
+Type for mode status. 
+
+Defines the status of the modes. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}
+}]Status for setting the full step mode. \index{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}
+}]Status for setting the half step mode. \index{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}
+}]Status for setting the quater step mode. \index{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}
+}]Status for setting the 8 microstep mode. \index{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}
+}]Status for setting the 16 microstep mode. \index{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P@{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}}\item[{\em 
+\hypertarget{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}\label{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}
+}]Status for setting the 32 microstep mode. \end{description}
+\end{Desc}
+
+
+Definition at line 62 of file drv\-\_\-8825.\-h.
+
+
+\begin{DoxyCode}
+62              \{\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP},   \textcolor{comment}{/**< Status for setting the full step mode. */}
+63         \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{MODE\_HALF\_STEP},         \textcolor{comment}{/**< Status for setting the half step mode. */}
+64         \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{MODE\_QUATER\_STEP},       \textcolor{comment}{/**< Status for setting the quater step mode. */}
+65         \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{MODE\_8\_MICROSTEP},       \textcolor{comment}{/**< Status for setting the 8 microstep mode. */}
+66         \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{MODE\_16\_MICROSTEP},      \textcolor{comment}{/**< Status for setting the 16 microstep mode. */}
+67         \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{MODE\_32\_MICROSTEP}       \textcolor{comment}{/**< Status for setting the 32 microstep mode. */}
+68         \} \hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\_type};
+\end{DoxyCode}
+\hypertarget{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!step\-\_\-type@{step\-\_\-type}}
+\index{step\-\_\-type@{step\-\_\-type}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{step\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf step\-\_\-type}}}\label{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}
+
+
+Type for the direction status. 
+
+Defines the direction\-:clockwise or counter clock wise. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E@{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E@{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}}\item[{\em 
+\hypertarget{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}\label{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}
+}]Status for setting the clockwise direction. \index{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E@{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}!D\-R\-V8825 Library@{D\-R\-V8825 Library}}\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E@{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}}\item[{\em 
+\hypertarget{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}\label{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}
+}]Status for setting the counter clockwise direction. \end{description}
+\end{Desc}
+
+
+Definition at line 75 of file drv\-\_\-8825.\-h.
+
+
+\begin{DoxyCode}
+75              \{\hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{STEP\_COUNTER\_CLOCKWISE},   \textcolor{comment}{/**< Status for setting the clockwise
+       direction. */}
+76         \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{STEP\_CLOCKWISE}                  \textcolor{comment}{/**< Status for setting the counter clockwise
+       direction. */}
+77         \} \hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\_type};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Cal\-Work\-Param@{Cal\-Work\-Param}}
+\index{Cal\-Work\-Param@{Cal\-Work\-Param}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Cal\-Work\-Param}]{\setlength{\rightskip}{0pt plus 5cm}void Cal\-Work\-Param (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}
+Calculates the maximum, minimum and the acceleration for the different step modes.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 723 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+724 \{
+725     \textcolor{keywordflow}{switch} ( \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode} )
+726     \{
+727         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP}:
+728             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+729             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+730             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+731             \textcolor{keywordflow}{break};
+732 
+733         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{MODE\_HALF\_STEP}:
+734             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} >> 1;
+735             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} >> 1;
+736             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} >> 1;
+737             \textcolor{keywordflow}{break};
+738 
+739 
+740         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{MODE\_QUATER\_STEP}:
+741             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} >> 2;
+742             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} >> 2;
+743             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} >> 2;
+744             \textcolor{keywordflow}{break};
+745 
+746         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{MODE\_8\_MICROSTEP}:
+747             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} >> 3;
+748             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} >> 3;
+749             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} >> 3;
+750             \textcolor{keywordflow}{break};
+751 
+752 
+753         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{MODE\_16\_MICROSTEP}:
+754             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} >> 4;
+755             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} >> 4;
+756             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} >> 4;
+757             \textcolor{keywordflow}{break};
+758 
+759 
+760         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{MODE\_32\_MICROSTEP}:
+761             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} >> 5;
+762             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} >> 5;
+763             \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} >> 5;
+764             \textcolor{keywordflow}{break};
+765 
+766         \textcolor{keywordflow}{default}:
+767             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+768 
+769             \textcolor{keywordflow}{break};
+770     \}
+771 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Count\-\_\-\-Step@{Count\-\_\-\-Step}}
+\index{Count\-\_\-\-Step@{Count\-\_\-\-Step}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Count\-\_\-\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void Count\-\_\-\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf step\-\_\-type}}]{step, }
+\item[{uint64\-\_\-t}]{step\-\_\-count}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}
+Initializes the presented steps and calculates the steps for acceleration, deacceleration and the steps for constant speed \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em step} & the first argument. \\
+\hline
+{\em step\-\_\-count} & the second argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 297 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+298 \{
+299 
+300     uint16\_t y;
+301     \hyperlink{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{StepDir} = step;
+302 
+303 
+304     y = ( \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} - \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} ) / \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+305     y = y << 1;
+306     if ( y < step\_count )
+307     \{
+308         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} = y >> 1;
+309         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel} = \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel};
+310         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed} = step\_count - ( \hyperlink{structMotion}{Motion}.
+      \hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} + \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel} );
+311 
+312     \} \textcolor{keywordflow}{else}
+313     \{
+314         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed} = 0;
+315         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} = step\_count >> 1;
+316         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel} = \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel};
+317         \textcolor{keywordflow}{if} ( ( step\_count & 1 ) )
+318         \{
+319             \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel}++;
+320         \}
+321 
+322     \}
+323     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( TCCR1B, CS10 );
+324     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( TCCR1B, CS11 );
+325     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( TCCR1B, CS12 );
+326     TCNT1 = 65535 - \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+327     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+328     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( TIMSK, TOIE1 );
+329 
+330 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Decay@{Decay}}
+\index{Decay@{Decay}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Decay}]{\setlength{\rightskip}{0pt plus 5cm}void Decay (
+\begin{DoxyParamCaption}
+\item[{{\bf decay\-\_\-type}}]{decay}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}
+Function that sets the decay type. \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em decay} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+186 \{
+187     \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{CurrentDecay} = decay;
+188     \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store}( );
+189     \textcolor{keywordflow}{if} ( decay == \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{FAST\_DECAY} )
+190     \{
+191         \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{DDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+192         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{PDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+193         \textcolor{keywordflow}{return};
+194     \}
+195 
+196     \textcolor{keywordflow}{if} ( decay == \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{SLOW\_DECAY} )
+197     \{
+198         \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{DDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+199         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{PDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+200         \textcolor{keywordflow}{return};
+201     \}
+202 
+203     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{DDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+204     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{PDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+205 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Disabled\-\_\-\-Stepper@{Disabled\-\_\-\-Stepper}}
+\index{Disabled\-\_\-\-Stepper@{Disabled\-\_\-\-Stepper}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Disabled\-\_\-\-Stepper}]{\setlength{\rightskip}{0pt plus 5cm}void Disabled\-\_\-\-Stepper (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}
+Function that disables the stepper motor. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+174 \{
+175     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}{PENABLE\_STEPPER}, \hyperlink{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{ENABLE\_STEPPER} );
+176     \hyperlink{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}{ModeStart} = 0;
+177 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Enable\-\_\-\-Stepper@{Enable\-\_\-\-Stepper}}
+\index{Enable\-\_\-\-Stepper@{Enable\-\_\-\-Stepper}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Enable\-\_\-\-Stepper}]{\setlength{\rightskip}{0pt plus 5cm}void Enable\-\_\-\-Stepper (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}
+Function that enables the stepper motor. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+164 \{
+165     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}{PENABLE\_STEPPER}, \hyperlink{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{ENABLE\_STEPPER} );
+166     \hyperlink{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}{ModeStart} = 1;
+167 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-\_\-\-Decay@{Get\-\_\-\-Decay}}
+\index{Get\-\_\-\-Decay@{Get\-\_\-\-Decay}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-\_\-\-Decay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf decay\-\_\-type} Get\-\_\-\-Decay (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}
+Reads the setted decay. \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+decay\-\_\-type 
+\end{DoxyReturn}
+
+
+Definition at line 395 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+396 \{
+397     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{CurrentDecay};
+398 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-\_\-\-Mode@{Get\-\_\-\-Mode}}
+\index{Get\-\_\-\-Mode@{Get\-\_\-\-Mode}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-\_\-\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mode\-\_\-type} Get\-\_\-\-Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}
+Reads the setted mode. \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+mode\-\_\-type 
+\end{DoxyReturn}
+
+
+Definition at line 405 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+406 \{
+407     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode};
+408 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-\_\-\-Start@{Get\-\_\-\-Start}}
+\index{Get\-\_\-\-Start@{Get\-\_\-\-Start}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-\_\-\-Start}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Get\-\_\-\-Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}
+Returns the mode. \begin{DoxyReturn}{Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 414 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+415 \{
+416     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}{ModeStart};
+417 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-\_\-\-Steps\-\_\-revol@{Get\-\_\-\-Steps\-\_\-revol}}
+\index{Get\-\_\-\-Steps\-\_\-revol@{Get\-\_\-\-Steps\-\_\-revol}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-\_\-\-Steps\-\_\-revol}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-\_\-\-Steps\-\_\-revol (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}
+Gets the steps per revolution. \begin{DoxySeeAlso}{See Also}
+\hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{Steps\-Per\-Rev} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 545 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+546 \{
+547     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev};
+548 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Acceleration@{Get\-Acceleration}}
+\index{Get\-Acceleration@{Get\-Acceleration}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Acceleration (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}
+Reads the setted acceleration. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Acceleration 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 445 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+446 \{
+447     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+448 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{group__biba__drv_ga6202c4fd41a45376809e5940428467b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga56c30e2b82a23aed1c9febd704166090}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Current\-Speed@{Get\-Current\-Speed}}
+\index{Get\-Current\-Speed@{Get\-Current\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Current\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Current\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga56c30e2b82a23aed1c9febd704166090}
+Reads the current speed. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Current\-Speed 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 456 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+457 \{
+458     \textcolor{keywordflow}{return} \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed};
+459 \}
+\end{DoxyCode}
+\hypertarget{group__biba__drv_ga356f958c8327643ae22d240493ae7747}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Max\-Speed@{Get\-Max\-Speed}}
+\index{Get\-Max\-Speed@{Get\-Max\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Max\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Max\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga356f958c8327643ae22d240493ae7747}
+Reads the setted maximum speed.. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Max\-Speed 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 424 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+425 \{
+426     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+427 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{group__biba__drv_ga356f958c8327643ae22d240493ae7747_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Min\-Speed@{Get\-Min\-Speed}}
+\index{Get\-Min\-Speed@{Get\-Min\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Min\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Min\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}
+Reads the setted minimum speed. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Min\-Speed 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 435 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+436 \{
+437     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+438 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Real\-Acc@{Get\-Real\-Acc}}
+\index{Get\-Real\-Acc@{Get\-Real\-Acc}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Real\-Acc}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Real\-Acc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}
+Gets the real acceleration. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Acceleration 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 613 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+614 \{
+615     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+616 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Real\-Max\-Speed@{Get\-Real\-Max\-Speed}}
+\index{Get\-Real\-Max\-Speed@{Get\-Real\-Max\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Real\-Max\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Real\-Max\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}
+Gets the real maximum speed. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Max\-Speed 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 592 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+593 \{
+594     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+595 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Get\-Real\-Min\-Speed@{Get\-Real\-Min\-Speed}}
+\index{Get\-Real\-Min\-Speed@{Get\-Real\-Min\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Get\-Real\-Min\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Get\-Real\-Min\-Speed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}
+Gets the real minimum speed. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Min\-Speed 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 603 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+604 \{
+605     \textcolor{keywordflow}{return} \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+606 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Helper\-Rto\-T@{Helper\-Rto\-T}}
+\index{Helper\-Rto\-T@{Helper\-Rto\-T}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Helper\-Rto\-T}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t Helper\-Rto\-T (
+\begin{DoxyParamCaption}
+\item[{uint64\-\_\-t}]{in}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}
+Helper of the function Real\-To\-Time \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{Real\-To\-Time} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint64\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 838 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+839 \{
+840     uint64\_t revpermin;
+841 
+842 \textcolor{comment}{/*}
+843 \textcolor{comment}{    revpermin = in;}
+844 \textcolor{comment}{    revpermin = revpermin*StepsPerRev;}
+845 \textcolor{comment}{    revpermin = revpermin / 60;}
+846 \textcolor{comment}{    revpermin = 1000000000 / revpermin;}
+847 \textcolor{comment}{    revpermin = revpermin / PERTMR;}
+848 \textcolor{comment}{*/}
+849 revpermin=\hyperlink{drv__8825_8c_a556953635433b080667d6e8888dfe876}{TIMERCONST}/(in*\hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev});
+850     \textcolor{keywordflow}{if} ( revpermin < 65500 )
+851     \{   
+852         \textcolor{keywordflow}{return} revpermin;
+853     \}
+854     \textcolor{keywordflow}{else}
+855     \{
+856         \textcolor{keywordflow}{return}  65500;
+857     \}
+858 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Helper\-Tto\-R@{Helper\-Tto\-R}}
+\index{Helper\-Tto\-R@{Helper\-Tto\-R}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Helper\-Tto\-R}]{\setlength{\rightskip}{0pt plus 5cm}uint64\-\_\-t Helper\-Tto\-R (
+\begin{DoxyParamCaption}
+\item[{uint64\-\_\-t}]{in}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}
+Helper of the function Time\-To\-Real \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{Time\-To\-Real} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint64\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 867 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+868 \{
+869     uint64\_t r;
+870 
+871     \textcolor{comment}{//const uint64\_t l=1000000000*60;}
+872     
+873     r=\hyperlink{drv__8825_8c_a556953635433b080667d6e8888dfe876}{TIMERCONST}/(in*\hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev});
+874     
+875 \textcolor{comment}{/*}
+876 \textcolor{comment}{    r = in;}
+877 \textcolor{comment}{}
+878 \textcolor{comment}{    }
+879 \textcolor{comment}{    }
+880 \textcolor{comment}{    r = r * PERTMR;}
+881 \textcolor{comment}{    r = r*StepsPerRev;}
+882 \textcolor{comment}{    r = 10000000000 / r;}
+883 \textcolor{comment}{    r = r * 6;}
+884 \textcolor{comment}{}
+885 \textcolor{comment}{*/}
+886 
+887 
+888 
+889     \textcolor{keywordflow}{if} ( r > 1 )
+890     \{
+891         \textcolor{keywordflow}{return} r;
+892     \} \textcolor{keywordflow}{else}
+893     \{
+894         \textcolor{keywordflow}{return} 1;
+895         \textcolor{comment}{//putstring\_P( PSTR( "Target MaxSpeed\(\backslash\)r" ) );}
+896     \}
+897 
+898 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Home@{Home}}
+\index{Home@{Home}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Home}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Home (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134}
+The home of the motor. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]it doesnt work as espected \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+
+Definition at line 376 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+377 \{
+378     int16\_t i;
+379 
+380     \textcolor{keywordflow}{for} ( i = 0; i < 128; i++ )
+381     \{
+382         \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step}(\hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{STEP\_COUNTER\_CLOCKWISE});
+383         \textcolor{keywordflow}{if} ( !(\hyperlink{group__biba__config_ga65a9fed63ff97399d2b08295253076f3}{check\_pin}( \hyperlink{group__biba__config_gabd13263a1daa3de2c2e1417449c8e476}{IHOME}, \hyperlink{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{HOME} )) )
+384             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+385     \}
+386     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+387 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Init\-Stepper@{Init\-Stepper}}
+\index{Init\-Stepper@{Init\-Stepper}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Init\-Stepper}]{\setlength{\rightskip}{0pt plus 5cm}void Init\-Stepper (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}
+Initialize the D\-R\-V232. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 778 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+779 \{
+780     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = eeprom\_read\_word( ( uint16\_t * ) ( 0 ) );
+781     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = eeprom\_read\_word( ( uint16\_t * ) ( 2 ) );
+782     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = eeprom\_read\_word( ( uint16\_t * ) ( 4 ) );
+783     \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} = eeprom\_read\_word( ( uint16\_t * ) ( 6 ) );
+784     \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode} = eeprom\_read\_byte( ( uint8\_t * ) ( 8 ) );
+785     \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{CurrentDecay} = eeprom\_read\_byte( ( uint8\_t * ) ( 9 ) );
+786     \textcolor{keywordflow}{if} ( ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} == 0 ) || ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} == 0xffff ) )
+787     \{
+788         \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = 300;
+789         \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay}( \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{AUTO\_DECAY} );
+790         \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP} );
+791     \}
+792 
+793     \textcolor{keywordflow}{if} ( ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} == 0 ) || ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} == 0xffff ) )
+794     \{
+795         \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = 10;
+796     \}
+797 
+798     \textcolor{keywordflow}{if} ( ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} == 0 ) || ( \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} == 0xffff ) )
+799     \{
+800         \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = 100;
+801     \}
+802 
+803     \textcolor{keywordflow}{if} ( ( \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} == 0 ) || ( \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} == 0xffff ) )
+804     \{
+805         \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} = 400;
+806     \}
+807 
+808     \hyperlink{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{Disabled\_Stepper}( );
+809     \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay}( \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{CurrentDecay} );
+810     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode} );
+811     \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{RealToTime}( );
+812     \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{CalWorkParam}( );
+813 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Mode@{Mode}}
+\index{Mode@{Mode}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf mode\-\_\-type}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}
+Function that sets the mode. \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 215 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+216 \{
+217     \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode} = mode;
+218     \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{CalWorkParam}( );
+219     \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store}( );
+220 
+221     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP} )
+222     \{
+223         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+224         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+225         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+226     \}
+227 
+228     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{MODE\_HALF\_STEP} )
+229     \{
+230         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+231         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+232         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+233     \}
+234 
+235     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{MODE\_QUATER\_STEP} )
+236     \{
+237         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+238         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+239         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+240     \}
+241 
+242     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{MODE\_8\_MICROSTEP} )
+243     \{
+244         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+245         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+246         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+247     \}
+248 
+249     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{MODE\_16\_MICROSTEP} )
+250     \{
+251         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+252         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+253         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+254     \}
+255 
+256     \textcolor{keywordflow}{if} ( mode == \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{MODE\_32\_MICROSTEP} )
+257     \{
+258         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+259         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+260         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+261     \}
+262 
+263 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Real\-To\-Time@{Real\-To\-Time}}
+\index{Real\-To\-Time@{Real\-To\-Time}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Real\-To\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Real\-To\-Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}
+Calculates the real speed to the timmer speed. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 622 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+623 \{
+624     
+625     uint16\_t revpermin;
+626     \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed}=\hyperlink{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{HelperRtoT}(\hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed});
+627     \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed}=\hyperlink{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{HelperRtoT}(\hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed});
+628     
+629     revpermin = ( \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} - \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} ) / \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+630 
+631     \textcolor{comment}{//putstring\_P( PSTR( "acc=" ) );}
+632     \textcolor{comment}{//putstring( int\_to\_string( ( uint64\_t ) ( revpermin ) ) );}
+633     \textcolor{comment}{//putstring\_P( PSTR( "\(\backslash\)r" ) );}
+634 
+635     if ( revpermin < 1 )
+636     \{
+637         \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = 1;
+638         \textcolor{comment}{//  putstring\_P( PSTR( "Acc  low\(\backslash\)r" ) );}
+639     \} \textcolor{keywordflow}{else}
+640     \{
+641         \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = revpermin;
+642     \}
+643 
+644     \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{CalWorkParam}( );
+645     \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store}( );
+646 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-\_\-\-Steps\-\_\-revol@{Set\-\_\-\-Steps\-\_\-revol}}
+\index{Set\-\_\-\-Steps\-\_\-revol@{Set\-\_\-\-Steps\-\_\-revol}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-\_\-\-Steps\-\_\-revol}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-\_\-\-Steps\-\_\-revol (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{step\-\_\-rev}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}
+Sets the steps per revolution. \begin{DoxySeeAlso}{See Also}
+\hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{Steps\-Per\-Rev} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em step\-\_\-rev} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 535 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+536 \{
+537     \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} = step\_rev;
+538 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Acceleration@{Set\-Acceleration}}
+\index{Set\-Acceleration@{Set\-Acceleration}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Acceleration}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Acceleration (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{accel}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}
+Function that sets the acceleration. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Acceleration 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em accel} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+154 \{
+155     \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = accel;
+156     \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{TimeToReal}( );
+157 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga91f64f1e8f2b67bfcf24f6d2a2249373}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Current\-Speed@{Set\-Current\-Speed}}
+\index{Set\-Current\-Speed@{Set\-Current\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Current\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Current\-Speed (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{spd}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga91f64f1e8f2b67bfcf24f6d2a2249373}
+Sets the current speed. \begin{DoxySeeAlso}{See Also}
+\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{Motion.\-Current\-Speed} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 468 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+469 \{
+470     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = spd;
+471 \}
+\end{DoxyCode}
+\hypertarget{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Max\-Speed@{Set\-Max\-Speed}}
+\index{Set\-Max\-Speed@{Set\-Max\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Max\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Max\-Speed (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{spd}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}
+Function that sets the maximum speed. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Max\-Speed 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+129 \{
+130     \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = spd;
+131     \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{TimeToReal}( );
+132 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Min\-Speed@{Set\-Min\-Speed}}
+\index{Set\-Min\-Speed@{Set\-Min\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Min\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Min\-Speed (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{spd}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}
+Function that sets the minimum speed. \begin{DoxySeeAlso}{See Also}
+Time\-Param.\-Min\-Speed 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+142 \{
+143     \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = spd;
+144     \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{TimeToReal}( );
+145 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Real\-Acc@{Set\-Real\-Acc}}
+\index{Set\-Real\-Acc@{Set\-Real\-Acc}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Real\-Acc}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Real\-Acc (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{realacc}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}
+Sets the real acceleration. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Acceleration 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em realacc} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 581 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+582 \{
+583     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = realacc;
+584     \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{RealToTime}( );
+585 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaf272b22659980a7a5b9be13378963f67_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{group__biba__drv_gaf272b22659980a7a5b9be13378963f67_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Real\-Max\-Speed@{Set\-Real\-Max\-Speed}}
+\index{Set\-Real\-Max\-Speed@{Set\-Real\-Max\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Real\-Max\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Real\-Max\-Speed (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{maxspd}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}
+Sets the real maximum speed. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Max\-Speed 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em maxspd} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 557 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+558 \{
+559     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} = maxspd;
+560     \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{RealToTime}( );
+561 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Set\-Real\-Min\-Speed@{Set\-Real\-Min\-Speed}}
+\index{Set\-Real\-Min\-Speed@{Set\-Real\-Min\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Set\-Real\-Min\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Set\-Real\-Min\-Speed (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{minspd}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}
+Sets the real minimum speed. \begin{DoxySeeAlso}{See Also}
+Real\-Speed.\-Min\-Speed 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em minspd} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 569 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+570 \{
+571     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} = minspd;
+572     \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{RealToTime}( );
+573 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Step@{Step}}
+\index{Step@{Step}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}void Step (
+\begin{DoxyParamCaption}
+\item[{{\bf step\-\_\-type}}]{step}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}
+Performs single step. \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em step} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 272 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+273 \{
+274     \textcolor{keywordflow}{if} ( step == \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{STEP\_CLOCKWISE} )
+275     \{
+276         \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}{PDIRECTION}, \hyperlink{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{DIRECTION} );
+277 
+278     \} \textcolor{keywordflow}{else}
+279     \{
+280         \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}{PDIRECTION}, \hyperlink{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{DIRECTION} );
+281     \}
+282     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gaa3a1d04d71d6791ec7d5d9bd6d2d8cb1}{PSTEP}, \hyperlink{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}{STEP} );
+283     \_delay\_us( 2 );
+284     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gaa3a1d04d71d6791ec7d5d9bd6d2d8cb1}{PSTEP}, \hyperlink{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}{STEP} );
+285     \_delay\_us( 2 );
+286 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Stop\-\_\-\-Motion\-\_\-fast@{Stop\-\_\-\-Motion\-\_\-fast}}
+\index{Stop\-\_\-\-Motion\-\_\-fast@{Stop\-\_\-\-Motion\-\_\-fast}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Stop\-\_\-\-Motion\-\_\-fast}]{\setlength{\rightskip}{0pt plus 5cm}void Stop\-\_\-\-Motion\-\_\-fast (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}
+Stops the movement without deacceleration at the end. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 361 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+362 \{
+363     \hyperlink{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{ConstSpd} = 0;
+364     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} = 0;
+365     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed} = 0;
+366     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel} = 0;
+367 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Stop\-\_\-\-Motion\-\_\-normal@{Stop\-\_\-\-Motion\-\_\-normal}}
+\index{Stop\-\_\-\-Motion\-\_\-normal@{Stop\-\_\-\-Motion\-\_\-normal}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Stop\-\_\-\-Motion\-\_\-normal}]{\setlength{\rightskip}{0pt plus 5cm}void Stop\-\_\-\-Motion\-\_\-normal (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}
+Stops the movement with deacceleration at the end. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 349 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+350 \{
+351     \hyperlink{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{ConstSpd} = 0;
+352     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} = 0;
+353     \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed} = 0;
+354 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!store@{store}}
+\index{store@{store}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{store}]{\setlength{\rightskip}{0pt plus 5cm}void store (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}
+Calculates the real maximum speed,real minimum speed, real acceleration, steps per revolution, current mode and the current decay. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 820 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+821 \{
+822     eeprom\_write\_word( ( uint16\_t * ) ( 0 ), \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} );
+823     eeprom\_write\_word( ( uint16\_t * ) ( 2 ), \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} );
+824     eeprom\_write\_word( ( uint16\_t * ) ( 4 ), \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} );
+825     eeprom\_write\_word( ( uint16\_t * ) ( 6 ), \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{StepsPerRev} );
+826     eeprom\_write\_byte( ( uint8\_t * ) ( 8 ), \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{CurrentMode} );
+827     eeprom\_write\_byte( ( uint8\_t * ) ( 9 ), \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{CurrentDecay} );
+828 
+829 
+830 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Time\-To\-Real@{Time\-To\-Real}}
+\index{Time\-To\-Real@{Time\-To\-Real}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Time\-To\-Real}]{\setlength{\rightskip}{0pt plus 5cm}void Time\-To\-Real (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}
+Calculates the timmer speed to the real speed. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 652 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+653 \{
+654     uint16\_t r;
+655     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed}=\hyperlink{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{HelperTtoR}(\hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed});
+656     \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed}=\hyperlink{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{HelperTtoR}(\hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.
+      \hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed});
+657 
+658 \textcolor{comment}{/*}
+659 \textcolor{comment}{    }
+660 \textcolor{comment}{}
+661 \textcolor{comment}{    //const uint64\_t l=1000000000*60;}
+662 \textcolor{comment}{}
+663 \textcolor{comment}{    r = TimeParam.MaxSpeed;}
+664 \textcolor{comment}{}
+665 \textcolor{comment}{    r = r * PERTMR;}
+666 \textcolor{comment}{    r = r*StepsPerRev;}
+667 \textcolor{comment}{    r = 10000000000 / r;}
+668 \textcolor{comment}{    r = r * 6;}
+669 \textcolor{comment}{}
+670 \textcolor{comment}{}
+671 \textcolor{comment}{}
+672 \textcolor{comment}{}
+673 \textcolor{comment}{    if ( r > 1 )}
+674 \textcolor{comment}{    \{}
+675 \textcolor{comment}{        RealSpeed.MaxSpeed = r;}
+676 \textcolor{comment}{    \} else}
+677 \textcolor{comment}{    \{}
+678 \textcolor{comment}{        RealSpeed.MaxSpeed = 1;}
+679 \textcolor{comment}{        //putstring\_P( PSTR( "Target MaxSpeed\(\backslash\)r" ) );}
+680 \textcolor{comment}{    \}}
+681 \textcolor{comment}{}
+682 \textcolor{comment}{}
+683 \textcolor{comment}{    r = TimeParam.MinSpeed;}
+684 \textcolor{comment}{    r = r * PERTMR;}
+685 \textcolor{comment}{    r = r*StepsPerRev;}
+686 \textcolor{comment}{    r = 60000000000 / r;}
+687 \textcolor{comment}{    //r=r*6;}
+688 \textcolor{comment}{}
+689 \textcolor{comment}{}
+690 \textcolor{comment}{    if ( r > 1 )}
+691 \textcolor{comment}{    \{}
+692 \textcolor{comment}{        RealSpeed.MinSpeed = r;}
+693 \textcolor{comment}{    \} else}
+694 \textcolor{comment}{    \{}
+695 \textcolor{comment}{        RealSpeed.MinSpeed = 1;}
+696 \textcolor{comment}{        //putstring\_P( PSTR( "Target Minspeed\(\backslash\)r" ) );}
+697 \textcolor{comment}{    \}}
+698 \textcolor{comment}{}
+699 \textcolor{comment}{*/}
+700 
+701     r = ( \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed} - \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} ) / 
+      \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{TimeParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+702 
+703     if ( r < 1 )
+704     \{
+705         \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = 1;
+706         \textcolor{comment}{//putstring\_P( PSTR( "Acc low\(\backslash\)r" ) );}
+707     \} \textcolor{keywordflow}{else}
+708     \{
+709         \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{RealSpeed}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} = r;
+710     \}
+711 
+712     \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{CalWorkParam}( );
+713     \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store}( );
+714 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{\index{D\-R\-V8825 Library@{D\-R\-V8825 Library}!Way\-\_\-\-Speed@{Way\-\_\-\-Speed}}
+\index{Way\-\_\-\-Speed@{Way\-\_\-\-Speed}!DRV8825 Library@{D\-R\-V8825 Library}}
+\subsubsection[{Way\-\_\-\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Way\-\_\-\-Speed (
+\begin{DoxyParamCaption}
+\item[{{\bf step\-\_\-type}}]{step}
+\end{DoxyParamCaption}
+)}}\label{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}
+Movement with constant speed and constant r\-P\-M \begin{DoxySeeAlso}{See Also}
+\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em step} & the first argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 339 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+340 \{
+341     \hyperlink{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{ConstSpd} = 1;
+342     \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\_Step}( step, 60000 );
+343 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d_icgraph}
+\end{center}
+\end{figure}
+
+

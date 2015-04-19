@@ -1,0 +1,136 @@
+eeschema (2013-may-18)-stable  >> Creation date: 19.02.2015 (чт) 22,07,03 EET
+#Cmp ( order = Reference )
+| C1         12p         
+| C2         12p         
+| C3         10u         
+| C4         10u         
+| C5         680n        
+| C6         10u         
+| C7         10u         
+| C8         220n        
+| C9         220n        
+| C10        330u        
+| C11        220n        
+| C12        220n        
+| C13        100u        
+| C14        10n         
+| C15        220n        
+| C16        100n        
+| C17        100u        
+| D1         1N5819GLX   
+| D2         1N4001      
+| IC1        ATMEGA8-P   
+| IC2        SP485       
+| IC3        LTV-814     
+| IC4        LTV-814     
+| IC5        LTV-814     
+| IC6        LTV-814     
+| IC7        LTV-814     
+| IC8        LM2575_PENTAWATT_D2PAK
+| JP1        JUMPER      
+| JP2        JUMPER      
+| JP3        JUMPER      
+| JP4        JUMPER      
+| JP5        JUMPER      
+| L1         330u        
+| P1         HD-515R 8P  
+| P2         HN1X6       
+| P3         HD-515R 8P  
+| P4         HD-515R 2P  
+| P5         CONN_4      
+| R1         10k         
+| R2         120         
+| R3         820         
+| R4         820         
+| R5         4.7k        
+| R6         4.7k        
+| R7         4.7k        
+| R8         4.7k        
+| R9         4.7k        
+| R10        4.7k        
+| R11        4.7k        
+| R12        4.7k        
+| R13        4.7k        
+| R14        4.7k        
+| R15        50k         
+| R16        4.7k        
+| R17        4.7k        
+| R18        1M          
+| R19        0.2         
+| R20        0.2         
+| RV1        30k         
+| U1         MAX232      
+| U2         6N137       
+| U3         6N137       
+| U4         DRV8825PWP  
+| X1         Q11.0592 MHz HC-49S
+#End Cmp
+
+#Cmp ( order = Value )
+| 12p          C1        
+| 12p          C2        
+| 10n          C14       
+| 100n         C16       
+| 220n         C8        
+| 220n         C9        
+| 220n         C11       
+| 220n         C12       
+| 220n         C15       
+| 680n         C5        
+| 10u          C3        
+| 10u          C4        
+| 10u          C6        
+| 10u          C7        
+| 100u         C13       
+| 100u         C17       
+| 330u         C10       
+| 1N5819GLX    D1        
+| 1N4001       D2        
+| LM2575_PENTAWATT_D2PAK IC8       
+| ATMEGA8-P    IC1       
+| LTV-814      IC3       
+| LTV-814      IC4       
+| LTV-814      IC5       
+| LTV-814      IC6       
+| LTV-814      IC7       
+| SP485        IC2       
+| JUMPER       JP1       
+| JUMPER       JP2       
+| JUMPER       JP3       
+| JUMPER       JP4       
+| JUMPER       JP5       
+| 330u         L1        
+| HD-515R 8P   P1        
+| HN1X6        P2        
+| HD-515R 8P   P3        
+| HD-515R 2P   P4        
+| CONN_4       P5        
+| 0.2          R19       
+| 0.2          R20       
+| 120          R2        
+| 820          R3        
+| 820          R4        
+| 4.7k         R5        
+| 4.7k         R6        
+| 4.7k         R7        
+| 4.7k         R8        
+| 4.7k         R9        
+| 4.7k         R10       
+| 4.7k         R11       
+| 4.7k         R12       
+| 4.7k         R13       
+| 4.7k         R14       
+| 4.7k         R16       
+| 4.7k         R17       
+| 10k          R1        
+| 50k          R15       
+| 1M           R18       
+| 30k          RV1       
+| MAX232       U1        
+| 6N137        U2        
+| 6N137        U3        
+| DRV8825PWP   U4        
+| Q11.0592 MHz HC-49S X1        
+#End Cmp
+
+#End List

@@ -1,0 +1,6 @@
+<map id="TimeToReal" name="TimeToReal">
+<area shape="rect" id="node3" href="$group__biba__drv.html#gaf56c9e829e6f40a75e89bd16f5051c63" title="SetMaxSpeed" alt="" coords="159,5,268,33"/>
+<area shape="rect" id="node7" href="$group__biba__drv.html#ga39d145b6dc7b1fa19582960613440fd4" title="SetMinSpeed" alt="" coords="160,55,267,83"/>
+<area shape="rect" id="node10" href="$group__biba__drv.html#ga746cb11e60c877a82b3ecbdbaa375f5e" title="SetAcceleration" alt="" coords="153,106,273,134"/>
+<area shape="rect" id="node5" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="323,55,373,83"/>
+</map>

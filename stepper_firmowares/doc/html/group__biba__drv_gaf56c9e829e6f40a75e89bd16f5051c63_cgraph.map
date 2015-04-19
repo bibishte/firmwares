@@ -1,0 +1,9 @@
+<map id="SetMaxSpeed" name="SetMaxSpeed">
+<area shape="rect" id="node3" href="$group__biba__drv.html#gaec239a01fef85140bc7c12fa612f421b" title="TimeToReal" alt="" coords="165,55,264,83"/>
+<area shape="rect" id="node5" href="$group__biba__drv.html#gabc1e78364b977fdff7ae3b642e720f58" title="HelperTtoR" alt="" coords="323,5,416,33"/>
+<area shape="rect" id="node7" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="312,55,427,83"/>
+<area shape="rect" id="node15" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="343,106,396,134"/>
+<area shape="rect" id="node9" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="476,55,561,83"/>
+<area shape="rect" id="node11" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="611,55,704,83"/>
+<area shape="rect" id="node13" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="753,55,860,83"/>
+</map>

@@ -1,0 +1,613 @@
+\hypertarget{main_8c}{\section{main.\-c File Reference}
+\label{main_8c}\index{main.\-c@{main.\-c}}
+}
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/eeprom.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}usart.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}messages.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}interpreter.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}drv\-\_\-8825.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}main.\-h\char`\"{}}\\*
+Include dependency graph for main.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\-\_\-\-C\-P\-U}~11059200\-U\-L
+\begin{DoxyCompactList}\small\item\em define C\-P\-U frequency in Mhz here if not defined in Makefile \end{DoxyCompactList}\item 
+\#define \hyperlink{main_8c_ab54b68a1ee096155399ca2ee8bf5362e}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}~115200
+\begin{DoxyCompactList}\small\item\em 115200 baud \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01}{Init\-\_\-\-Input\-\_\-\-Output} (void)
+\item 
+int16\-\_\-t \hyperlink{main_8c_aec570f4ab450e8224be63b7dcfa62b35}{main} (void)
+\begin{DoxyCompactList}\small\item\em main loop \end{DoxyCompactList}\item 
+void \hyperlink{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f}{test} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+F\-I\-L\-E \hyperlink{main_8c_a366295bc7a65603cd821dad87abee42d}{usart\-\_\-str}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{\index{main.\-c@{main.\-c}!F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}}
+\index{F\-\_\-\-C\-P\-U@{F\-\_\-\-C\-P\-U}!main.c@{main.\-c}}
+\subsubsection[{F\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-\_\-\-C\-P\-U~11059200\-U\-L}}\label{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}
+
+
+define C\-P\-U frequency in Mhz here if not defined in Makefile 
+
+
+
+Definition at line 46 of file main.\-c.
+
+\hypertarget{main_8c_ab54b68a1ee096155399ca2ee8bf5362e}{\index{main.\-c@{main.\-c}!U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}}
+\index{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}!main.c@{main.\-c}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-R\-A\-T\-E~115200}}\label{main_8c_ab54b68a1ee096155399ca2ee8bf5362e}
+
+
+115200 baud 
+
+
+
+Definition at line 50 of file main.\-c.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8c_aec570f4ab450e8224be63b7dcfa62b35}{\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int16\-\_\-t main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_aec570f4ab450e8224be63b7dcfa62b35}
+
+
+main loop 
+
+
+
+Definition at line 62 of file main.\-c.
+
+
+\begin{DoxyCode}
+63 \{
+64     \textcolor{keywordtype}{char} message[32]; \textcolor{comment}{// 1 byte + for string termination}
+65 
+66     int8\_t cmd;
+67     \textcolor{keyword}{const} \textcolor{keywordtype}{char} *cptr;
+68     \textcolor{keywordtype}{char} * pch;
+69     uint64\_t ch;
+70     uint8\_t i;
+71 
+72 
+73     SFIOR &= 0xfb; \textcolor{comment}{//11111011 -> PUD=0}
+74     \textcolor{comment}{/*}
+75 \textcolor{comment}{     * Set ports data direction}
+76 \textcolor{comment}{     */}
+77     \hyperlink{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01}{Init\_Input\_Output}( );
+78 
+79     \hyperlink{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}{usart\_init}( \hyperlink{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}{USART\_BAUD\_SELECT}( \hyperlink{main_8c_ab54b68a1ee096155399ca2ee8bf5362e}{USART\_BAUD\_RATE}, 
+      \hyperlink{main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\_CPU} ) );
+80 
+81 
+82 
+83     \textcolor{comment}{/*}
+84 \textcolor{comment}{     * now enable interrupt, since USART library is interrupt controlled}
+85 \textcolor{comment}{     */}
+86     sei( );
+87     stdout = stdin = &\hyperlink{main_8c_a366295bc7a65603cd821dad87abee42d}{usart\_str};
+88 
+89     \_delay\_ms( 100 );
+90     
+91 
+92     \hyperlink{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}{InitStepper}();
+93 
+94 
+95     \textcolor{keywordflow}{for} (;; )
+96     \{
+97 
+98         \textcolor{keywordflow}{if} ( ( cptr = fgets( message, \textcolor{keyword}{sizeof} message - 1, stdin ) ) )
+99         \{
+100 
+101 
+102             cmd = \hyperlink{interpreter_8c_a70379adfcbe9ce00e996ac1bfc1b12c6}{get\_cmd\_id}( message );
+103 
+104             \textcolor{keywordflow}{switch} ( cmd )
+105             \{
+106                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba52f49aba124a600ad9581caabe6a099a}{VERSION}:
+107                     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"1.0\(\backslash\)r"} ) );
+108                     \textcolor{keywordflow}{break};
+109 
+110 
+111                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba9f5cb747b2e1f0ea781d2b1f2a5b4824}{HELP}:
+112                     \textcolor{comment}{//  putstring\_P( PSTR( "help?\(\backslash\)r" ) );}
+113 
+114                     i = 0;
+115 
+116                     \textcolor{keywordflow}{do}
+117                     \{
+118                         cptr = \hyperlink{interpreter_8c_a290f954ecc7694751a55343897b8ff26}{get\_cmd\_name}( i++ );
+119                         \textcolor{keywordflow}{if} ( cptr )
+120                         \{
+121                             \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( cptr );
+122                             \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+123                         \}
+124                     \}
+125                     \textcolor{keywordflow}{while} ( cptr );
+126 
+127                     \textcolor{keywordflow}{break};
+128 
+129                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bab2f0cd22b1963becef8b91d29d567fe8}{TEST}:
+130                     \hyperlink{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f}{test}( );
+131                     \textcolor{keywordflow}{break};
+132 
+133                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba4998096b25353cc07269962f86300dec}{SET\_DEC\_SLOW}:
+134                     \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay}( \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{SLOW\_DECAY} );
+135                     \hyperlink{group__biba__messges_gad5028f9e871f7e63759218b94a829f45}{SDec}( );
+136                     \textcolor{keywordflow}{break};
+137 
+138                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba20b2c32ca5b9510332e3a8c016b0eb04}{SET\_DEC\_FAST}:
+139                     \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay}( \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{FAST\_DECAY} );
+140                     \hyperlink{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436}{FDec}( );
+141                     \textcolor{keywordflow}{break};
+142 
+143                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba8db62e91d4c755602fccdf364b216639}{SET\_DEC\_AUTO}:
+144                     \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay}( \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{AUTO\_DECAY} );
+145                     \hyperlink{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5}{ADec}( );
+146                     \textcolor{keywordflow}{break};
+147 
+148                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55baf39287d15da3c9b77b2a43913e0d6a55}{SET\_MODE\_FULL}:
+149                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP} );
+150                     \hyperlink{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a}{Fstep}( );
+151                     \textcolor{keywordflow}{break};
+152 
+153                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba92a94251b6d39b5dca4f6e70abfa39ad}{SET\_MODE\_HALF}:
+154                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{MODE\_HALF\_STEP} );
+155                     \hyperlink{group__biba__messges_ga53669298f54817f8d2b140050dc910f1}{HStep}( );
+156                     \textcolor{keywordflow}{break};
+157 
+158                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bac800303390d29709b53c835d772731d8}{SET\_MODE\_QUATER}:
+159                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{MODE\_QUATER\_STEP} );
+160                     \hyperlink{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a}{Qstep}( );
+161                     \textcolor{keywordflow}{break};
+162 
+163                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba49307cfe2722f10529d25da9dcf1c300}{SET\_MODE\_8}:
+164                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{MODE\_8\_MICROSTEP} );
+165                     \hyperlink{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7}{M8Step}( );
+166                     \textcolor{keywordflow}{break};
+167 
+168                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba68150c4e0abdf6219ce9251fefef45c4}{SET\_MODE\_16}:
+169                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{MODE\_16\_MICROSTEP} );
+170                     \hyperlink{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b}{M16Step}( );
+171                     \textcolor{keywordflow}{break};
+172 
+173                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bacd2480b2e23d39f8d446723dbb092dfc}{SET\_MODE\_32}:
+174                     \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode}( \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{MODE\_32\_MICROSTEP} );
+175                     \hyperlink{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158}{M32Step}( );
+176                     \textcolor{keywordflow}{break};
+177 
+178                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55badb9cc256399338bce161b5e2c53761a7}{SET\_HOME}:
+179                     \textcolor{comment}{//              putstring("home%d\(\backslash\)r", Home());}
+180                     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"home "} ) );
+181                     \textcolor{keywordflow}{if} ( !(\hyperlink{group__biba__config_ga65a9fed63ff97399d2b08295253076f3}{check\_pin}( \hyperlink{group__biba__config_gabd13263a1daa3de2c2e1417449c8e476}{IHOME}, \hyperlink{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{HOME} )) )
+182                     \{
+183                         \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"TRUE"} ) );
+184                     \} \textcolor{keywordflow}{else}
+185                     \{
+186                         \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"FALSE"} ) );
+187                     \}
+188                     \textcolor{comment}{//              putstring(ConvertASCItouint64(Home()));}
+189                     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+190 
+191                     \textcolor{keywordflow}{break};
+192 
+193                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba2e77b74b45dcaabb40265be8c45d9c65}{SET\_ACC}:
+194                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+195                     \textcolor{keywordflow}{if} ( pch != NULL )
+196                     \{
+197                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+198                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+199                         \textcolor{keywordflow}{if} ( ch > 0 )
+200                         \{
+201                             \hyperlink{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}{SetAcceleration}( ch );
+202                             \hyperlink{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615}{Acc}( );
+203                             \textcolor{keywordflow}{break};
+204                         \} \textcolor{keywordflow}{else}
+205                         \{
+206                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+207                             \textcolor{keywordflow}{break};
+208                         \}
+209                     \}
+210                     \textcolor{keywordflow}{break};
+211 
+212                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba9b77b97753f6732abf16d3229b8f55ca}{SET\_MIN\_SPEED}:
+213                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+214                     \textcolor{keywordflow}{if} ( pch != NULL )
+215                     \{
+216                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+217                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+218                         \textcolor{keywordflow}{if} ( ch > 0 )
+219                         \{
+220                             \hyperlink{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}{SetMinSpeed}( ch );
+221                             \hyperlink{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7}{Minspeed}( );
+222                             \textcolor{keywordflow}{break};
+223                         \} \textcolor{keywordflow}{else}
+224                         \{
+225                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+226                             \textcolor{keywordflow}{break};
+227                         \}
+228                     \}
+229                     \textcolor{keywordflow}{break};
+230 
+231                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba787e6a32f2657afbac1a33fb51768380}{SET\_MAX\_SPEED}:
+232                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+233                     \textcolor{keywordflow}{if} ( pch != NULL )
+234                     \{
+235                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+236                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+237                         \textcolor{keywordflow}{if} ( ch > 0 )
+238                         \{
+239                             \hyperlink{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}{SetMaxSpeed}( ch );
+240                             \hyperlink{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112}{Maxspeed}( );
+241                             \textcolor{keywordflow}{break};
+242                         \} \textcolor{keywordflow}{else}
+243                         \{
+244                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+245                             \textcolor{keywordflow}{break};
+246                         \}
+247                     \}
+248                     \textcolor{keywordflow}{break};
+249 
+250                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bab31b29b24ef72167ea6b821e44f2d8f1}{SET\_STP\_REV}:
+251 
+252                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+253                     \textcolor{keywordflow}{if} ( pch != NULL )
+254                     \{
+255                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+256                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+257                         \textcolor{keywordflow}{if} ( ch > 0 )
+258                         \{
+259                             \hyperlink{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}{Set\_Steps\_revol}( ch );
+260                             \hyperlink{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1}{SptRevol}();
+261                             \textcolor{keywordflow}{break};
+262                         \}
+263                         \textcolor{keywordflow}{else}
+264                         \{
+265                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+266                             \textcolor{keywordflow}{break};
+267                         \}
+268                     \}
+269 
+270                     \textcolor{keywordflow}{break};
+271 
+272                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba221e7d4226cd726a8ef18e3fd020e489}{SET\_R\_MIN\_SPD}:
+273 
+274                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+275                     \textcolor{keywordflow}{if} ( pch != NULL )
+276                     \{
+277                         \textcolor{comment}{//pch = strstr( pch, "=" );}
+278                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+279                         \textcolor{keywordflow}{if} ( ch > 0 )
+280                         \{
+281                             \hyperlink{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}{SetRealMinSpeed}( ch );
+282                             \hyperlink{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b}{RMinSpd}();
+283                             \textcolor{keywordflow}{break};
+284                         \}
+285                         \textcolor{keywordflow}{else}
+286                         \{
+287                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+288                             \textcolor{keywordflow}{break};
+289                         \}
+290                     \}
+291 
+292                     \textcolor{keywordflow}{break};
+293 
+294                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55badc11e570f337ebe74c0bebdac21abece}{SET\_R\_MAX\_SPD}:
+295 
+296                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+297                     \textcolor{keywordflow}{if} ( pch != NULL )
+298                     \{
+299                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+300                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+301                         \textcolor{keywordflow}{if} ( ch > 0 )
+302                         \{
+303 
+304 
+305                             \hyperlink{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}{SetRealMaxSpeed}( ch );
+306                             \hyperlink{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08}{RMaxSpd}();
+307                             \textcolor{keywordflow}{break};
+308                         \}
+309                         \textcolor{keywordflow}{else}
+310                         \{
+311                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+312                             \textcolor{keywordflow}{break};
+313                         \}
+314                     \}
+315 
+316                     \textcolor{keywordflow}{break};
+317 
+318 
+319                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba1d893b8b5c4ab593a3397741d0821ea5}{SET\_R\_ACC}:
+320 
+321                     pch = strstr( message, \textcolor{stringliteral}{"="} );
+322                     \textcolor{keywordflow}{if} ( pch != NULL )
+323                     \{
+324                         pch = strstr( pch, \textcolor{stringliteral}{"="} );
+325                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch + 1 );
+326                         \textcolor{keywordflow}{if} ( ch > 0 )
+327                         \{
+328                             \hyperlink{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}{SetRealAcc}( ch );
+329                             \hyperlink{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5}{RAcc}();
+330                             \textcolor{keywordflow}{break};
+331                         \} \textcolor{keywordflow}{else}
+332                         \{
+333                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+334                             \textcolor{keywordflow}{break};
+335                         \}
+336                     \}
+337 
+338                     \textcolor{keywordflow}{break};
+339 
+340 
+341                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba83e3c74ce80c2f92348594c8a64760a3}{GET\_ACC}:
+342                     \hyperlink{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615}{Acc}( );
+343                     \textcolor{keywordflow}{break};
+344 
+345                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba474e3ca39b8a023f6c6ddd642e380318}{GET\_MIN\_SPEED}:
+346                     \hyperlink{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7}{Minspeed}( );
+347                     \textcolor{keywordflow}{break};
+348 
+349                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba8f1952d9895650e841fff43f63054597}{GET\_MAX\_SPEED}:
+350                     \hyperlink{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112}{Maxspeed}( );
+351                     \textcolor{keywordflow}{break};
+352 
+353 
+354                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bae530aa115c4fef95ee14f81c50f0ac3a}{GET\_STP\_REV}:
+355                     \hyperlink{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1}{SptRevol}();
+356                     \textcolor{keywordflow}{break};
+357 
+358 
+359                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55babfc89f5a756f65ae5d834223fc475a8d}{GET\_R\_MIN\_SPD}:
+360                     \hyperlink{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b}{RMinSpd}();
+361                     \textcolor{keywordflow}{break};
+362 
+363                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba76cf279e34beeda6f6b38c6d740f9643}{GET\_R\_MAX\_SPD}:
+364                     \hyperlink{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08}{RMaxSpd}();
+365                     \textcolor{keywordflow}{break};
+366 
+367                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55baa4324fb70da22cad40b92e1ae431952f}{GET\_R\_ACC}:
+368                     \hyperlink{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5}{RAcc}();
+369                     \textcolor{keywordflow}{break};
+370 
+371 
+372                     
+373                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba4ea51e371cdc6827591a99c3119e002a}{STOPF}:
+374                     \hyperlink{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}{Stop\_Motion\_fast}();
+375                     \hyperlink{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c}{Stop}();
+376                     \textcolor{keywordflow}{break};
+377                     
+378                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55baf16265197dcba32be2aee36c9a436790}{STOPN}:
+379                     \hyperlink{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}{Stop\_Motion\_normal}();
+380                     \hyperlink{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c}{Stop}();
+381                     \textcolor{keywordflow}{break};
+382                     
+383                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55baf6acafdeb6976b7ff675ea2ef6944c9f}{CONSTSPD}:
+384                     pch = strstr( message, \textcolor{stringliteral}{"clock"} );
+385                     \textcolor{keywordflow}{if} ( pch != NULL )
+386                     \{
+387                         \hyperlink{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{Way\_Speed}(\hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{STEP\_CLOCKWISE});
+388                             \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"DONE\(\backslash\)r "} ) );
+389                             \textcolor{keywordflow}{break};
+390                         
+391                     \}
+392 
+393                     pch = strstr( message, \textcolor{stringliteral}{"against"} );
+394                     \textcolor{keywordflow}{if} ( pch != NULL )
+395                     \{
+396                     
+397                             \hyperlink{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{Way\_Speed}( \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{STEP\_COUNTER\_CLOCKWISE} );
+398                             \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"DONE\(\backslash\)r"} ) );
+399                             \textcolor{keywordflow}{break};
+400                     \}
+401                     
+402                     \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}();
+403                     \textcolor{keywordflow}{break};
+404 
+405 
+406                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55ba7d46875fa3ebd2c34d2756950eda83bf}{ENABLE}:
+407                     \hyperlink{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}{Enable\_Stepper}( );
+408                     \textcolor{comment}{//putstring\_P( PSTR( "Enable\(\backslash\)r" ) );}
+409                     \textcolor{keywordflow}{break};
+410 
+411                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bad3a9df141be0ccf10389b640f492b26d}{DISABLE}:
+412                     \hyperlink{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{Disabled\_Stepper}( );
+413                     \textcolor{comment}{//putstring\_P( PSTR( "Disable\(\backslash\)r" ) );}
+414                     \textcolor{keywordflow}{break};
+415 
+416 
+417 
+418 
+419 
+420                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55badf1256e4198172eedfbf12c770d11589}{GOTO}:
+421                     pch = strstr( message, \textcolor{stringliteral}{"clock"} );
+422                     \textcolor{keywordflow}{if} ( pch != NULL )
+423                     \{
+424                         pch = strstr( pch, \textcolor{stringliteral}{" "} );
+425                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch );
+426 
+427                         \textcolor{keywordflow}{if} ( ch > 0 )
+428                         \{
+429                             \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\_Step}( \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{STEP\_CLOCKWISE}, ch );
+430 \textcolor{comment}{/*}
+431 \textcolor{comment}{                            putstring\_P( PSTR( "DONE " ) );}
+432 \textcolor{comment}{                            putstring( int\_to\_string( ch ) );}
+433 \textcolor{comment}{                            putstring\_P( PSTR( " steps\(\backslash\)r" ) );}
+434 \textcolor{comment}{*/}
+435                             \textcolor{keywordflow}{break};
+436                         \} \textcolor{keywordflow}{else}
+437                         \{
+438                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+439                             \textcolor{keywordflow}{break};
+440                         \}
+441                     \}
+442 
+443                     pch = strstr( message, \textcolor{stringliteral}{"against"} );
+444                     \textcolor{keywordflow}{if} ( pch != NULL )
+445                     \{
+446                         pch = strstr( pch, \textcolor{stringliteral}{" "} );
+447                         ch = \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{ConvertASCItouint64}( pch );
+448                         \textcolor{keywordflow}{if} ( ch > 0 )
+449                         \{
+450                             \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\_Step}( \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{STEP\_COUNTER\_CLOCKWISE}, ch );
+451 \textcolor{comment}{/*}
+452 \textcolor{comment}{                            putstring\_P( PSTR( "DONE " ) );}
+453 \textcolor{comment}{                            putstring( int\_to\_string( ch ) );}
+454 \textcolor{comment}{                            putstring\_P( PSTR( " steps\(\backslash\)r" ) );}
+455 \textcolor{comment}{*/}
+456                             \textcolor{keywordflow}{break};
+457                         \} \textcolor{keywordflow}{else}
+458                         \{
+459                             \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg}( );
+460                             \textcolor{keywordflow}{break};
+461                         \}
+462                     \}
+463                     \textcolor{keywordflow}{break};
+464 
+465                 \textcolor{keywordflow}{case} \hyperlink{interpreter_8h_a06fc87d81c62e9abb8790b6e5713c55bab15379688176677d49474245a6178d97}{STATUS}:
+466                     \textcolor{keywordflow}{switch} ( \hyperlink{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}{Get\_Decay}( ) )
+467                     \{
+468                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{SLOW\_DECAY}:
+469                             \hyperlink{group__biba__messges_gad5028f9e871f7e63759218b94a829f45}{SDec}( );
+470                             \textcolor{keywordflow}{break};
+471 
+472                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{FAST\_DECAY}:
+473                             \hyperlink{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436}{FDec}( );
+474                             \textcolor{keywordflow}{break};
+475 
+476                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{AUTO\_DECAY}:
+477                             \hyperlink{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5}{ADec}( );
+478                             \textcolor{keywordflow}{break};
+479 
+480                         \textcolor{keywordflow}{default}:
+481                         \{
+482                             \textcolor{comment}{//putstring\_P( PSTR( "Not set decay\(\backslash\)r" ) );}
+483                             \textcolor{keywordflow}{break};
+484                         \}
+485                     \}
+486 
+487                     \textcolor{keywordflow}{switch} ( \hyperlink{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}{Get\_Mode}( ) )
+488                     \{
+489                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{MODE\_FULL\_STEP}:
+490                             \hyperlink{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a}{Fstep}( );
+491                             \textcolor{keywordflow}{break};
+492 
+493                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{MODE\_HALF\_STEP}:
+494                             \hyperlink{group__biba__messges_ga53669298f54817f8d2b140050dc910f1}{HStep}( );
+495                             \textcolor{keywordflow}{break};
+496 
+497                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{MODE\_QUATER\_STEP}:
+498                             \hyperlink{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a}{Qstep}( );
+499                             \textcolor{keywordflow}{break};
+500 
+501                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{MODE\_8\_MICROSTEP}:
+502                             \hyperlink{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7}{M8Step}( );
+503                             \textcolor{keywordflow}{break};
+504 
+505                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{MODE\_16\_MICROSTEP}:
+506                             \hyperlink{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b}{M16Step}( );
+507                             \textcolor{keywordflow}{break};
+508 
+509                         \textcolor{keywordflow}{case} \hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{MODE\_32\_MICROSTEP}:
+510                             \hyperlink{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158}{M32Step}( );
+511                             \textcolor{keywordflow}{break};
+512 
+513                         \textcolor{keywordflow}{default}:
+514                         \{
+515                             \textcolor{comment}{//putstring\_P( PSTR( "Not set mode\(\backslash\)r" ) );}
+516                             \textcolor{keywordflow}{break};
+517                         \}
+518 
+519                     \}
+520 
+521 
+522                     \textcolor{keywordflow}{if} ( \hyperlink{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}{Get\_Start}( ) )
+523                     \{
+524                         \textcolor{comment}{//putstring\_P( PSTR( "Enable\(\backslash\)r" ) );}
+525                     \}
+526                     \textcolor{keywordflow}{else}
+527                     \{
+528                         \textcolor{comment}{//putstring\_P( PSTR( "Disable\(\backslash\)r" ) );}
+529                     \}
+530 
+531                     \textcolor{keywordflow}{break};
+532 
+533 
+534 
+535 
+536 
+537 
+538 
+539                 \textcolor{keywordflow}{default}:
+540 
+541                     \textcolor{keywordflow}{if} ( ( cmd < 0 ) && ( !( ( message[0] == 0x0d ) || ( message[0] == 0x0a ) ) ) )
+542                         \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"Comand not implement\(\backslash\)r"} ) );
+543                     \textcolor{keywordflow}{break};
+544 
+545             \} \textcolor{comment}{//switch (cmd)}
+546         \} \textcolor{comment}{//if (USART\_RxEOL > 0)}
+547 
+548 
+549 
+550 
+551     \} \textcolor{comment}{//for (;;)}
+552 
+553     \textcolor{keywordflow}{return} 0;
+554 \} \textcolor{comment}{//End int main(void)}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{main_8c_aec570f4ab450e8224be63b7dcfa62b35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8c_a366295bc7a65603cd821dad87abee42d}{\index{main.\-c@{main.\-c}!usart\-\_\-str@{usart\-\_\-str}}
+\index{usart\-\_\-str@{usart\-\_\-str}!main.c@{main.\-c}}
+\subsubsection[{usart\-\_\-str}]{\setlength{\rightskip}{0pt plus 5cm}F\-I\-L\-E usart\-\_\-str}}\label{main_8c_a366295bc7a65603cd821dad87abee42d}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+     FDEV\_SETUP\_STREAM( \hyperlink{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}{usart\_putchar}, \hyperlink{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}{usart\_getchar}, \_FDEV\_SETUP\_RW )
+\end{DoxyCode}
+Set function for standart I\-O getchart and putchart from U\-A\-R\-T library 
+
+Definition at line 56 of file main.\-c.
+

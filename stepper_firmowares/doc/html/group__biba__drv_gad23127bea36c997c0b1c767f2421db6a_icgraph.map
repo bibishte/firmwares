@@ -1,0 +1,7 @@
+<map id="RealToTime" name="RealToTime">
+<area shape="rect" id="node3" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="152,5,291,33"/>
+<area shape="rect" id="node7" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="155,55,288,83"/>
+<area shape="rect" id="node10" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="175,106,268,134"/>
+<area shape="rect" id="node13" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="176,157,267,185"/>
+<area shape="rect" id="node5" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="339,81,389,109"/>
+</map>

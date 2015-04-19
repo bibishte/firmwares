@@ -1,0 +1,145 @@
+\hypertarget{group__biba__main}{\section{main Library}
+\label{group__biba__main}\index{main Library@{main Library}}
+}
+
+
+This turns on the motor and directly goes in the continuos loop for controlling it.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01}{Init\-\_\-\-Input\-\_\-\-Output} (void)
+\item 
+void \hyperlink{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f}{test} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This turns on the motor and directly goes in the continuos loop for controlling it. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{main_8h}{main.h}>} 
+\end{DoxyCode}
+
+
+This turns on the motor and directly goes in the continuos loop for controlling it.
+
+\begin{DoxyNote}{Note}
+this is whear all the magic happens 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Bilyana Borisova \href{mailto:bibishte@gmail.com}{\tt bibishte@gmail.\-com} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01}{\index{main Library@{main Library}!Init\-\_\-\-Input\-\_\-\-Output@{Init\-\_\-\-Input\-\_\-\-Output}}
+\index{Init\-\_\-\-Input\-\_\-\-Output@{Init\-\_\-\-Input\-\_\-\-Output}!main Library@{main Library}}
+\subsubsection[{Init\-\_\-\-Input\-\_\-\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void Init\-\_\-\-Input\-\_\-\-Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01}
+Initial initialisation of input and output of microcontroller \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 561 of file main.\-c.
+
+
+\begin{DoxyCode}
+562 \{
+563     \textcolor{comment}{//input init}
+564 
+565     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga90f5e4a0bd154d1e2b2a6f688dced82e}{DRXD}, \hyperlink{group__biba__config_ga95855eaf9cee62de5402f124b1b8a27b}{RXD} );
+566     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga80ca054824bc462b54a3fcfdf7f6be87}{DHOME}, \hyperlink{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{HOME} );
+567     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga813e08916fb1e6f00505d36e1bb830c3}{DSCL}, \hyperlink{group__biba__config_gab5ffc4751921608954bb7a5687566b2d}{SCL} );
+568     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_gafc00dbf97764b4d68c05e9bfc6761e4d}{DMISO}, \hyperlink{group__biba__config_ga7334c540878c8c4d801fd75ed9fd8063}{MISO} );
+569     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga6b14a46014e8d8efa630e7df0f08b368}{DFAULT}, \hyperlink{group__biba__config_ga4115eb21750f37d540839cc51fca5401}{FAULT} );
+570 
+571     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gae632439c6ad45e36bc003a03e22e9e7a}{PRXD}, \hyperlink{group__biba__config_ga95855eaf9cee62de5402f124b1b8a27b}{RXD} );
+572     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga40b96047acab9312add35336b138f140}{PSCL}, \hyperlink{group__biba__config_gab5ffc4751921608954bb7a5687566b2d}{SCL} );
+573     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gaaf98ae1f6b0c231d734e204906a0e992}{PMISO}, \hyperlink{group__biba__config_ga7334c540878c8c4d801fd75ed9fd8063}{MISO} );
+574     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}(\hyperlink{group__biba__config_ga431ab20bf2b9e58830a8ecd2a294e8bc}{PHOME}, \hyperlink{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{HOME});
+575 
+576     \textcolor{comment}{//output init}
+577 
+578     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga11a7f88811704d85bf9e6e88e5b4a13a}{DENABLE\_STEPPER}, \hyperlink{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{ENABLE\_STEPPER} );
+579     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_gafcb7b56ec9ef5d20fcc86f61034a6a73}{DTXD}, \hyperlink{group__biba__config_ga0466ccb605cb0395fb03b72f476ec855}{TXD} );
+580     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga652846ae5576cfc7a97e79569c9b9426}{DMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+581     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga583975602ab120ab85362c7281e4b1dc}{DMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+582     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_gab30b2507134f18696809327fcfb86c51}{DMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+583     \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\_as\_input}( \hyperlink{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{DDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+584     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_gafec4ba65dc31b3c5c4ca6a3471054994}{DSTEP}, \hyperlink{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}{STEP} );
+585     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga1421c0c377bbe274867c9dbaca51d707}{DMOSI}, \hyperlink{group__biba__config_ga5d3f11f2fdf8a7e27b975291e0c2c8cc}{MOSI} );
+586     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_ga75cfe7b50065d13aa41a1b28815b78df}{DDIRECTION}, \hyperlink{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{DIRECTION} );
+587     \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}( \hyperlink{group__biba__config_gab2a611474dce8378023836a4c5e07b3a}{DDIR\_485}, \hyperlink{group__biba__config_ga251b49d43197436ec9943946734a7945}{DIR\_485} );
+588 
+589     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}{PENABLE\_STEPPER}, \hyperlink{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{ENABLE\_STEPPER} );
+590     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{PMODE0}, \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{MODE0} );
+591     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{PMODE1}, \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{MODE1} );
+592     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{PMODE2}, \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{MODE2} );
+593     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{PDECAY}, \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{DECAY} );
+594     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( \hyperlink{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}{PDIRECTION}, \hyperlink{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{DIRECTION} );
+595     \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\_bit}( \hyperlink{group__biba__config_ga68d026b2f91c535d306bc10e7576056f}{PDIR\_485}, \hyperlink{group__biba__config_ga251b49d43197436ec9943946734a7945}{DIR\_485} );
+596 
+597 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{group__biba__main_ga18fa08105e4cb9cce10290e3c5c4ca01_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f}{\index{main Library@{main Library}!test@{test}}
+\index{test@{test}!main Library@{main Library}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}void test (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f}
+Just for testing \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 603 of file main.\-c.
+
+
+\begin{DoxyCode}
+604 \{
+605     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"Test?"} ) );
+606 
+607 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{group__biba__main_ga708a4c1a4d0c4acc4c447310dd4db27f_icgraph}
+\end{center}
+\end{figure}
+
+

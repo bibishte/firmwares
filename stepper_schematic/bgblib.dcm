@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0  Date: 18.02.2015 (ср) 19,55,42 EET
+#
+$CMP LTV-814
+D LTV-814 MFSOP6, AC/DC Optocoupler, Vce 35V, CTR 20%
+K NPN AC DC Optocoupler
+$ENDCMP
+#
+#End Doc Library

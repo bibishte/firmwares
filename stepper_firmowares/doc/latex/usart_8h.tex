@@ -1,0 +1,29 @@
+\hypertarget{usart_8h}{\section{usart.\-h File Reference}
+\label{usart_8h}\index{usart.\-h@{usart.\-h}}
+}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{usart_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T}(baud\-Rate, xtal\-Cpu)~((xtal\-Cpu)/((baud\-Rate)$\ast$16l)-\/1)
+\begin{DoxyCompactList}\small\item\em U\-S\-A\-R\-T Baudrate Expression. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__pfleury__uart_ga8c35b761fccbace5f3a903cd20eb4b5e}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D}(baud\-Rate, xtal\-Cpu)~(((xtal\-Cpu)/((baud\-Rate)$\ast$8l)-\/1)$|$0x8000)
+\begin{DoxyCompactList}\small\item\em U\-S\-A\-R\-T Baudrate Expression for A\-Tmega double speed mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{V\-E\-O\-L}~(char) 0x0d
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}{usart\-\_\-getchar} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Get received byte from ringbuffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}{usart\-\_\-init} (unsigned int)
+\begin{DoxyCompactList}\small\item\em Initialize U\-S\-A\-R\-T and set baudrate. \end{DoxyCompactList}\item 
+int \hyperlink{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}{usart\-\_\-putchar} (char c, F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Put byte to ringbuffer for transmitting via U\-A\-R\-T. \end{DoxyCompactList}\end{DoxyCompactItemize}

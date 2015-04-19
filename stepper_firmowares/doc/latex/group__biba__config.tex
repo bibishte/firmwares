@@ -1,0 +1,698 @@
+\hypertarget{group__biba__config}{\section{config Library}
+\label{group__biba__config}\index{config Library@{config Library}}
+}
+
+
+General macros for port manipolation and port naming.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__biba__config_ga65a9fed63ff97399d2b08295253076f3}{check\-\_\-pin}(P\-I\-Nx, P\-I\-Nxn)~(P\-I\-Nx \& (1 $<$$<$ P\-I\-Nxn))
+\item 
+\#define \hyperlink{group__biba__config_ga1d47feb8b05cf197117763115ac90485}{C\-H\-E\-C\-K\-P\-I\-N}(x, y)~((x\&(1$<$$<$y))!=0?1\-:0)
+\item 
+\#define \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\-\_\-bit}(byte, bit)~byte \&= $\sim$(1 $<$$<$ bit)
+\item 
+\#define \hyperlink{group__biba__config_ga984f41d756890774ffc7ce744024a000}{clr\-\_\-port}(P\-O\-R\-Tx, P\-O\-R\-Txn)~P\-O\-R\-Tx \&= $\sim$(1 $<$$<$ P\-O\-R\-Txn)
+\item 
+\#define \hyperlink{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{D\-D\-E\-C\-A\-Y}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_gab2a611474dce8378023836a4c5e07b3a}{D\-D\-I\-R\-\_\-485}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_ga75cfe7b50065d13aa41a1b28815b78df}{D\-D\-I\-R\-E\-C\-T\-I\-O\-N}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{D\-E\-C\-A\-Y}~P\-C1
+\item 
+\#define \hyperlink{group__biba__config_ga11a7f88811704d85bf9e6e88e5b4a13a}{D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}~D\-D\-R\-D
+\item 
+\#define \hyperlink{group__biba__config_ga6b14a46014e8d8efa630e7df0f08b368}{D\-F\-A\-U\-L\-T}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_ga80ca054824bc462b54a3fcfdf7f6be87}{D\-H\-O\-M\-E}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_ga251b49d43197436ec9943946734a7945}{D\-I\-R\-\_\-485}~P\-B0
+\item 
+\#define \hyperlink{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{D\-I\-R\-E\-C\-T\-I\-O\-N}~P\-B2
+\item 
+\#define \hyperlink{group__biba__config_gafc00dbf97764b4d68c05e9bfc6761e4d}{D\-M\-I\-S\-O}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_ga652846ae5576cfc7a97e79569c9b9426}{D\-M\-O\-D\-E0}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_ga583975602ab120ab85362c7281e4b1dc}{D\-M\-O\-D\-E1}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_gab30b2507134f18696809327fcfb86c51}{D\-M\-O\-D\-E2}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_ga1421c0c377bbe274867c9dbaca51d707}{D\-M\-O\-S\-I}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_ga90f5e4a0bd154d1e2b2a6f688dced82e}{D\-R\-X\-D}~D\-D\-R\-D
+\item 
+\#define \hyperlink{group__biba__config_ga813e08916fb1e6f00505d36e1bb830c3}{D\-S\-C\-L}~D\-D\-R\-B
+\item 
+\#define \hyperlink{group__biba__config_gafec4ba65dc31b3c5c4ca6a3471054994}{D\-S\-T\-E\-P}~D\-D\-R\-C
+\item 
+\#define \hyperlink{group__biba__config_gafcb7b56ec9ef5d20fcc86f61034a6a73}{D\-T\-X\-D}~D\-D\-R\-D
+\item 
+\#define \hyperlink{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}~P\-D5
+\item 
+\#define \hyperlink{group__biba__config_ga65e9886d74aaee76545e83dd09011727}{false}~1!=1
+\item 
+\#define \hyperlink{group__biba__config_ga4115eb21750f37d540839cc51fca5401}{F\-A\-U\-L\-T}~P\-B1
+\item 
+\#define \hyperlink{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{H\-O\-M\-E}~P\-C2
+\item 
+\#define \hyperlink{group__biba__config_ga7295c6f7b10d528d2a6878ddb5cedee9}{I\-D\-E\-C\-A\-Y}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_ga8c1dcb1285a3f6b595aa403bfc2046e9}{I\-D\-I\-R\-\_\-485}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_ga05466c17e001989bf527098e9ea8b20c}{I\-D\-I\-R\-E\-C\-T\-I\-O\-N}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_ga38a64ed512258be4847202d41c945f1d}{I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}~P\-I\-N\-D
+\item 
+\#define \hyperlink{group__biba__config_gaeddf690491247a8a3a624d3e52904fe7}{I\-F\-A\-U\-L\-T}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_gabd13263a1daa3de2c2e1417449c8e476}{I\-H\-O\-M\-E}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_ga2bfb9bd5b79538403a1caa9656e248d9}{I\-M\-I\-S\-O}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_ga2d3f9ece079a1fd5f865181487c06deb}{I\-M\-O\-D\-E0}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_gaacd24160a55e79573bf115736964e481}{I\-M\-O\-D\-E1}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_ga0c375abc5fc38a870d36c0432ddf4673}{I\-M\-O\-D\-E2}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_gadbbd69302ff10bfa13cf87e3e810a79f}{I\-M\-O\-S\-I}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_ga566802973e97fd0cf4b0ee55aad5a176}{I\-R\-X\-D}~P\-I\-N\-D
+\item 
+\#define \hyperlink{group__biba__config_ga067354c27a0600f5750fb6bf7db25524}{I\-S\-C\-L}~P\-I\-N\-B
+\item 
+\#define \hyperlink{group__biba__config_ga5bd5979291487b59ffbe66c85249a0db}{I\-S\-T\-E\-P}~P\-I\-N\-C
+\item 
+\#define \hyperlink{group__biba__config_ga251454338fb90e437951f785af82f31a}{I\-T\-X\-D}~P\-I\-N\-D
+\item 
+\#define \hyperlink{group__biba__config_ga7334c540878c8c4d801fd75ed9fd8063}{M\-I\-S\-O}~P\-B4
+\item 
+\#define \hyperlink{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{M\-O\-D\-E0}~P\-C3
+\item 
+\#define \hyperlink{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{M\-O\-D\-E1}~P\-C4
+\item 
+\#define \hyperlink{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{M\-O\-D\-E2}~P\-C5
+\item 
+\#define \hyperlink{group__biba__config_ga5d3f11f2fdf8a7e27b975291e0c2c8cc}{M\-O\-S\-I}~P\-B3
+\item 
+\#define \hyperlink{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{P\-D\-E\-C\-A\-Y}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_ga68d026b2f91c535d306bc10e7576056f}{P\-D\-I\-R\-\_\-485}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}{P\-D\-I\-R\-E\-C\-T\-I\-O\-N}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}{P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}~P\-O\-R\-T\-D
+\item 
+\#define \hyperlink{group__biba__config_gae646a630dc8c353cefb0a13c0fbe4a09}{P\-F\-A\-U\-L\-T}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_ga431ab20bf2b9e58830a8ecd2a294e8bc}{P\-H\-O\-M\-E}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_gaaf98ae1f6b0c231d734e204906a0e992}{P\-M\-I\-S\-O}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{P\-M\-O\-D\-E0}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{P\-M\-O\-D\-E1}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{P\-M\-O\-D\-E2}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_ga0bffda68fcafad7e4ec33f7acc04edb0}{P\-M\-O\-S\-I}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_gae632439c6ad45e36bc003a03e22e9e7a}{P\-R\-X\-D}~P\-O\-R\-T\-D
+\item 
+\#define \hyperlink{group__biba__config_ga40b96047acab9312add35336b138f140}{P\-S\-C\-L}~P\-O\-R\-T\-B
+\item 
+\#define \hyperlink{group__biba__config_gaa3a1d04d71d6791ec7d5d9bd6d2d8cb1}{P\-S\-T\-E\-P}~P\-O\-R\-T\-C
+\item 
+\#define \hyperlink{group__biba__config_ga56847c27276a6b03d9b40ca2141760d4}{P\-T\-X\-D}~P\-O\-R\-T\-D
+\item 
+\#define \hyperlink{group__biba__config_ga95855eaf9cee62de5402f124b1b8a27b}{R\-X\-D}~P\-D0
+\item 
+\#define \hyperlink{group__biba__config_gab5ffc4751921608954bb7a5687566b2d}{S\-C\-L}~P\-B5
+\item 
+\#define \hyperlink{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{set\-\_\-as\-\_\-input}(D\-D\-Rx, D\-Dxn)~D\-D\-Rx \&= $\sim$(1 $<$$<$ D\-Dxn)
+\item 
+\#define \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\-\_\-as\-\_\-output}(D\-D\-Rx, D\-Dxn)~D\-D\-Rx $|$= (1 $<$$<$ D\-Dxn)
+\item 
+\#define \hyperlink{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{set\-\_\-bit}(byte, bit)~byte $|$= (1 $<$$<$ bit)
+\item 
+\#define \hyperlink{group__biba__config_gaf35e079ba65545e8d32741037add9b40}{set\-\_\-port}(P\-O\-R\-Tx, P\-O\-R\-Txn)~P\-O\-R\-Tx $|$= (1 $<$$<$ P\-O\-R\-Txn)
+\item 
+\#define \hyperlink{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}{S\-T\-E\-P}~P\-C0
+\item 
+\#define \hyperlink{group__biba__config_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}~1==1
+\item 
+\#define \hyperlink{group__biba__config_ga0466ccb605cb0395fb03b72f476ec855}{T\-X\-D}~P\-D1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General macros for port manipolation and port naming. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{config_8h}{config.h}>} 
+\end{DoxyCode}
+
+
+Defines simple macros for setting bits and bytes for manipolating D\-R\-V8825
+
+\begin{DoxyAuthor}{Author}
+Bilyana Borisova \href{mailto:bibishte@gmail.com}{\tt bibishte@gmail.\-com} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__biba__config_ga65a9fed63ff97399d2b08295253076f3}{\index{config Library@{config Library}!check\-\_\-pin@{check\-\_\-pin}}
+\index{check\-\_\-pin@{check\-\_\-pin}!config Library@{config Library}}
+\subsubsection[{check\-\_\-pin}]{\setlength{\rightskip}{0pt plus 5cm}\#define check\-\_\-pin(
+\begin{DoxyParamCaption}
+\item[{}]{P\-I\-Nx, }
+\item[{}]{P\-I\-Nxn}
+\end{DoxyParamCaption}
+)~(P\-I\-Nx \& (1 $<$$<$ P\-I\-Nxn))}}\label{group__biba__config_ga65a9fed63ff97399d2b08295253076f3}
+Test whether bit {\ttfamily P\-I\-Nxn} in I\-O register {\ttfamily P\-I\-Nx} is set. This will return a 0 if the port pin is driven low, and non-\/zero if the pin is driven high. 
+
+Definition at line 72 of file config.\-h.
+
+\hypertarget{group__biba__config_ga1d47feb8b05cf197117763115ac90485}{\index{config Library@{config Library}!C\-H\-E\-C\-K\-P\-I\-N@{C\-H\-E\-C\-K\-P\-I\-N}}
+\index{C\-H\-E\-C\-K\-P\-I\-N@{C\-H\-E\-C\-K\-P\-I\-N}!config Library@{config Library}}
+\subsubsection[{C\-H\-E\-C\-K\-P\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-H\-E\-C\-K\-P\-I\-N(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~((x\&(1$<$$<$y))!=0?1\-:0)}}\label{group__biba__config_ga1d47feb8b05cf197117763115ac90485}
+
+
+Definition at line 74 of file config.\-h.
+
+\hypertarget{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{\index{config Library@{config Library}!clr\-\_\-bit@{clr\-\_\-bit}}
+\index{clr\-\_\-bit@{clr\-\_\-bit}!config Library@{config Library}}
+\subsubsection[{clr\-\_\-bit}]{\setlength{\rightskip}{0pt plus 5cm}\#define clr\-\_\-bit(
+\begin{DoxyParamCaption}
+\item[{}]{byte, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~byte \&= $\sim$(1 $<$$<$ bit)}}\label{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}
+
+
+Definition at line 44 of file config.\-h.
+
+\hypertarget{group__biba__config_ga984f41d756890774ffc7ce744024a000}{\index{config Library@{config Library}!clr\-\_\-port@{clr\-\_\-port}}
+\index{clr\-\_\-port@{clr\-\_\-port}!config Library@{config Library}}
+\subsubsection[{clr\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define clr\-\_\-port(
+\begin{DoxyParamCaption}
+\item[{}]{P\-O\-R\-Tx, }
+\item[{}]{P\-O\-R\-Txn}
+\end{DoxyParamCaption}
+)~P\-O\-R\-Tx \&= $\sim$(1 $<$$<$ P\-O\-R\-Txn)}}\label{group__biba__config_ga984f41d756890774ffc7ce744024a000}
+Write logic zero bit {\ttfamily P\-O\-R\-Txn} in I\-O register {\ttfamily P\-O\-R\-Tx}. When the pin is configured as an output pin, the port pin is driven low (zero). 
+
+Definition at line 66 of file config.\-h.
+
+\hypertarget{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}{\index{config Library@{config Library}!D\-D\-E\-C\-A\-Y@{D\-D\-E\-C\-A\-Y}}
+\index{D\-D\-E\-C\-A\-Y@{D\-D\-E\-C\-A\-Y}!config Library@{config Library}}
+\subsubsection[{D\-D\-E\-C\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-D\-E\-C\-A\-Y~D\-D\-R\-C}}\label{group__biba__config_ga4280725e4eff1145eac3e34c574b8383}
+
+
+Definition at line 134 of file config.\-h.
+
+\hypertarget{group__biba__config_gab2a611474dce8378023836a4c5e07b3a}{\index{config Library@{config Library}!D\-D\-I\-R\-\_\-485@{D\-D\-I\-R\-\_\-485}}
+\index{D\-D\-I\-R\-\_\-485@{D\-D\-I\-R\-\_\-485}!config Library@{config Library}}
+\subsubsection[{D\-D\-I\-R\-\_\-485}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-D\-I\-R\-\_\-485~D\-D\-R\-B}}\label{group__biba__config_gab2a611474dce8378023836a4c5e07b3a}
+
+
+Definition at line 138 of file config.\-h.
+
+\hypertarget{group__biba__config_ga75cfe7b50065d13aa41a1b28815b78df}{\index{config Library@{config Library}!D\-D\-I\-R\-E\-C\-T\-I\-O\-N@{D\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{D\-D\-I\-R\-E\-C\-T\-I\-O\-N@{D\-D\-I\-R\-E\-C\-T\-I\-O\-N}!config Library@{config Library}}
+\subsubsection[{D\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-D\-I\-R\-E\-C\-T\-I\-O\-N~D\-D\-R\-B}}\label{group__biba__config_ga75cfe7b50065d13aa41a1b28815b78df}
+
+
+Definition at line 137 of file config.\-h.
+
+\hypertarget{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}{\index{config Library@{config Library}!D\-E\-C\-A\-Y@{D\-E\-C\-A\-Y}}
+\index{D\-E\-C\-A\-Y@{D\-E\-C\-A\-Y}!config Library@{config Library}}
+\subsubsection[{D\-E\-C\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-C\-A\-Y~P\-C1}}\label{group__biba__config_ga9d211c41bcae2aa62028a3645c63cf8a}
+
+
+Definition at line 92 of file config.\-h.
+
+\hypertarget{group__biba__config_ga11a7f88811704d85bf9e6e88e5b4a13a}{\index{config Library@{config Library}!D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}}
+\index{D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}!config Library@{config Library}}
+\subsubsection[{D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R~D\-D\-R\-D}}\label{group__biba__config_ga11a7f88811704d85bf9e6e88e5b4a13a}
+
+
+Definition at line 129 of file config.\-h.
+
+\hypertarget{group__biba__config_ga6b14a46014e8d8efa630e7df0f08b368}{\index{config Library@{config Library}!D\-F\-A\-U\-L\-T@{D\-F\-A\-U\-L\-T}}
+\index{D\-F\-A\-U\-L\-T@{D\-F\-A\-U\-L\-T}!config Library@{config Library}}
+\subsubsection[{D\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-F\-A\-U\-L\-T~D\-D\-R\-B}}\label{group__biba__config_ga6b14a46014e8d8efa630e7df0f08b368}
+
+
+Definition at line 124 of file config.\-h.
+
+\hypertarget{group__biba__config_ga80ca054824bc462b54a3fcfdf7f6be87}{\index{config Library@{config Library}!D\-H\-O\-M\-E@{D\-H\-O\-M\-E}}
+\index{D\-H\-O\-M\-E@{D\-H\-O\-M\-E}!config Library@{config Library}}
+\subsubsection[{D\-H\-O\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-H\-O\-M\-E~D\-D\-R\-C}}\label{group__biba__config_ga80ca054824bc462b54a3fcfdf7f6be87}
+
+
+Definition at line 121 of file config.\-h.
+
+\hypertarget{group__biba__config_ga251b49d43197436ec9943946734a7945}{\index{config Library@{config Library}!D\-I\-R\-\_\-485@{D\-I\-R\-\_\-485}}
+\index{D\-I\-R\-\_\-485@{D\-I\-R\-\_\-485}!config Library@{config Library}}
+\subsubsection[{D\-I\-R\-\_\-485}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-\_\-485~P\-B0}}\label{group__biba__config_ga251b49d43197436ec9943946734a7945}
+
+
+Definition at line 96 of file config.\-h.
+
+\hypertarget{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}{\index{config Library@{config Library}!D\-I\-R\-E\-C\-T\-I\-O\-N@{D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{D\-I\-R\-E\-C\-T\-I\-O\-N@{D\-I\-R\-E\-C\-T\-I\-O\-N}!config Library@{config Library}}
+\subsubsection[{D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-I\-R\-E\-C\-T\-I\-O\-N~P\-B2}}\label{group__biba__config_ga1d692daf1ffadae2243a5ab556589629}
+
+
+Definition at line 95 of file config.\-h.
+
+\hypertarget{group__biba__config_gafc00dbf97764b4d68c05e9bfc6761e4d}{\index{config Library@{config Library}!D\-M\-I\-S\-O@{D\-M\-I\-S\-O}}
+\index{D\-M\-I\-S\-O@{D\-M\-I\-S\-O}!config Library@{config Library}}
+\subsubsection[{D\-M\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-M\-I\-S\-O~D\-D\-R\-B}}\label{group__biba__config_gafc00dbf97764b4d68c05e9bfc6761e4d}
+
+
+Definition at line 123 of file config.\-h.
+
+\hypertarget{group__biba__config_ga652846ae5576cfc7a97e79569c9b9426}{\index{config Library@{config Library}!D\-M\-O\-D\-E0@{D\-M\-O\-D\-E0}}
+\index{D\-M\-O\-D\-E0@{D\-M\-O\-D\-E0}!config Library@{config Library}}
+\subsubsection[{D\-M\-O\-D\-E0}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-M\-O\-D\-E0~D\-D\-R\-C}}\label{group__biba__config_ga652846ae5576cfc7a97e79569c9b9426}
+
+
+Definition at line 131 of file config.\-h.
+
+\hypertarget{group__biba__config_ga583975602ab120ab85362c7281e4b1dc}{\index{config Library@{config Library}!D\-M\-O\-D\-E1@{D\-M\-O\-D\-E1}}
+\index{D\-M\-O\-D\-E1@{D\-M\-O\-D\-E1}!config Library@{config Library}}
+\subsubsection[{D\-M\-O\-D\-E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-M\-O\-D\-E1~D\-D\-R\-C}}\label{group__biba__config_ga583975602ab120ab85362c7281e4b1dc}
+
+
+Definition at line 132 of file config.\-h.
+
+\hypertarget{group__biba__config_gab30b2507134f18696809327fcfb86c51}{\index{config Library@{config Library}!D\-M\-O\-D\-E2@{D\-M\-O\-D\-E2}}
+\index{D\-M\-O\-D\-E2@{D\-M\-O\-D\-E2}!config Library@{config Library}}
+\subsubsection[{D\-M\-O\-D\-E2}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-M\-O\-D\-E2~D\-D\-R\-C}}\label{group__biba__config_gab30b2507134f18696809327fcfb86c51}
+
+
+Definition at line 133 of file config.\-h.
+
+\hypertarget{group__biba__config_ga1421c0c377bbe274867c9dbaca51d707}{\index{config Library@{config Library}!D\-M\-O\-S\-I@{D\-M\-O\-S\-I}}
+\index{D\-M\-O\-S\-I@{D\-M\-O\-S\-I}!config Library@{config Library}}
+\subsubsection[{D\-M\-O\-S\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-M\-O\-S\-I~D\-D\-R\-B}}\label{group__biba__config_ga1421c0c377bbe274867c9dbaca51d707}
+
+
+Definition at line 136 of file config.\-h.
+
+\hypertarget{group__biba__config_ga90f5e4a0bd154d1e2b2a6f688dced82e}{\index{config Library@{config Library}!D\-R\-X\-D@{D\-R\-X\-D}}
+\index{D\-R\-X\-D@{D\-R\-X\-D}!config Library@{config Library}}
+\subsubsection[{D\-R\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-R\-X\-D~D\-D\-R\-D}}\label{group__biba__config_ga90f5e4a0bd154d1e2b2a6f688dced82e}
+
+
+Definition at line 120 of file config.\-h.
+
+\hypertarget{group__biba__config_ga813e08916fb1e6f00505d36e1bb830c3}{\index{config Library@{config Library}!D\-S\-C\-L@{D\-S\-C\-L}}
+\index{D\-S\-C\-L@{D\-S\-C\-L}!config Library@{config Library}}
+\subsubsection[{D\-S\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-S\-C\-L~D\-D\-R\-B}}\label{group__biba__config_ga813e08916fb1e6f00505d36e1bb830c3}
+
+
+Definition at line 122 of file config.\-h.
+
+\hypertarget{group__biba__config_gafec4ba65dc31b3c5c4ca6a3471054994}{\index{config Library@{config Library}!D\-S\-T\-E\-P@{D\-S\-T\-E\-P}}
+\index{D\-S\-T\-E\-P@{D\-S\-T\-E\-P}!config Library@{config Library}}
+\subsubsection[{D\-S\-T\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-S\-T\-E\-P~D\-D\-R\-C}}\label{group__biba__config_gafec4ba65dc31b3c5c4ca6a3471054994}
+
+
+Definition at line 135 of file config.\-h.
+
+\hypertarget{group__biba__config_gafcb7b56ec9ef5d20fcc86f61034a6a73}{\index{config Library@{config Library}!D\-T\-X\-D@{D\-T\-X\-D}}
+\index{D\-T\-X\-D@{D\-T\-X\-D}!config Library@{config Library}}
+\subsubsection[{D\-T\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-T\-X\-D~D\-D\-R\-D}}\label{group__biba__config_gafcb7b56ec9ef5d20fcc86f61034a6a73}
+
+
+Definition at line 130 of file config.\-h.
+
+\hypertarget{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}{\index{config Library@{config Library}!E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}}
+\index{E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}!config Library@{config Library}}
+\subsubsection[{E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R~P\-D5}}\label{group__biba__config_gaf43f2237d47f7e2e48d74999befaa9fd}
+
+
+Definition at line 87 of file config.\-h.
+
+\hypertarget{group__biba__config_ga65e9886d74aaee76545e83dd09011727}{\index{config Library@{config Library}!false@{false}}
+\index{false@{false}!config Library@{config Library}}
+\subsubsection[{false}]{\setlength{\rightskip}{0pt plus 5cm}\#define false~1!=1}}\label{group__biba__config_ga65e9886d74aaee76545e83dd09011727}
+
+
+Definition at line 162 of file config.\-h.
+
+\hypertarget{group__biba__config_ga4115eb21750f37d540839cc51fca5401}{\index{config Library@{config Library}!F\-A\-U\-L\-T@{F\-A\-U\-L\-T}}
+\index{F\-A\-U\-L\-T@{F\-A\-U\-L\-T}!config Library@{config Library}}
+\subsubsection[{F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-U\-L\-T~P\-B1}}\label{group__biba__config_ga4115eb21750f37d540839cc51fca5401}
+
+
+Definition at line 82 of file config.\-h.
+
+\hypertarget{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}{\index{config Library@{config Library}!H\-O\-M\-E@{H\-O\-M\-E}}
+\index{H\-O\-M\-E@{H\-O\-M\-E}!config Library@{config Library}}
+\subsubsection[{H\-O\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-O\-M\-E~P\-C2}}\label{group__biba__config_ga0e26ea2db1b570d1a6fe1ac180ef4541}
+
+
+Definition at line 79 of file config.\-h.
+
+\hypertarget{group__biba__config_ga7295c6f7b10d528d2a6878ddb5cedee9}{\index{config Library@{config Library}!I\-D\-E\-C\-A\-Y@{I\-D\-E\-C\-A\-Y}}
+\index{I\-D\-E\-C\-A\-Y@{I\-D\-E\-C\-A\-Y}!config Library@{config Library}}
+\subsubsection[{I\-D\-E\-C\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-D\-E\-C\-A\-Y~P\-I\-N\-C}}\label{group__biba__config_ga7295c6f7b10d528d2a6878ddb5cedee9}
+
+
+Definition at line 155 of file config.\-h.
+
+\hypertarget{group__biba__config_ga8c1dcb1285a3f6b595aa403bfc2046e9}{\index{config Library@{config Library}!I\-D\-I\-R\-\_\-485@{I\-D\-I\-R\-\_\-485}}
+\index{I\-D\-I\-R\-\_\-485@{I\-D\-I\-R\-\_\-485}!config Library@{config Library}}
+\subsubsection[{I\-D\-I\-R\-\_\-485}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-D\-I\-R\-\_\-485~P\-I\-N\-B}}\label{group__biba__config_ga8c1dcb1285a3f6b595aa403bfc2046e9}
+
+
+Definition at line 159 of file config.\-h.
+
+\hypertarget{group__biba__config_ga05466c17e001989bf527098e9ea8b20c}{\index{config Library@{config Library}!I\-D\-I\-R\-E\-C\-T\-I\-O\-N@{I\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{I\-D\-I\-R\-E\-C\-T\-I\-O\-N@{I\-D\-I\-R\-E\-C\-T\-I\-O\-N}!config Library@{config Library}}
+\subsubsection[{I\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-D\-I\-R\-E\-C\-T\-I\-O\-N~P\-I\-N\-B}}\label{group__biba__config_ga05466c17e001989bf527098e9ea8b20c}
+
+
+Definition at line 158 of file config.\-h.
+
+\hypertarget{group__biba__config_ga38a64ed512258be4847202d41c945f1d}{\index{config Library@{config Library}!I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}}
+\index{I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}!config Library@{config Library}}
+\subsubsection[{I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R~P\-I\-N\-D}}\label{group__biba__config_ga38a64ed512258be4847202d41c945f1d}
+
+
+Definition at line 150 of file config.\-h.
+
+\hypertarget{group__biba__config_gaeddf690491247a8a3a624d3e52904fe7}{\index{config Library@{config Library}!I\-F\-A\-U\-L\-T@{I\-F\-A\-U\-L\-T}}
+\index{I\-F\-A\-U\-L\-T@{I\-F\-A\-U\-L\-T}!config Library@{config Library}}
+\subsubsection[{I\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-F\-A\-U\-L\-T~P\-I\-N\-B}}\label{group__biba__config_gaeddf690491247a8a3a624d3e52904fe7}
+
+
+Definition at line 146 of file config.\-h.
+
+\hypertarget{group__biba__config_gabd13263a1daa3de2c2e1417449c8e476}{\index{config Library@{config Library}!I\-H\-O\-M\-E@{I\-H\-O\-M\-E}}
+\index{I\-H\-O\-M\-E@{I\-H\-O\-M\-E}!config Library@{config Library}}
+\subsubsection[{I\-H\-O\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-H\-O\-M\-E~P\-I\-N\-C}}\label{group__biba__config_gabd13263a1daa3de2c2e1417449c8e476}
+
+
+Definition at line 143 of file config.\-h.
+
+\hypertarget{group__biba__config_ga2bfb9bd5b79538403a1caa9656e248d9}{\index{config Library@{config Library}!I\-M\-I\-S\-O@{I\-M\-I\-S\-O}}
+\index{I\-M\-I\-S\-O@{I\-M\-I\-S\-O}!config Library@{config Library}}
+\subsubsection[{I\-M\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-I\-S\-O~P\-I\-N\-B}}\label{group__biba__config_ga2bfb9bd5b79538403a1caa9656e248d9}
+
+
+Definition at line 145 of file config.\-h.
+
+\hypertarget{group__biba__config_ga2d3f9ece079a1fd5f865181487c06deb}{\index{config Library@{config Library}!I\-M\-O\-D\-E0@{I\-M\-O\-D\-E0}}
+\index{I\-M\-O\-D\-E0@{I\-M\-O\-D\-E0}!config Library@{config Library}}
+\subsubsection[{I\-M\-O\-D\-E0}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-O\-D\-E0~P\-I\-N\-C}}\label{group__biba__config_ga2d3f9ece079a1fd5f865181487c06deb}
+
+
+Definition at line 152 of file config.\-h.
+
+\hypertarget{group__biba__config_gaacd24160a55e79573bf115736964e481}{\index{config Library@{config Library}!I\-M\-O\-D\-E1@{I\-M\-O\-D\-E1}}
+\index{I\-M\-O\-D\-E1@{I\-M\-O\-D\-E1}!config Library@{config Library}}
+\subsubsection[{I\-M\-O\-D\-E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-O\-D\-E1~P\-I\-N\-C}}\label{group__biba__config_gaacd24160a55e79573bf115736964e481}
+
+
+Definition at line 153 of file config.\-h.
+
+\hypertarget{group__biba__config_ga0c375abc5fc38a870d36c0432ddf4673}{\index{config Library@{config Library}!I\-M\-O\-D\-E2@{I\-M\-O\-D\-E2}}
+\index{I\-M\-O\-D\-E2@{I\-M\-O\-D\-E2}!config Library@{config Library}}
+\subsubsection[{I\-M\-O\-D\-E2}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-O\-D\-E2~P\-I\-N\-C}}\label{group__biba__config_ga0c375abc5fc38a870d36c0432ddf4673}
+
+
+Definition at line 154 of file config.\-h.
+
+\hypertarget{group__biba__config_gadbbd69302ff10bfa13cf87e3e810a79f}{\index{config Library@{config Library}!I\-M\-O\-S\-I@{I\-M\-O\-S\-I}}
+\index{I\-M\-O\-S\-I@{I\-M\-O\-S\-I}!config Library@{config Library}}
+\subsubsection[{I\-M\-O\-S\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-M\-O\-S\-I~P\-I\-N\-B}}\label{group__biba__config_gadbbd69302ff10bfa13cf87e3e810a79f}
+
+
+Definition at line 157 of file config.\-h.
+
+\hypertarget{group__biba__config_ga566802973e97fd0cf4b0ee55aad5a176}{\index{config Library@{config Library}!I\-R\-X\-D@{I\-R\-X\-D}}
+\index{I\-R\-X\-D@{I\-R\-X\-D}!config Library@{config Library}}
+\subsubsection[{I\-R\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-R\-X\-D~P\-I\-N\-D}}\label{group__biba__config_ga566802973e97fd0cf4b0ee55aad5a176}
+
+
+Definition at line 142 of file config.\-h.
+
+\hypertarget{group__biba__config_ga067354c27a0600f5750fb6bf7db25524}{\index{config Library@{config Library}!I\-S\-C\-L@{I\-S\-C\-L}}
+\index{I\-S\-C\-L@{I\-S\-C\-L}!config Library@{config Library}}
+\subsubsection[{I\-S\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-S\-C\-L~P\-I\-N\-B}}\label{group__biba__config_ga067354c27a0600f5750fb6bf7db25524}
+
+
+Definition at line 144 of file config.\-h.
+
+\hypertarget{group__biba__config_ga5bd5979291487b59ffbe66c85249a0db}{\index{config Library@{config Library}!I\-S\-T\-E\-P@{I\-S\-T\-E\-P}}
+\index{I\-S\-T\-E\-P@{I\-S\-T\-E\-P}!config Library@{config Library}}
+\subsubsection[{I\-S\-T\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-S\-T\-E\-P~P\-I\-N\-C}}\label{group__biba__config_ga5bd5979291487b59ffbe66c85249a0db}
+
+
+Definition at line 156 of file config.\-h.
+
+\hypertarget{group__biba__config_ga251454338fb90e437951f785af82f31a}{\index{config Library@{config Library}!I\-T\-X\-D@{I\-T\-X\-D}}
+\index{I\-T\-X\-D@{I\-T\-X\-D}!config Library@{config Library}}
+\subsubsection[{I\-T\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-T\-X\-D~P\-I\-N\-D}}\label{group__biba__config_ga251454338fb90e437951f785af82f31a}
+
+
+Definition at line 151 of file config.\-h.
+
+\hypertarget{group__biba__config_ga7334c540878c8c4d801fd75ed9fd8063}{\index{config Library@{config Library}!M\-I\-S\-O@{M\-I\-S\-O}}
+\index{M\-I\-S\-O@{M\-I\-S\-O}!config Library@{config Library}}
+\subsubsection[{M\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-I\-S\-O~P\-B4}}\label{group__biba__config_ga7334c540878c8c4d801fd75ed9fd8063}
+
+
+Definition at line 81 of file config.\-h.
+
+\hypertarget{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}{\index{config Library@{config Library}!M\-O\-D\-E0@{M\-O\-D\-E0}}
+\index{M\-O\-D\-E0@{M\-O\-D\-E0}!config Library@{config Library}}
+\subsubsection[{M\-O\-D\-E0}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-O\-D\-E0~P\-C3}}\label{group__biba__config_ga5daa4b780b82b5e8678d8c7095336b62}
+
+
+Definition at line 89 of file config.\-h.
+
+\hypertarget{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}{\index{config Library@{config Library}!M\-O\-D\-E1@{M\-O\-D\-E1}}
+\index{M\-O\-D\-E1@{M\-O\-D\-E1}!config Library@{config Library}}
+\subsubsection[{M\-O\-D\-E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-O\-D\-E1~P\-C4}}\label{group__biba__config_ga443b1268c43b309560d57e34d50b5b3b}
+
+
+Definition at line 90 of file config.\-h.
+
+\hypertarget{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}{\index{config Library@{config Library}!M\-O\-D\-E2@{M\-O\-D\-E2}}
+\index{M\-O\-D\-E2@{M\-O\-D\-E2}!config Library@{config Library}}
+\subsubsection[{M\-O\-D\-E2}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-O\-D\-E2~P\-C5}}\label{group__biba__config_gab2d8aca64e351712eae6f03e3f9d64ad}
+
+
+Definition at line 91 of file config.\-h.
+
+\hypertarget{group__biba__config_ga5d3f11f2fdf8a7e27b975291e0c2c8cc}{\index{config Library@{config Library}!M\-O\-S\-I@{M\-O\-S\-I}}
+\index{M\-O\-S\-I@{M\-O\-S\-I}!config Library@{config Library}}
+\subsubsection[{M\-O\-S\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-O\-S\-I~P\-B3}}\label{group__biba__config_ga5d3f11f2fdf8a7e27b975291e0c2c8cc}
+
+
+Definition at line 94 of file config.\-h.
+
+\hypertarget{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}{\index{config Library@{config Library}!P\-D\-E\-C\-A\-Y@{P\-D\-E\-C\-A\-Y}}
+\index{P\-D\-E\-C\-A\-Y@{P\-D\-E\-C\-A\-Y}!config Library@{config Library}}
+\subsubsection[{P\-D\-E\-C\-A\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-D\-E\-C\-A\-Y~P\-O\-R\-T\-C}}\label{group__biba__config_ga42a58bd5ca7d52e02b78dbc498bd18fc}
+
+
+Definition at line 113 of file config.\-h.
+
+\hypertarget{group__biba__config_ga68d026b2f91c535d306bc10e7576056f}{\index{config Library@{config Library}!P\-D\-I\-R\-\_\-485@{P\-D\-I\-R\-\_\-485}}
+\index{P\-D\-I\-R\-\_\-485@{P\-D\-I\-R\-\_\-485}!config Library@{config Library}}
+\subsubsection[{P\-D\-I\-R\-\_\-485}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-D\-I\-R\-\_\-485~P\-O\-R\-T\-B}}\label{group__biba__config_ga68d026b2f91c535d306bc10e7576056f}
+
+
+Definition at line 117 of file config.\-h.
+
+\hypertarget{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}{\index{config Library@{config Library}!P\-D\-I\-R\-E\-C\-T\-I\-O\-N@{P\-D\-I\-R\-E\-C\-T\-I\-O\-N}}
+\index{P\-D\-I\-R\-E\-C\-T\-I\-O\-N@{P\-D\-I\-R\-E\-C\-T\-I\-O\-N}!config Library@{config Library}}
+\subsubsection[{P\-D\-I\-R\-E\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-D\-I\-R\-E\-C\-T\-I\-O\-N~P\-O\-R\-T\-B}}\label{group__biba__config_ga27c908eae571c75c5a5e37d6fcc8db9d}
+
+
+Definition at line 116 of file config.\-h.
+
+\hypertarget{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}{\index{config Library@{config Library}!P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}}
+\index{P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R@{P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}!config Library@{config Library}}
+\subsubsection[{P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-N\-A\-B\-L\-E\-\_\-\-S\-T\-E\-P\-P\-E\-R~P\-O\-R\-T\-D}}\label{group__biba__config_gaf49566bede8af55a9c7c7cb49722ca8a}
+
+
+Definition at line 108 of file config.\-h.
+
+\hypertarget{group__biba__config_gae646a630dc8c353cefb0a13c0fbe4a09}{\index{config Library@{config Library}!P\-F\-A\-U\-L\-T@{P\-F\-A\-U\-L\-T}}
+\index{P\-F\-A\-U\-L\-T@{P\-F\-A\-U\-L\-T}!config Library@{config Library}}
+\subsubsection[{P\-F\-A\-U\-L\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-F\-A\-U\-L\-T~P\-O\-R\-T\-B}}\label{group__biba__config_gae646a630dc8c353cefb0a13c0fbe4a09}
+
+
+Definition at line 103 of file config.\-h.
+
+\hypertarget{group__biba__config_ga431ab20bf2b9e58830a8ecd2a294e8bc}{\index{config Library@{config Library}!P\-H\-O\-M\-E@{P\-H\-O\-M\-E}}
+\index{P\-H\-O\-M\-E@{P\-H\-O\-M\-E}!config Library@{config Library}}
+\subsubsection[{P\-H\-O\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-H\-O\-M\-E~P\-O\-R\-T\-C}}\label{group__biba__config_ga431ab20bf2b9e58830a8ecd2a294e8bc}
+
+
+Definition at line 100 of file config.\-h.
+
+\hypertarget{group__biba__config_gaaf98ae1f6b0c231d734e204906a0e992}{\index{config Library@{config Library}!P\-M\-I\-S\-O@{P\-M\-I\-S\-O}}
+\index{P\-M\-I\-S\-O@{P\-M\-I\-S\-O}!config Library@{config Library}}
+\subsubsection[{P\-M\-I\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-I\-S\-O~P\-O\-R\-T\-B}}\label{group__biba__config_gaaf98ae1f6b0c231d734e204906a0e992}
+
+
+Definition at line 102 of file config.\-h.
+
+\hypertarget{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}{\index{config Library@{config Library}!P\-M\-O\-D\-E0@{P\-M\-O\-D\-E0}}
+\index{P\-M\-O\-D\-E0@{P\-M\-O\-D\-E0}!config Library@{config Library}}
+\subsubsection[{P\-M\-O\-D\-E0}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-D\-E0~P\-O\-R\-T\-C}}\label{group__biba__config_gac31c37de4ad57d7e8e88d6a4ceb1a526}
+
+
+Definition at line 110 of file config.\-h.
+
+\hypertarget{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}{\index{config Library@{config Library}!P\-M\-O\-D\-E1@{P\-M\-O\-D\-E1}}
+\index{P\-M\-O\-D\-E1@{P\-M\-O\-D\-E1}!config Library@{config Library}}
+\subsubsection[{P\-M\-O\-D\-E1}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-D\-E1~P\-O\-R\-T\-C}}\label{group__biba__config_gae2b3b81d452af91ecd26298a6a9954a8}
+
+
+Definition at line 111 of file config.\-h.
+
+\hypertarget{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}{\index{config Library@{config Library}!P\-M\-O\-D\-E2@{P\-M\-O\-D\-E2}}
+\index{P\-M\-O\-D\-E2@{P\-M\-O\-D\-E2}!config Library@{config Library}}
+\subsubsection[{P\-M\-O\-D\-E2}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-D\-E2~P\-O\-R\-T\-C}}\label{group__biba__config_ga4e6fd56609bbd34dc3797ee35d8610e8}
+
+
+Definition at line 112 of file config.\-h.
+
+\hypertarget{group__biba__config_ga0bffda68fcafad7e4ec33f7acc04edb0}{\index{config Library@{config Library}!P\-M\-O\-S\-I@{P\-M\-O\-S\-I}}
+\index{P\-M\-O\-S\-I@{P\-M\-O\-S\-I}!config Library@{config Library}}
+\subsubsection[{P\-M\-O\-S\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-S\-I~P\-O\-R\-T\-B}}\label{group__biba__config_ga0bffda68fcafad7e4ec33f7acc04edb0}
+
+
+Definition at line 115 of file config.\-h.
+
+\hypertarget{group__biba__config_gae632439c6ad45e36bc003a03e22e9e7a}{\index{config Library@{config Library}!P\-R\-X\-D@{P\-R\-X\-D}}
+\index{P\-R\-X\-D@{P\-R\-X\-D}!config Library@{config Library}}
+\subsubsection[{P\-R\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-X\-D~P\-O\-R\-T\-D}}\label{group__biba__config_gae632439c6ad45e36bc003a03e22e9e7a}
+
+
+Definition at line 99 of file config.\-h.
+
+\hypertarget{group__biba__config_ga40b96047acab9312add35336b138f140}{\index{config Library@{config Library}!P\-S\-C\-L@{P\-S\-C\-L}}
+\index{P\-S\-C\-L@{P\-S\-C\-L}!config Library@{config Library}}
+\subsubsection[{P\-S\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-S\-C\-L~P\-O\-R\-T\-B}}\label{group__biba__config_ga40b96047acab9312add35336b138f140}
+
+
+Definition at line 101 of file config.\-h.
+
+\hypertarget{group__biba__config_gaa3a1d04d71d6791ec7d5d9bd6d2d8cb1}{\index{config Library@{config Library}!P\-S\-T\-E\-P@{P\-S\-T\-E\-P}}
+\index{P\-S\-T\-E\-P@{P\-S\-T\-E\-P}!config Library@{config Library}}
+\subsubsection[{P\-S\-T\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-S\-T\-E\-P~P\-O\-R\-T\-C}}\label{group__biba__config_gaa3a1d04d71d6791ec7d5d9bd6d2d8cb1}
+
+
+Definition at line 114 of file config.\-h.
+
+\hypertarget{group__biba__config_ga56847c27276a6b03d9b40ca2141760d4}{\index{config Library@{config Library}!P\-T\-X\-D@{P\-T\-X\-D}}
+\index{P\-T\-X\-D@{P\-T\-X\-D}!config Library@{config Library}}
+\subsubsection[{P\-T\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-T\-X\-D~P\-O\-R\-T\-D}}\label{group__biba__config_ga56847c27276a6b03d9b40ca2141760d4}
+
+
+Definition at line 109 of file config.\-h.
+
+\hypertarget{group__biba__config_ga95855eaf9cee62de5402f124b1b8a27b}{\index{config Library@{config Library}!R\-X\-D@{R\-X\-D}}
+\index{R\-X\-D@{R\-X\-D}!config Library@{config Library}}
+\subsubsection[{R\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-X\-D~P\-D0}}\label{group__biba__config_ga95855eaf9cee62de5402f124b1b8a27b}
+
+
+Definition at line 78 of file config.\-h.
+
+\hypertarget{group__biba__config_gab5ffc4751921608954bb7a5687566b2d}{\index{config Library@{config Library}!S\-C\-L@{S\-C\-L}}
+\index{S\-C\-L@{S\-C\-L}!config Library@{config Library}}
+\subsubsection[{S\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-C\-L~P\-B5}}\label{group__biba__config_gab5ffc4751921608954bb7a5687566b2d}
+
+
+Definition at line 80 of file config.\-h.
+
+\hypertarget{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}{\index{config Library@{config Library}!set\-\_\-as\-\_\-input@{set\-\_\-as\-\_\-input}}
+\index{set\-\_\-as\-\_\-input@{set\-\_\-as\-\_\-input}!config Library@{config Library}}
+\subsubsection[{set\-\_\-as\-\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}\#define set\-\_\-as\-\_\-input(
+\begin{DoxyParamCaption}
+\item[{}]{D\-D\-Rx, }
+\item[{}]{D\-Dxn}
+\end{DoxyParamCaption}
+)~D\-D\-Rx \&= $\sim$(1 $<$$<$ D\-Dxn)}}\label{group__biba__config_gaf5147cefc7b56baad8c6337a315ce07f}
+Write logical zero bit {\ttfamily D\-Dxn} in I\-O register {\ttfamily D\-D\-Rx}. This will configure Pxn as an input pin. 
+
+Definition at line 54 of file config.\-h.
+
+\hypertarget{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{\index{config Library@{config Library}!set\-\_\-as\-\_\-output@{set\-\_\-as\-\_\-output}}
+\index{set\-\_\-as\-\_\-output@{set\-\_\-as\-\_\-output}!config Library@{config Library}}
+\subsubsection[{set\-\_\-as\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}\#define set\-\_\-as\-\_\-output(
+\begin{DoxyParamCaption}
+\item[{}]{D\-D\-Rx, }
+\item[{}]{D\-Dxn}
+\end{DoxyParamCaption}
+)~D\-D\-Rx $|$= (1 $<$$<$ D\-Dxn)}}\label{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}
+Write logical one bit {\ttfamily D\-Dxn} in I\-O register {\ttfamily D\-D\-Rx}. This will configure Pxn as an output pin. 
+
+Definition at line 49 of file config.\-h.
+
+\hypertarget{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}{\index{config Library@{config Library}!set\-\_\-bit@{set\-\_\-bit}}
+\index{set\-\_\-bit@{set\-\_\-bit}!config Library@{config Library}}
+\subsubsection[{set\-\_\-bit}]{\setlength{\rightskip}{0pt plus 5cm}\#define set\-\_\-bit(
+\begin{DoxyParamCaption}
+\item[{}]{byte, }
+\item[{}]{bit}
+\end{DoxyParamCaption}
+)~byte $|$= (1 $<$$<$ bit)}}\label{group__biba__config_ga4ee07d04aa2ef10d631d61c17c558464}
+
+
+Definition at line 43 of file config.\-h.
+
+\hypertarget{group__biba__config_gaf35e079ba65545e8d32741037add9b40}{\index{config Library@{config Library}!set\-\_\-port@{set\-\_\-port}}
+\index{set\-\_\-port@{set\-\_\-port}!config Library@{config Library}}
+\subsubsection[{set\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}\#define set\-\_\-port(
+\begin{DoxyParamCaption}
+\item[{}]{P\-O\-R\-Tx, }
+\item[{}]{P\-O\-R\-Txn}
+\end{DoxyParamCaption}
+)~P\-O\-R\-Tx $|$= (1 $<$$<$ P\-O\-R\-Txn)}}\label{group__biba__config_gaf35e079ba65545e8d32741037add9b40}
+Write logic one bit {\ttfamily P\-O\-R\-Txn} in I\-O register {\ttfamily P\-O\-R\-Tx}. When the pin is configured as an output pin, the port pin is driven high (one). 
+
+Definition at line 60 of file config.\-h.
+
+\hypertarget{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}{\index{config Library@{config Library}!S\-T\-E\-P@{S\-T\-E\-P}}
+\index{S\-T\-E\-P@{S\-T\-E\-P}!config Library@{config Library}}
+\subsubsection[{S\-T\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-T\-E\-P~P\-C0}}\label{group__biba__config_ga70be2dc5c8bdc85b027ea6118753cca1}
+
+
+Definition at line 93 of file config.\-h.
+
+\hypertarget{group__biba__config_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{\index{config Library@{config Library}!true@{true}}
+\index{true@{true}!config Library@{config Library}}
+\subsubsection[{true}]{\setlength{\rightskip}{0pt plus 5cm}\#define true~1==1}}\label{group__biba__config_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}
+
+
+Definition at line 161 of file config.\-h.
+
+\hypertarget{group__biba__config_ga0466ccb605cb0395fb03b72f476ec855}{\index{config Library@{config Library}!T\-X\-D@{T\-X\-D}}
+\index{T\-X\-D@{T\-X\-D}!config Library@{config Library}}
+\subsubsection[{T\-X\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-X\-D~P\-D1}}\label{group__biba__config_ga0466ccb605cb0395fb03b72f476ec855}
+
+
+Definition at line 88 of file config.\-h.
+

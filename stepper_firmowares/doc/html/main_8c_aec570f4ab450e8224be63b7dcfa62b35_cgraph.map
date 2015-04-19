@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$group__biba__main.html#ga18fa08105e4cb9cce10290e3c5c4ca01" title="Init_Input_Output" alt="" coords="117,5,245,33"/>
+<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga31c0af992d7fc4db12191bb47a416da9" title="Initialize USART and set baudrate. " alt="" coords="143,55,220,83"/>
+<area shape="rect" id="node7" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="136,207,227,235"/>
+<area shape="rect" id="node9" href="$group__biba__drv.html#gade0e100f335652e364c58ae4a5c89ba4" title="Decay" alt="" coords="344,131,405,159"/>
+<area shape="rect" id="node13" href="$group__biba__drv.html#gafe73070875f7ba05536a1eeb83258c91" title="Mode" alt="" coords="347,182,403,210"/>
+<area shape="rect" id="node17" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="655,461,740,489"/>
+<area shape="rect" id="node19" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="789,967,883,995"/>
+<area shape="rect" id="node24" href="$group__biba__drv.html#ga5b763d9479149e1cd8843fa5f144a18a" title="Disabled_Stepper" alt="" coords="308,359,441,387"/>
+<area shape="rect" id="node31" href="$interpreter_8c.html#a70379adfcbe9ce00e996ac1bfc1b12c6" title="get_cmd_id" alt="" coords="135,1525,228,1553"/>
+<area shape="rect" id="node34" href="$interpreter_8c.html#a290f954ecc7694751a55343897b8ff26" title="get_cmd_name" alt="" coords="123,1575,240,1603"/>
+<area shape="rect" id="node36" href="$group__biba__utils.html#ga354be7728c1265a82ba2510f1800cea4" title="putstring" alt="" coords="337,1322,412,1350"/>
+<area shape="rect" id="node39" href="$group__biba__main.html#ga708a4c1a4d0c4acc4c447310dd4db27f" title="test" alt="" coords="675,613,720,641"/>
+<area shape="rect" id="node43" href="$group__biba__messges.html#gad5028f9e871f7e63759218b94a829f45" title="SDec" alt="" coords="520,663,576,691"/>
+<area shape="rect" id="node46" href="$group__biba__messges.html#ga0dd076c947adc7f37ed9024c16def436" title="FDec" alt="" coords="671,714,724,742"/>
+<area shape="rect" id="node49" href="$group__biba__messges.html#ga4df90f192fc647ecf71806dc05b290b5" title="ADec" alt="" coords="520,765,576,793"/>
+<area shape="rect" id="node53" href="$group__biba__messges.html#ga6a0297ad8db89b689f7314473dd7cd7a" title="Fstep" alt="" coords="669,815,725,843"/>
+<area shape="rect" id="node56" href="$group__biba__messges.html#ga53669298f54817f8d2b140050dc910f1" title="HStep" alt="" coords="517,866,579,894"/>
+<area shape="rect" id="node59" href="$group__biba__messges.html#ga11901ed666ca738e518ff569cf8d947a" title="Qstep" alt="" coords="668,917,727,945"/>
+<area shape="rect" id="node62" href="$group__biba__messges.html#ga40b8844aa998b3549f6194d437100ee7" title="M8Step" alt="" coords="513,967,583,995"/>
+<area shape="rect" id="node65" href="$group__biba__messges.html#ga286e4f6b6038548b06d71fb6badfd28b" title="M16Step" alt="" coords="659,1018,736,1046"/>
+<area shape="rect" id="node68" href="$group__biba__messges.html#ga5b419cf59d479fba5c67c575b553e158" title="M32Step" alt="" coords="336,1069,413,1097"/>
+<area shape="rect" id="node71" href="$group__biba__utils.html#gade0d11aaaeeeb0b4369bcef0819dd8f9" title="ConvertASCItouint64" alt="" coords="104,1626,259,1654"/>
+<area shape="rect" id="node73" href="$group__biba__drv.html#ga746cb11e60c877a82b3ecbdbaa375f5e" title="SetAcceleration" alt="" coords="121,1677,241,1705"/>
+<area shape="rect" id="node75" href="$group__biba__messges.html#ga6e96dc2b209da9d4eef98fb809f1f615" title="Acc" alt="" coords="159,1221,204,1249"/>
+<area shape="rect" id="node80" href="$group__biba__drv.html#ga39d145b6dc7b1fa19582960613440fd4" title="SetMinSpeed" alt="" coords="128,1727,235,1755"/>
+<area shape="rect" id="node82" href="$group__biba__messges.html#ga46822b53dd41e304ef1887ef7075ffd7" title="Minspeed" alt="" coords="140,1271,223,1299"/>
+<area shape="rect" id="node86" href="$group__biba__drv.html#gaf56c9e829e6f40a75e89bd16f5051c63" title="SetMaxSpeed" alt="" coords="127,1778,236,1806"/>
+<area shape="rect" id="node88" href="$group__biba__messges.html#gaa5f13f30a59a97aca9198b06a0c90112" title="Maxspeed" alt="" coords="139,1373,224,1401"/>
+<area shape="rect" id="node92" href="$group__biba__drv.html#ga0c630286eeb4f2b49bfe96670dafd65c" title="Set_Steps_revol" alt="" coords="119,1829,244,1857"/>
+<area shape="rect" id="node94" href="$group__biba__messges.html#ga98ca8e64d40da656ab802f68b0eb84a1" title="SptRevol" alt="" coords="143,1423,220,1451"/>
+<area shape="rect" id="node98" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="115,258,248,286"/>
+<area shape="rect" id="node101" href="$group__biba__messges.html#gaabc2b68cf794e6851e1826ba9e083c3b" title="RMinSpd" alt="" coords="143,1474,220,1502"/>
+<area shape="rect" id="node105" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="112,309,251,337"/>
+<area shape="rect" id="node108" href="$group__biba__messges.html#ga1cee417b557775a8a769eb5bc2306f08" title="RMaxSpd" alt="" coords="140,1119,223,1147"/>
+<area shape="rect" id="node112" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="135,359,228,387"/>
+<area shape="rect" id="node115" href="$group__biba__messges.html#gad576f94f72a14d6cf14d7a3217d3fdb5" title="RAcc" alt="" coords="155,1170,208,1198"/>
+<area shape="rect" id="node119" href="$group__biba__drv.html#ga1db502f9943a62943380a04ba0bd52cb" title="Stop_Motion_fast" alt="" coords="116,1879,247,1907"/>
+<area shape="rect" id="node121" href="$group__biba__messges.html#ga76c658dc5f4332e4b034419dca518c1c" title="Stop" alt="" coords="523,511,573,539"/>
+<area shape="rect" id="node124" href="$group__biba__drv.html#ga95c2965416e69e644b9f5a482707ae9f" title="Stop_Motion_normal" alt="" coords="107,1930,256,1958"/>
+<area shape="rect" id="node126" href="$group__biba__drv.html#ga102f936b773a4a26032cc6b8cd1a273d" title="Way_Speed" alt="" coords="132,1981,231,2009"/>
+<area shape="rect" id="node128" href="$group__biba__drv.html#ga961e1c89176d3c56101bb4eddf6642dc" title="Count_Step" alt="" coords="327,2006,423,2034"/>
+<area shape="rect" id="node130" href="$group__biba__drv.html#gab1ea57d26402b13aaed719a4d11097d5" title="Enable_Stepper" alt="" coords="120,2082,243,2110"/>
+<area shape="rect" id="node134" href="$group__biba__drv.html#ga20503ca831d18cf625abe0f6e98d281a" title="Get_Decay" alt="" coords="136,2133,227,2161"/>
+<area shape="rect" id="node136" href="$group__biba__drv.html#ga51c375fddbfeaed5366cd0bf2f9a2dab" title="Get_Mode" alt="" coords="139,2183,224,2211"/>
+<area shape="rect" id="node138" href="$group__biba__drv.html#gabdfa1389f4c68fca40077275f7727fea" title="Get_Start" alt="" coords="140,2234,223,2262"/>
+<area shape="rect" id="node15" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="491,258,605,286"/>
+<area shape="rect" id="node26" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="325,283,424,311"/>
+<area shape="rect" id="node11" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="521,182,575,210"/>
+<area shape="rect" id="node21" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="932,1195,1039,1223"/>
+</map>

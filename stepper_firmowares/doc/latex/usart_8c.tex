@@ -1,0 +1,201 @@
+\hypertarget{usart_8c}{\section{usart.\-c File Reference}
+\label{usart_8c}\index{usart.\-c@{usart.\-c}}
+}
+{\ttfamily \#include $<$avr/io.\-h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$util/atomic.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}config.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}usart.\-h\char`\"{}}\\*
+Include dependency graph for usart.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{usart_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structring__buffer}{ring\-\_\-buffer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{usart_8c_a11ccde3e30505d234dff6b046be9996b}{B1\-S\-I\-Z\-E}~32
+\item 
+\#define \hyperlink{usart_8c_a403cf3149c084cea115b85c90721039a}{B\-S\-I\-Z\-E}~32
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structring__buffer}{ring\-\_\-buffer} \hyperlink{usart_8c_a963a1a53bdd33928539cf4fdea3f40f9}{ring\-\_\-buffer\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{usart_8c_a9622edb266a65452131cdbbccb5e5b0e}{I\-S\-R} (\hyperlink{usartm8_8h_a019f9b38ea0e96074c2efade336329c4}{U\-S\-A\-R\-T0\-\_\-\-R\-X\-C\-\_\-vect})
+\item 
+\hyperlink{usart_8c_a95e67e677722a53e3ad9f1ffce2e7408}{I\-S\-R} (\hyperlink{usartm8_8h_ad9bde31ae3a411a233e95dee8f16e85a}{U\-S\-A\-R\-T0\-\_\-\-U\-D\-R\-E\-\_\-vect})
+\item 
+int \hyperlink{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}{usart\-\_\-getchar} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Get received byte from ringbuffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}{usart\-\_\-init} (unsigned int baudrate)
+\begin{DoxyCompactList}\small\item\em Initialize U\-S\-A\-R\-T and set baudrate. \end{DoxyCompactList}\item 
+int \hyperlink{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}{usart\-\_\-putchar} (char c, F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Put byte to ringbuffer for transmitting via U\-A\-R\-T. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\-\_\-t \hyperlink{usart_8c_ab1e8994b5f6467f5ea20b67e58452d0c}{brx} \mbox{[}\hyperlink{usart_8c_a403cf3149c084cea115b85c90721039a}{B\-S\-I\-Z\-E}\mbox{]}
+\item 
+static uint8\-\_\-t \hyperlink{usart_8c_a9fd172d91b4883e4431518231478e027}{btx} \mbox{[}\hyperlink{usart_8c_a403cf3149c084cea115b85c90721039a}{B\-S\-I\-Z\-E}\mbox{]}
+\item 
+volatile \hyperlink{usart_8c_a963a1a53bdd33928539cf4fdea3f40f9}{ring\-\_\-buffer\-\_\-t} \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\-\_\-rx}
+\item 
+volatile \hyperlink{usart_8c_a963a1a53bdd33928539cf4fdea3f40f9}{ring\-\_\-buffer\-\_\-t} \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\-\_\-tx}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{usart_8c_a11ccde3e30505d234dff6b046be9996b}{\index{usart.\-c@{usart.\-c}!B1\-S\-I\-Z\-E@{B1\-S\-I\-Z\-E}}
+\index{B1\-S\-I\-Z\-E@{B1\-S\-I\-Z\-E}!usart.c@{usart.\-c}}
+\subsubsection[{B1\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B1\-S\-I\-Z\-E~32}}\label{usart_8c_a11ccde3e30505d234dff6b046be9996b}
+
+
+Definition at line 37 of file usart.\-c.
+
+\hypertarget{usart_8c_a403cf3149c084cea115b85c90721039a}{\index{usart.\-c@{usart.\-c}!B\-S\-I\-Z\-E@{B\-S\-I\-Z\-E}}
+\index{B\-S\-I\-Z\-E@{B\-S\-I\-Z\-E}!usart.c@{usart.\-c}}
+\subsubsection[{B\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-S\-I\-Z\-E~32}}\label{usart_8c_a403cf3149c084cea115b85c90721039a}
+
+
+Definition at line 36 of file usart.\-c.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{usart_8c_a963a1a53bdd33928539cf4fdea3f40f9}{\index{usart.\-c@{usart.\-c}!ring\-\_\-buffer\-\_\-t@{ring\-\_\-buffer\-\_\-t}}
+\index{ring\-\_\-buffer\-\_\-t@{ring\-\_\-buffer\-\_\-t}!usart.c@{usart.\-c}}
+\subsubsection[{ring\-\_\-buffer\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ring\-\_\-buffer}  {\bf ring\-\_\-buffer\-\_\-t}}}\label{usart_8c_a963a1a53bdd33928539cf4fdea3f40f9}
+
+
+\subsection{Function Documentation}
+\hypertarget{usart_8c_a9622edb266a65452131cdbbccb5e5b0e}{\index{usart.\-c@{usart.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!usart.c@{usart.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf U\-S\-A\-R\-T0\-\_\-\-R\-X\-C\-\_\-vect}}]{}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_a9622edb266a65452131cdbbccb5e5b0e}
+U\-S\-A\-R\-T0 Receive Complete interrupt 
+
+Definition at line 195 of file usart.\-c.
+
+
+\begin{DoxyCode}
+196 \{
+197     uint8\_t data;
+198 
+199     data = \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0};
+200 
+201     \textcolor{keywordflow}{if} (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} < \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size})
+202     \{
+203         \textcolor{keywordflow}{if} (data == \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{VEOL})
+204             \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines}++;
+205 
+206         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data}[\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head}] = data;
+207 
+208         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} = (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} + 1) & (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.
+      \hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} - 1);
+209         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount}++;
+210     \}
+211     \textcolor{keywordflow}{else}
+212     \{
+213         \textcolor{comment}{//The Buffer is full! clear it}
+214         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} = 0;
+215         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} = 0;
+216         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} = 0;
+217         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines} = 0;
+218 
+219         \textcolor{comment}{/* Wait for empty transmit buffer */}
+220         \textcolor{keywordflow}{while} (!(\hyperlink{usartm8_8h_afd390ccfd96d1e33ba363a2a86edfa0a}{UCSR0A} & (1 << \hyperlink{usartm8_8h_ae392015221942bde7408352740c43368}{UDRE0})))
+221             ;
+222         \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0} = \textcolor{charliteral}{'B'};
+223         \textcolor{keywordflow}{while} (!(\hyperlink{usartm8_8h_afd390ccfd96d1e33ba363a2a86edfa0a}{UCSR0A} & (1 << \hyperlink{usartm8_8h_ae392015221942bde7408352740c43368}{UDRE0})))
+224             ;
+225         \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0} = \textcolor{charliteral}{'O'};
+226         \textcolor{keywordflow}{while} (!(\hyperlink{usartm8_8h_afd390ccfd96d1e33ba363a2a86edfa0a}{UCSR0A} & (1 << \hyperlink{usartm8_8h_ae392015221942bde7408352740c43368}{UDRE0})))
+227             ;
+228         \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0} = \textcolor{charliteral}{'F'};
+229         \textcolor{keywordflow}{while} (!(\hyperlink{usartm8_8h_afd390ccfd96d1e33ba363a2a86edfa0a}{UCSR0A} & (1 << \hyperlink{usartm8_8h_ae392015221942bde7408352740c43368}{UDRE0})))
+230             ;
+231         \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0} = \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{VEOL};
+232         \textcolor{comment}{//TODO Software flow control XON/XOFF.
+       http://www-user.tu-chemnitz.de/~heha/hs\_freeware/terminal/terminal.htm}
+233         \textcolor{comment}{//SBUF = 0x13; //Pause transmission. Send XOFF character}
+234     \}
+235 \}
+\end{DoxyCode}
+\hypertarget{usart_8c_a95e67e677722a53e3ad9f1ffce2e7408}{\index{usart.\-c@{usart.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!usart.c@{usart.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{{\bf U\-S\-A\-R\-T0\-\_\-\-U\-D\-R\-E\-\_\-vect}}]{}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_a95e67e677722a53e3ad9f1ffce2e7408}
+U\-S\-A\-R\-T0 Data Register Empty interrupt Called when the U\-S\-A\-R\-T is ready to transmit the next byte 
+
+Definition at line 242 of file usart.\-c.
+
+
+\begin{DoxyCode}
+243 \{
+244     \textcolor{keywordflow}{if} (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} > 0)
+245     \{
+246         \hyperlink{usartm8_8h_a5dabbf03c46e68abe6ec61d6897a2002}{UDR0} = \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data}[\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail}];
+247 
+248         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} = (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} + 1) & (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.
+      \hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} - 1);
+249         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount}--;
+250     \}
+251     \textcolor{keywordflow}{else}
+252     \{
+253         \textcolor{comment}{/* tx buffer empty, disable UDRE interrupt */}
+254         \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} &= ~(1 << \hyperlink{usartm8_8h_aaf5d679b6390e6caa37f8501d03a266d}{UDRIE0});
+255     \}
+256 \}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{usart_8c_ab1e8994b5f6467f5ea20b67e58452d0c}{\index{usart.\-c@{usart.\-c}!brx@{brx}}
+\index{brx@{brx}!usart.c@{usart.\-c}}
+\subsubsection[{brx}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t brx\mbox{[}{\bf B\-S\-I\-Z\-E}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{usart_8c_ab1e8994b5f6467f5ea20b67e58452d0c}
+
+
+Definition at line 52 of file usart.\-c.
+
+\hypertarget{usart_8c_a9fd172d91b4883e4431518231478e027}{\index{usart.\-c@{usart.\-c}!btx@{btx}}
+\index{btx@{btx}!usart.c@{usart.\-c}}
+\subsubsection[{btx}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t btx\mbox{[}{\bf B\-S\-I\-Z\-E}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{usart_8c_a9fd172d91b4883e4431518231478e027}
+
+
+Definition at line 53 of file usart.\-c.
+
+\hypertarget{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{\index{usart.\-c@{usart.\-c}!usart\-\_\-rx@{usart\-\_\-rx}}
+\index{usart\-\_\-rx@{usart\-\_\-rx}!usart.c@{usart.\-c}}
+\subsubsection[{usart\-\_\-rx}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf ring\-\_\-buffer\-\_\-t} usart\-\_\-rx}}\label{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}
+
+
+Definition at line 55 of file usart.\-c.
+
+\hypertarget{usart_8c_a898850590437dfd2516494a732560c4c}{\index{usart.\-c@{usart.\-c}!usart\-\_\-tx@{usart\-\_\-tx}}
+\index{usart\-\_\-tx@{usart\-\_\-tx}!usart.c@{usart.\-c}}
+\subsubsection[{usart\-\_\-tx}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf ring\-\_\-buffer\-\_\-t} usart\-\_\-tx}}\label{usart_8c_a898850590437dfd2516494a732560c4c}
+
+
+Definition at line 54 of file usart.\-c.
+

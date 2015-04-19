@@ -1,0 +1,355 @@
+\hypertarget{group__pfleury__uart}{\section{U\-A\-R\-T Library}
+\label{group__pfleury__uart}\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}}
+}
+
+
+Interrupt U\-A\-R\-T library using the built-\/in U\-A\-R\-T with transmit and receive circular buffers.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T}(baud\-Rate, xtal\-Cpu)~((xtal\-Cpu)/((baud\-Rate)$\ast$16l)-\/1)
+\begin{DoxyCompactList}\small\item\em U\-S\-A\-R\-T Baudrate Expression. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__pfleury__uart_ga8c35b761fccbace5f3a903cd20eb4b5e}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D}(baud\-Rate, xtal\-Cpu)~(((xtal\-Cpu)/((baud\-Rate)$\ast$8l)-\/1)$|$0x8000)
+\begin{DoxyCompactList}\small\item\em U\-S\-A\-R\-T Baudrate Expression for A\-Tmega double speed mode. \end{DoxyCompactList}\item 
+\#define \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{V\-E\-O\-L}~(char) 0x0d
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}{usart\-\_\-getchar} (F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Get received byte from ringbuffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}{usart\-\_\-init} (unsigned int)
+\begin{DoxyCompactList}\small\item\em Initialize U\-S\-A\-R\-T and set baudrate. \end{DoxyCompactList}\item 
+int \hyperlink{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}{usart\-\_\-putchar} (char c, F\-I\-L\-E $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Put byte to ringbuffer for transmitting via U\-A\-R\-T. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interrupt U\-A\-R\-T library using the built-\/in U\-A\-R\-T with transmit and receive circular buffers. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{usart_8h}{usart.h}>} 
+\end{DoxyCode}
+
+
+This library can be used to transmit and receive data through the built in U\-A\-R\-T.
+
+An interrupt is generated when the U\-A\-R\-T has finished transmitting or receiving a byte. The interrupt handling routines use circular buffers for buffering received and transmitted data.
+
+The U\-A\-R\-T\-\_\-\-R\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E and U\-A\-R\-T\-\_\-\-T\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E constants define the size of the circular buffers in bytes. Note that these constants must be a power of 2. You may need to adapt this constants to your target and your application by adding C\-D\-E\-F\-S += -\/\-D\-U\-A\-R\-T\-\_\-\-R\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E=nn -\/\-D\-U\-A\-R\-T\-\_\-\-R\-X\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E=nn to your Makefile.
+
+\begin{DoxyNote}{Note}
+Based on Atmel Application Note A\-V\-R306 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Peter Fleury \href{mailto:pfleury@gmx.ch}{\tt pfleury@gmx.\-ch} \href{http://jump.to/fleury}{\tt http\-://jump.\-to/fleury} 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T}}
+\index{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T(
+\begin{DoxyParamCaption}
+\item[{}]{baud\-Rate, }
+\item[{}]{xtal\-Cpu}
+\end{DoxyParamCaption}
+)~((xtal\-Cpu)/((baud\-Rate)$\ast$16l)-\/1)}}\label{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}
+
+
+U\-S\-A\-R\-T Baudrate Expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xtalcpu} & system clock in Mhz, e.\-g. 4000000\-L for 4\-Mhz \\
+\hline
+{\em baudrate} & baudrate in bps, e.\-g. 1200, 2400, 9600 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file usart.\-h.
+
+\hypertarget{group__pfleury__uart_ga8c35b761fccbace5f3a903cd20eb4b5e}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D}}
+\index{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D@{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-S\-P\-E\-E\-D(
+\begin{DoxyParamCaption}
+\item[{}]{baud\-Rate, }
+\item[{}]{xtal\-Cpu}
+\end{DoxyParamCaption}
+)~(((xtal\-Cpu)/((baud\-Rate)$\ast$8l)-\/1)$|$0x8000)}}\label{group__pfleury__uart_ga8c35b761fccbace5f3a903cd20eb4b5e}
+
+
+U\-S\-A\-R\-T Baudrate Expression for A\-Tmega double speed mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xtalcpu} & system clock in Mhz, e.\-g. 4000000\-L for 4\-Mhz \\
+\hline
+{\em baudrate} & baudrate in bps, e.\-g. 1200, 2400, 9600 \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file usart.\-h.
+
+\hypertarget{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!V\-E\-O\-L@{V\-E\-O\-L}}
+\index{V\-E\-O\-L@{V\-E\-O\-L}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{V\-E\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\-E\-O\-L~(char) 0x0d}}\label{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}
+End of line character. 
+
+Definition at line 98 of file usart.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!usart\-\_\-getchar@{usart\-\_\-getchar}}
+\index{usart\-\_\-getchar@{usart\-\_\-getchar}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{usart\-\_\-getchar}]{\setlength{\rightskip}{0pt plus 5cm}int usart\-\_\-getchar (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}}\label{group__pfleury__uart_ga927612c41ef22fe455959b428e7f33cc}
+
+
+Get received byte from ringbuffer. 
+
+Returns in the lower byte the received character and in the higher byte the last receive error. U\-A\-R\-T\-\_\-\-N\-O\-\_\-\-D\-A\-T\-A is returned when no data is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lower byte\-: received byte from ringbuffer 
+
+higher byte\-: last receive status
+\begin{DoxyItemize}
+\item {\bfseries 0} successfully received data from U\-A\-R\-T
+\item {\bfseries U\-A\-R\-T\-\_\-\-N\-O\-\_\-\-D\-A\-T\-A} \par
+no receive data available
+\item {\bfseries U\-A\-R\-T\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W} \par
+Receive ringbuffer overflow. We are not reading the receive buffer fast enough, one or more received character have been dropped
+\item {\bfseries U\-A\-R\-T\-\_\-\-O\-V\-E\-R\-R\-U\-N\-\_\-\-E\-R\-R\-O\-R} \par
+Overrun condition by U\-A\-R\-T. A character already present in the U\-A\-R\-T U\-D\-R register was not read by the interrupt handler before the next character arrived, one or more received characters have been dropped.
+\item {\bfseries U\-A\-R\-T\-\_\-\-F\-R\-A\-M\-E\-\_\-\-E\-R\-R\-O\-R} \par
+Framing Error by U\-A\-R\-T
+\end{DoxyItemize}
+\end{DoxyReturn}
+Read byte from ring buffer 
+\begin{DoxyParams}{Parameters}
+{\em F\-I\-L\-E} & stream \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte from ring buffer 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file usart.\-c.
+
+
+\begin{DoxyCode}
+129 \{
+130     uint8\_t c;
+131 
+132     \textcolor{keywordflow}{if} (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} == 0)
+133         \textcolor{keywordflow}{return} EOF;
+134 
+135     \textcolor{keywordflow}{if} (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines} == 0)
+136         \textcolor{keywordflow}{return} EOF;
+137 
+138     c = \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data}[\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail}];
+139     \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} = (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} + 1) & (\hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.
+      \hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} - 1);
+140 
+141     \textcolor{comment}{//Disable RXC interrupt to run next lines atomic}
+142     \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} &= ~(1 << \hyperlink{usartm8_8h_a790906757f759fad4325c63ac3b0c9ab}{RXCIE0});
+143     \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount}--;
+144 
+145     \textcolor{comment}{//Behavior similar to Unix stty ICRNL}
+146     \textcolor{keywordflow}{if} (c == \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{VEOL})
+147     \{
+148         c = \textcolor{charliteral}{'\(\backslash\)n'};
+149         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines}--;
+150     \}
+151 
+152     \textcolor{comment}{//Enable RXC interrupt}
+153     \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} |= (1 << \hyperlink{usartm8_8h_a790906757f759fad4325c63ac3b0c9ab}{RXCIE0});
+154 
+155     \textcolor{keywordflow}{return} c;
+156 \}\textcolor{comment}{/* usart\_getchar */}
+\end{DoxyCode}
+\hypertarget{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!usart\-\_\-init@{usart\-\_\-init}}
+\index{usart\-\_\-init@{usart\-\_\-init}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{usart\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void usart\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{baudrate}
+\end{DoxyParamCaption}
+)}}\label{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9}
+
+
+Initialize U\-S\-A\-R\-T and set baudrate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & Specify baudrate using macro U\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T() \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+Initialize U\-S\-A\-R\-T and set baudrate Baudrate using macro \hyperlink{group__pfleury__uart_ga81b884d0763f1925a0efeac39322413d}{U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-S\-E\-L\-E\-C\-T()} 
+\begin{DoxyParams}{Parameters}
+{\em baudrate} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file usart.\-c.
+
+
+\begin{DoxyCode}
+70 \{
+71     ATOMIC\_BLOCK(ATOMIC\_RESTORESTATE)
+72     \{
+73         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data} = \hyperlink{usart_8c_ab1e8994b5f6467f5ea20b67e58452d0c}{brx};
+74         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} = \hyperlink{usart_8c_a403cf3149c084cea115b85c90721039a}{BSIZE};
+75         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} = 0;
+76         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} = 0;
+77         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} = 0;
+78         \hyperlink{usart_8c_a89c6e7ab71283948838e13efe4cbdfb1}{usart\_rx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines} = 0;
+79 
+80         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data} = \hyperlink{usart_8c_a9fd172d91b4883e4431518231478e027}{btx};
+81         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} = \hyperlink{usart_8c_a403cf3149c084cea115b85c90721039a}{BSIZE};
+82         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} = 0;
+83         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_ab0f9f0c2eae533546f76d08b39a71fc8}{tail} = 0;
+84         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} = 0;
+85         \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_aafdca1edc68f0b8080f87d0b3a64e62e}{nlines} = 0;
+86 
+87         \textcolor{comment}{/* Set baud rate */}
+88         \textcolor{keywordflow}{if} (baudrate & 0x8000)
+89         \{
+90             \hyperlink{usartm8_8h_afd390ccfd96d1e33ba363a2a86edfa0a}{UCSR0A} = (1 << \hyperlink{usartm8_8h_af765fa1eab56235dbab161f00d69a5fa}{U2X0}); \textcolor{comment}{//Enable 2x speed}
+91             baudrate &= ~0x8000;
+92         \}
+93         \hyperlink{usartm8_8h_a70e1c1bfc855cc280848f7203182230d}{UBRR0H} = (\textcolor{keywordtype}{unsigned} char) (baudrate >> 8);
+94         \hyperlink{usartm8_8h_ae96d0b97b754e1958c734dfb9d37f9ee}{UBRR0L} = (\textcolor{keywordtype}{unsigned} char) baudrate;
+95 
+96 \textcolor{preprocessor}{#if (USART0\_TYPE) == 485}
+97 \textcolor{preprocessor}{}
+98 \textcolor{preprocessor}{#if  defined(\_\_AVR\_ATmega8\_\_)  || defined(\_\_AVR\_ATmega16\_\_) || defined(\_\_AVR\_ATmega32\_\_) \(\backslash\)}
+99 \textcolor{preprocessor}{  || defined(\_\_AVR\_ATmega323\_\_)}
+100 \textcolor{preprocessor}{}        PORTD |= (1 << PD0); \textcolor{comment}{//pull-up RX0}
+101 \textcolor{preprocessor}{#elif defined(\_\_AVR\_ATmega162\_\_)}
+102 \textcolor{preprocessor}{}        PORTB |= (1 << PB2); \textcolor{comment}{//pull-up RX1}
+103 \textcolor{preprocessor}{#else}
+104 \textcolor{preprocessor}{}\textcolor{preprocessor}{#error "RX port is not internally pulled up"}
+105 \textcolor{preprocessor}{}\textcolor{preprocessor}{#endif}
+106 \textcolor{preprocessor}{}
+107         \textcolor{comment}{//Receiver output enable}
+108         transmitter0\_disable();
+109         \hyperlink{group__biba__config_ga91fb0adcf6533b4acfe793396836badc}{set\_as\_output}(DDRB, transceiver0);
+110 
+111         \textcolor{comment}{//Enable USART0 receiver and transmitter, receive complete}
+112         \textcolor{comment}{//and transmit complete interrupt.}
+113         \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} = (1 << \hyperlink{usartm8_8h_a790906757f759fad4325c63ac3b0c9ab}{RXCIE0}) | (1 << \hyperlink{usartm8_8h_a81c6f3daa20eb28ecc75337bee559c84}{TXCIE0}) | (1 << \hyperlink{usartm8_8h_ac11695cf8ce78bca8074ddc11da43586}{RXEN0}) | (1 << 
+      \hyperlink{usartm8_8h_a85ebab0cc6f7f45060a63ae97c32d38f}{TXEN0});
+114 \textcolor{preprocessor}{#else}
+115 \textcolor{preprocessor}{}        \textcolor{comment}{/* Enable USART receiver and transmitter and receive complete interrupt */}
+116         \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} = (1 << \hyperlink{usartm8_8h_a790906757f759fad4325c63ac3b0c9ab}{RXCIE0}) | (1 << \hyperlink{usartm8_8h_ac11695cf8ce78bca8074ddc11da43586}{RXEN0}) | (1 << \hyperlink{usartm8_8h_a85ebab0cc6f7f45060a63ae97c32d38f}{TXEN0});
+117 \textcolor{preprocessor}{#endif}
+118 \textcolor{preprocessor}{}        \textcolor{comment}{/* Set frame format: asynchronous, 8data, no parity, 1stop bit */}
+119         \hyperlink{usartm8_8h_ac337badc6764b225812868e8d330d765}{UCSR0C} = (1 << \hyperlink{usartm8_8h_a28b7b2e4d53a8ebf645fdb2550100809}{URSEL0}) | (1 << \hyperlink{usartm8_8h_a58d3de3766761188ebe46268a9556960}{UCSZ01}) | (1 << \hyperlink{usartm8_8h_a5860c8afad33f2c2ef4fc6d929deb6bd}{UCSZ00});
+120     \}
+121 \}\textcolor{comment}{/* usart\_init */}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__pfleury__uart_ga31c0af992d7fc4db12191bb47a416da9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}{\index{U\-A\-R\-T Library@{U\-A\-R\-T Library}!usart\-\_\-putchar@{usart\-\_\-putchar}}
+\index{usart\-\_\-putchar@{usart\-\_\-putchar}!UART Library@{U\-A\-R\-T Library}}
+\subsubsection[{usart\-\_\-putchar}]{\setlength{\rightskip}{0pt plus 5cm}int usart\-\_\-putchar (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{F\-I\-L\-E $\ast$}]{stream}
+\end{DoxyParamCaption}
+)}}\label{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e}
+
+
+Put byte to ringbuffer for transmitting via U\-A\-R\-T. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & byte to be transmitted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+Write byte to ring buffer for transmitting via U\-S\-A\-R\-T 
+\begin{DoxyParams}{Parameters}
+{\em c} & byte to be transmitted \\
+\hline
+{\em stream} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 164 of file usart.\-c.
+
+
+\begin{DoxyCode}
+165 \{
+166 \textcolor{preprocessor}{#if (USART0\_TYPE) == 485}
+167 \textcolor{preprocessor}{}    \textcolor{comment}{//Driver output enable}
+168     transmitter0\_enable();
+169 \textcolor{preprocessor}{#endif}
+170 \textcolor{preprocessor}{}
+171     \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'\(\backslash\)n'})
+172         c = \hyperlink{group__pfleury__uart_ga659dbdf07b27a95c6ca57fb14a9e15ad}{VEOL};
+173 
+174     \textcolor{keywordflow}{while} (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount} == \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size})
+175         ; \textcolor{comment}{//wait for free space in buffer}
+176 
+177     \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_afd2830d5078005b02a9621169c6cf1f4}{data}[\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head}] = c;
+178     \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} = (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_af1343044f173745cd6b3d70b10a3c5bb}{head} + 1) & (\hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.
+      \hyperlink{structring__buffer_afc24f89ba4a6c5783a381e2a10fcbedd}{size} - 1);
+179 
+180     \textcolor{comment}{//Disable UDRE interrupt to run next lines atomic}
+181     \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} &= ~(1 << \hyperlink{usartm8_8h_aaf5d679b6390e6caa37f8501d03a266d}{UDRIE0});
+182 
+183     \hyperlink{usart_8c_a898850590437dfd2516494a732560c4c}{usart\_tx}.\hyperlink{structring__buffer_abf5dc043ad613d205133e0800570fec2}{fillcount}++;
+184 
+185     \textcolor{comment}{//Enable UDRE interrupt}
+186     \hyperlink{usartm8_8h_a2ded98d79bd558dff7d52298728fd9b8}{UCSR0B} |= (1 << \hyperlink{usartm8_8h_aaf5d679b6390e6caa37f8501d03a266d}{UDRIE0});
+187 
+188     \textcolor{keywordflow}{return} 0;
+189 \}\textcolor{comment}{/* usart\_putchar */}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__pfleury__uart_ga5db1b15d2f108232a6162b87c9fb352e_icgraph}
+\end{center}
+\end{figure}
+
+

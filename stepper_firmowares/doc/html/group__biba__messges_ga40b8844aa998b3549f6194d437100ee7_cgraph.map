@@ -1,0 +1,4 @@
+<map id="M8Step" name="M8Step">
+<area shape="rect" id="node3" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="125,5,219,33"/>
+<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="268,5,375,33"/>
+</map>

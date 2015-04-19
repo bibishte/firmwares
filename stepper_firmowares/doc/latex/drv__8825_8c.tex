@@ -1,0 +1,315 @@
+\hypertarget{drv__8825_8c}{\section{drv\-\_\-8825.\-c File Reference}
+\label{drv__8825_8c}\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}}
+}
+{\ttfamily \#include \char`\"{}drv\-\_\-8825.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}config.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}messages.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$avr/pgmspace.\-h$>$}\\*
+{\ttfamily \#include $<$avr/eeprom.\-h$>$}\\*
+Include dependency graph for drv\-\_\-8825.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{drv__8825_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMotion}{Motion}
+\begin{DoxyCompactList}\small\item\em This structure defines the current step execution status. This structure is used for the timmer interrupting and in the comments for initializing the spin. \end{DoxyCompactList}\item 
+struct \hyperlink{structMotor__Parameters}{Motor\-\_\-\-Parameters}
+\begin{DoxyCompactList}\small\item\em This structure defines types for motor parameters This type is used for declaration of three structures that are for the motor paramenters used for timmer, the real parameters of the motor and the working parameters that have been already calculated according to the microstep mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{drv__8825_8c_a6bfd15ff180f734cbc5b69e729ac5b65}{P\-E\-R\-T\-M\-R}~723
+\item 
+\#define \hyperlink{drv__8825_8c_a556953635433b080667d6e8888dfe876}{T\-I\-M\-E\-R\-C\-O\-N\-S\-T}~82987552
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structMotor__Parameters}{Motor\-\_\-\-Parameters} \hyperlink{drv__8825_8c_a00e5331474326ef8ed2d76943e17fb5b}{Motor\-\_\-\-Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{Cal\-Work\-Param} (void)
+\item 
+void \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\-\_\-\-Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step, uint64\-\_\-t step\-\_\-count)
+\item 
+void \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay} (\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} decay)
+\item 
+void \hyperlink{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{Disabled\-\_\-\-Stepper} (void)
+\item 
+void \hyperlink{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}{Enable\-\_\-\-Stepper} (void)
+\item 
+\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \hyperlink{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}{Get\-\_\-\-Decay} (void)
+\item 
+\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \hyperlink{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}{Get\-\_\-\-Mode} (void)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}{Get\-\_\-\-Start} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}{Get\-\_\-\-Steps\-\_\-revol} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}{Get\-Acceleration} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga56c30e2b82a23aed1c9febd704166090}{Get\-Current\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga356f958c8327643ae22d240493ae7747}{Get\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}{Get\-Min\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}{Get\-Real\-Acc} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}{Get\-Real\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}{Get\-Real\-Min\-Speed} (void)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{Helper\-Rto\-T} (uint64\-\_\-t in)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{Helper\-Tto\-R} (uint64\-\_\-t in)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134}{Home} (void)
+\item 
+void \hyperlink{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}{Init\-Stepper} (void)
+\item 
+\hyperlink{drv__8825_8c_ab16889ae984b9b798989a0d239283cac}{I\-S\-R} (T\-I\-M\-E\-R1\-\_\-\-O\-V\-F\-\_\-vect)
+\item 
+void \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode} (\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} mode)
+\item 
+void \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{Real\-To\-Time} (void)
+\item 
+void \hyperlink{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}{Set\-\_\-\-Steps\-\_\-revol} (uint16\-\_\-t step\-\_\-rev)
+\item 
+void \hyperlink{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}{Set\-Acceleration} (uint16\-\_\-t accel)
+\item 
+void \hyperlink{group__biba__drv_ga91f64f1e8f2b67bfcf24f6d2a2249373}{Set\-Current\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}{Set\-Max\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}{Set\-Min\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}{Set\-Real\-Acc} (uint16\-\_\-t realacc)
+\item 
+void \hyperlink{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}{Set\-Real\-Max\-Speed} (uint16\-\_\-t maxspd)
+\item 
+void \hyperlink{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}{Set\-Real\-Min\-Speed} (uint16\-\_\-t minspd)
+\item 
+void \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\item 
+void \hyperlink{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}{Stop\-\_\-\-Motion\-\_\-fast} (void)
+\item 
+void \hyperlink{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}{Stop\-\_\-\-Motion\-\_\-normal} (void)
+\item 
+void \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store} (void)
+\item 
+void \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{Time\-To\-Real} (void)
+\item 
+void \hyperlink{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{Way\-\_\-\-Speed} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static volatile uint8\-\_\-t \hyperlink{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{Const\-Spd}
+\item 
+static volatile \hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \hyperlink{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{Current\-Decay}
+\item 
+static volatile \hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \hyperlink{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{Current\-Mode}
+\item 
+static volatile uint8\-\_\-t \hyperlink{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}{Mode\-Start}
+\item 
+static volatile struct \hyperlink{structMotion}{Motion} \hyperlink{drv__8825_8c_aa953c05832677849e86563c10df2a014}{Motion}
+\item 
+static volatile \hyperlink{structMotor__Parameters}{Motor\-\_\-\-Parameters} \hyperlink{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{Real\-Speed}
+\item 
+static volatile \hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} \hyperlink{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{Step\-Dir}
+\item 
+static volatile uint16\-\_\-t \hyperlink{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{Steps\-Per\-Rev}
+\item 
+static volatile \hyperlink{structMotor__Parameters}{Motor\-\_\-\-Parameters} \hyperlink{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{Time\-Param}
+\item 
+static volatile \hyperlink{structMotor__Parameters}{Motor\-\_\-\-Parameters} \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{Working\-Param}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{drv__8825_8c_a6bfd15ff180f734cbc5b69e729ac5b65}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!P\-E\-R\-T\-M\-R@{P\-E\-R\-T\-M\-R}}
+\index{P\-E\-R\-T\-M\-R@{P\-E\-R\-T\-M\-R}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{P\-E\-R\-T\-M\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-E\-R\-T\-M\-R~723}}\label{drv__8825_8c_a6bfd15ff180f734cbc5b69e729ac5b65}
+Defines the Timer 
+
+Definition at line 37 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a556953635433b080667d6e8888dfe876}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!T\-I\-M\-E\-R\-C\-O\-N\-S\-T@{T\-I\-M\-E\-R\-C\-O\-N\-S\-T}}
+\index{T\-I\-M\-E\-R\-C\-O\-N\-S\-T@{T\-I\-M\-E\-R\-C\-O\-N\-S\-T}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{T\-I\-M\-E\-R\-C\-O\-N\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-I\-M\-E\-R\-C\-O\-N\-S\-T~82987552}}\label{drv__8825_8c_a556953635433b080667d6e8888dfe876}
+Calculate the Timer Constant 
+
+Definition at line 38 of file drv\-\_\-8825.\-c.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{drv__8825_8c_a00e5331474326ef8ed2d76943e17fb5b}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Motor\-\_\-\-Parameters@{Motor\-\_\-\-Parameters}}
+\index{Motor\-\_\-\-Parameters@{Motor\-\_\-\-Parameters}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Motor\-\_\-\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Motor\-\_\-\-Parameters}  {\bf Motor\-\_\-\-Parameters}}}\label{drv__8825_8c_a00e5331474326ef8ed2d76943e17fb5b}
+
+
+\subsection{Function Documentation}
+\hypertarget{drv__8825_8c_ab16889ae984b9b798989a0d239283cac}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!I\-S\-R@{I\-S\-R}}
+\index{I\-S\-R@{I\-S\-R}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{I\-S\-R}]{\setlength{\rightskip}{0pt plus 5cm}I\-S\-R (
+\begin{DoxyParamCaption}
+\item[{T\-I\-M\-E\-R1\-\_\-\-O\-V\-F\-\_\-vect}]{}
+\end{DoxyParamCaption}
+)}}\label{drv__8825_8c_ab16889ae984b9b798989a0d239283cac}
+Interrupt sours routine.\-Makes a step and then loads the next value of the timmer 
+
+Definition at line 477 of file drv\-\_\-8825.\-c.
+
+
+\begin{DoxyCode}
+478 \{
+479     \textcolor{keywordflow}{if} ( \hyperlink{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{ConstSpd} == 1 )
+480     \{
+481         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed}++;
+482     \}
+483     \textcolor{keywordflow}{if} ( \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel} > 0 )
+484     \{
+485         \textcolor{keywordflow}{if} ( \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} > \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.
+      \hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration} )
+486         \{
+487             \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} - 
+      \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+488         \} \textcolor{keywordflow}{else}
+489         \{
+490             \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+491         \}
+492 
+493         \textcolor{keywordflow}{if} ( \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} < \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed} )
+494         \{
+495             \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.
+      \hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+496         \}
+497         TCNT1 = 0 - \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed};
+498         \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step}( \hyperlink{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{StepDir} );
+499         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a970d0810aac5cab75c8dd0c95e4473da}{StepsAccel}--;
+500 
+501         \textcolor{keywordflow}{return};
+502     \}
+503 
+504     \textcolor{keywordflow}{if} ( \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed} > 0 )
+505     \{
+506         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_aa99fa8cb04ab25fc08e7b65664b7fdef}{StepsConstSpeed}--;
+507         TCNT1 = 0 - \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_a501458e333945f49f03c295e2f49e3b9}{MaxSpeed};
+508         \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step}( \hyperlink{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{StepDir} );
+509 
+510         \textcolor{keywordflow}{return};
+511     \}
+512 
+513 
+514     \textcolor{keywordflow}{if} ( \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel} > 0 )
+515     \{
+516         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a0d7942de8bba5304852a9f2d8fe833e5}{StepsDeaccel}--;
+517         \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} = \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed} + 
+      \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aa9f1146edc6d945d535eec80a01481f1}{Acceleration};
+518         TCNT1 = 0 - \hyperlink{structMotion}{Motion}.\hyperlink{structMotion_a50860ebd661de5d104a36a92cd5f17c7}{CurrentSpeed};
+519         \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step}( \hyperlink{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{StepDir} );
+520 
+521         \textcolor{keywordflow}{return};
+522     \}
+523 
+524     \hyperlink{group__biba__config_gaf2f231c38a29a96bac24f174fe7bf8b0}{clr\_bit}( TIMSK, TOIE1 );
+525     TCNT1 = 65535 - \hyperlink{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{WorkingParam}.\hyperlink{structMotor__Parameters_aaf0ac3ed818f5c89cc86ea1d9174dc43}{MinSpeed};
+526 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{drv__8825_8c_ab16889ae984b9b798989a0d239283cac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Const\-Spd@{Const\-Spd}}
+\index{Const\-Spd@{Const\-Spd}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Const\-Spd}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint8\-\_\-t Const\-Spd\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a295a33258d6c0cfd0dd62f0574952f21}
+Flag used for constant speed mode. 
+
+Definition at line 97 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Current\-Decay@{Current\-Decay}}
+\index{Current\-Decay@{Current\-Decay}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Current\-Decay}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf decay\-\_\-type} Current\-Decay\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a1cc7e950196402ba79f3e5098b08fa33}
+Store the current decay mode. 
+
+Definition at line 102 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Current\-Mode@{Current\-Mode}}
+\index{Current\-Mode@{Current\-Mode}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Current\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf mode\-\_\-type} Current\-Mode\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_ab08e51d202664c8cc9434eac6c46f1f3}
+Store the current step mode. 
+
+Definition at line 106 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Mode\-Start@{Mode\-Start}}
+\index{Mode\-Start@{Mode\-Start}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Mode\-Start}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint8\-\_\-t Mode\-Start\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_ac23af1c3ab9ed8b840ff803e637bf070}
+Flog for enable and disable stepper motor 
+
+Definition at line 110 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_aa953c05832677849e86563c10df2a014}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Motion@{Motion}}
+\index{Motion@{Motion}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Motion}]{\setlength{\rightskip}{0pt plus 5cm}volatile struct {\bf Motion}  {\bf Motion}\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_aa953c05832677849e86563c10df2a014}
+\hypertarget{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Real\-Speed@{Real\-Speed}}
+\index{Real\-Speed@{Real\-Speed}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Real\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Motor\-\_\-\-Parameters} Real\-Speed\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a2e720ed1ed0ef90dba27c1f246048dcd}
+This is used for calculating the timer values. This is the real speed of the motor. 
+
+Definition at line 93 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Step\-Dir@{Step\-Dir}}
+\index{Step\-Dir@{Step\-Dir}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Step\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf step\-\_\-type} Step\-Dir\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a237abe7878c99e9fb1c077c0b916733f}
+Flag for stepper direction. 
+
+Definition at line 114 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Steps\-Per\-Rev@{Steps\-Per\-Rev}}
+\index{Steps\-Per\-Rev@{Steps\-Per\-Rev}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Steps\-Per\-Rev}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\-\_\-t Steps\-Per\-Rev\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a54128bfe0cfae9cbd8577cf456951f21}
+Motor parameter -\/ Steps per revolution. 
+
+Definition at line 119 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Time\-Param@{Time\-Param}}
+\index{Time\-Param@{Time\-Param}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Time\-Param}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Motor\-\_\-\-Parameters} Time\-Param\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a7d20b8cec6f96108790d4bf76b9c469d}
+This is used for calculating the timer values for full step mode. 
+
+Definition at line 85 of file drv\-\_\-8825.\-c.
+
+\hypertarget{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}{\index{drv\-\_\-8825.\-c@{drv\-\_\-8825.\-c}!Working\-Param@{Working\-Param}}
+\index{Working\-Param@{Working\-Param}!drv_8825.c@{drv\-\_\-8825.\-c}}
+\subsubsection[{Working\-Param}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Motor\-\_\-\-Parameters} Working\-Param\hspace{0.3cm}{\ttfamily [static]}}}\label{drv__8825_8c_a4c86b1f568d93b1bfc8c30587b2c271a}
+This is used for the timmer and it is calculated based on the mode. 
+
+Definition at line 89 of file drv\-\_\-8825.\-c.
+

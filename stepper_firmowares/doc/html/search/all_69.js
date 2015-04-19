@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['id',['id',['../structcmd__struct.html#aef60eff615b829ce802d4c60aef7b9d2',1,'cmd_struct']]],
+  ['idecay',['IDECAY',['../group__biba__config.html#ga7295c6f7b10d528d2a6878ddb5cedee9',1,'config.h']]],
+  ['idir_5f485',['IDIR_485',['../group__biba__config.html#ga8c1dcb1285a3f6b595aa403bfc2046e9',1,'config.h']]],
+  ['idirection',['IDIRECTION',['../group__biba__config.html#ga05466c17e001989bf527098e9ea8b20c',1,'config.h']]],
+  ['ienable_5fstepper',['IENABLE_STEPPER',['../group__biba__config.html#ga38a64ed512258be4847202d41c945f1d',1,'config.h']]],
+  ['ifault',['IFAULT',['../group__biba__config.html#gaeddf690491247a8a3a624d3e52904fe7',1,'config.h']]],
+  ['ihome',['IHOME',['../group__biba__config.html#gabd13263a1daa3de2c2e1417449c8e476',1,'config.h']]],
+  ['imiso',['IMISO',['../group__biba__config.html#ga2bfb9bd5b79538403a1caa9656e248d9',1,'config.h']]],
+  ['imode0',['IMODE0',['../group__biba__config.html#ga2d3f9ece079a1fd5f865181487c06deb',1,'config.h']]],
+  ['imode1',['IMODE1',['../group__biba__config.html#gaacd24160a55e79573bf115736964e481',1,'config.h']]],
+  ['imode2',['IMODE2',['../group__biba__config.html#ga0c375abc5fc38a870d36c0432ddf4673',1,'config.h']]],
+  ['imosi',['IMOSI',['../group__biba__config.html#gadbbd69302ff10bfa13cf87e3e810a79f',1,'config.h']]],
+  ['init_5finput_5foutput',['Init_Input_Output',['../group__biba__main.html#ga18fa08105e4cb9cce10290e3c5c4ca01',1,'Init_Input_Output(void):&#160;main.c'],['../group__biba__main.html#ga18fa08105e4cb9cce10290e3c5c4ca01',1,'Init_Input_Output(void):&#160;main.c']]],
+  ['initstepper',['InitStepper',['../group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10',1,'InitStepper(void):&#160;drv_8825.c'],['../group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10',1,'InitStepper(void):&#160;drv_8825.c']]],
+  ['int_5fto_5fstring',['int_to_string',['../group__biba__utils.html#ga3d33c2ff89043a4bf00d652d182dfc27',1,'int_to_string(uint64_t i):&#160;utils.c'],['../group__biba__utils.html#ga3d33c2ff89043a4bf00d652d182dfc27',1,'int_to_string(uint64_t i):&#160;utils.c']]],
+  ['interpreter_2ec',['interpreter.c',['../interpreter_8c.html',1,'']]],
+  ['interpreter_2eh',['interpreter.h',['../interpreter_8h.html',1,'']]],
+  ['irxd',['IRXD',['../group__biba__config.html#ga566802973e97fd0cf4b0ee55aad5a176',1,'config.h']]],
+  ['iscl',['ISCL',['../group__biba__config.html#ga067354c27a0600f5750fb6bf7db25524',1,'config.h']]],
+  ['isr',['ISR',['../drv__8825_8c.html#ab16889ae984b9b798989a0d239283cac',1,'ISR(TIMER1_OVF_vect):&#160;drv_8825.c'],['../usart_8c.html#a9622edb266a65452131cdbbccb5e5b0e',1,'ISR(USART0_RXC_vect):&#160;usart.c'],['../usart_8c.html#a95e67e677722a53e3ad9f1ffce2e7408',1,'ISR(USART0_UDRE_vect):&#160;usart.c']]],
+  ['istep',['ISTEP',['../group__biba__config.html#ga5bd5979291487b59ffbe66c85249a0db',1,'config.h']]],
+  ['itxd',['ITXD',['../group__biba__config.html#ga251454338fb90e437951f785af82f31a',1,'config.h']]]
+];

@@ -1,0 +1,1128 @@
+\begin{theindex}
+
+  \item {A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {A\discretionary {-}{}{}Dec}
+    \subitem {messages Library}, \hyperpage{51}
+  \item {Acc}
+    \subitem {messages Library}, \hyperpage{50}
+  \item {Acceleration}
+    \subitem {Motor\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Parameters}, 
+		\hyperpage{80}
+
+  \indexspace
+
+  \item {B1\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{109}
+  \item {B\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{109}
+  \item {brx}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{110}
+  \item {btx}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{110}
+  \item {buf}
+    \subitem {utils.\discretionary {-}{}{}c}, \hyperpage{116}
+
+  \indexspace
+
+  \item {C\-O\-N\-S\-T\-S\-P\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {C\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}P\discretionary {-}{}{}I\discretionary {-}{}{}N}
+    \subitem {config Library}, \hyperpage{11}
+  \item {Cal\discretionary {-}{}{}Work\discretionary {-}{}{}Param}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{19}
+  \item {check\discretionary {-}{}{}\_\discretionary {-}{}{}pin}
+    \subitem {config Library}, \hyperpage{11}
+  \item {clr\discretionary {-}{}{}\_\discretionary {-}{}{}bit}
+    \subitem {config Library}, \hyperpage{11}
+  \item {clr\discretionary {-}{}{}\_\discretionary {-}{}{}port}
+    \subitem {config Library}, \hyperpage{11}
+  \item {cmd\discretionary {-}{}{}\_\discretionary {-}{}{}struct}, 
+		\hyperpage{77}
+    \subitem {id}, \hyperpage{77}
+    \subitem {name}, \hyperpage{78}
+  \item {cmd\discretionary {-}{}{}\_\discretionary {-}{}{}tbl}
+    \subitem {interpreter.\discretionary {-}{}{}c}, \hyperpage{93}
+  \item {config Library}, \hyperpage{9}
+    \subitem {C\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}P\discretionary {-}{}{}I\discretionary {-}{}{}N}, 
+		\hyperpage{11}
+    \subitem {check\discretionary {-}{}{}\_\discretionary {-}{}{}pin}, 
+		\hyperpage{11}
+    \subitem {clr\discretionary {-}{}{}\_\discretionary {-}{}{}bit}, 
+		\hyperpage{11}
+    \subitem {clr\discretionary {-}{}{}\_\discretionary {-}{}{}port}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}, 
+		\hyperpage{11}
+    \subitem {D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}, 
+		\hyperpage{12}
+    \subitem {D\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{12}
+    \subitem {E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{12}
+    \subitem {F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}, 
+		\hyperpage{13}
+    \subitem {false}, \hyperpage{12}
+    \subitem {H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}, 
+		\hyperpage{13}
+    \subitem {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+    \subitem {I\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{14}
+    \subitem {I\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}, 
+		\hyperpage{14}
+    \subitem {I\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}, 
+		\hyperpage{14}
+    \subitem {I\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}, 
+		\hyperpage{14}
+    \subitem {M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}, 
+		\hyperpage{14}
+    \subitem {P\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}, 
+		\hyperpage{14}
+    \subitem {P\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}, 
+		\hyperpage{14}
+    \subitem {P\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}, 
+		\hyperpage{15}
+    \subitem {P\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{16}
+    \subitem {R\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{16}
+    \subitem {S\discretionary {-}{}{}C\discretionary {-}{}{}L}, 
+		\hyperpage{16}
+    \subitem {S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}, 
+		\hyperpage{16}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}as\discretionary {-}{}{}\_\discretionary {-}{}{}input}, 
+		\hyperpage{16}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}as\discretionary {-}{}{}\_\discretionary {-}{}{}output}, 
+		\hyperpage{16}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}bit}, 
+		\hyperpage{16}
+    \subitem {set\discretionary {-}{}{}\_\discretionary {-}{}{}port}, 
+		\hyperpage{16}
+    \subitem {T\discretionary {-}{}{}X\discretionary {-}{}{}D}, 
+		\hyperpage{16}
+    \subitem {true}, \hyperpage{16}
+  \item {config.\discretionary {-}{}{}h}, \hyperpage{83}
+  \item {Const\discretionary {-}{}{}Spd}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Convert\discretionary {-}{}{}A\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}Itouint64}
+    \subitem {utils Library}, \hyperpage{70}
+  \item {Count\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Step}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{20}
+  \item {Current\discretionary {-}{}{}Decay}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Current\discretionary {-}{}{}Mode}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Current\discretionary {-}{}{}Speed}
+    \subitem {Motion}, \hyperpage{79}
+
+  \indexspace
+
+  \item {D\-I\-S\-A\-B\-L\-E}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {D\-R\-V8825 Library}
+    \subitem {A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}, \hyperpage{18}
+    \subitem {F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}, \hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}, 
+		\hyperpage{18}
+    \subitem {S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}, \hyperpage{18}
+    \subitem {S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}, 
+		\hyperpage{19}
+    \subitem {S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}, 
+		\hyperpage{19}
+  \item {D\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}
+    \subitem {config Library}, \hyperpage{11}
+  \item {D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}O\discretionary {-}{}{}R0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{17}
+    \subitem {Cal\discretionary {-}{}{}Work\discretionary {-}{}{}Param}, 
+		\hyperpage{19}
+    \subitem {Count\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Step}, 
+		\hyperpage{20}
+    \subitem {Decay}, \hyperpage{21}
+    \subitem {decay\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{18}
+    \subitem {Disabled\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Stepper}, 
+		\hyperpage{22}
+    \subitem {Enable\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Stepper}, 
+		\hyperpage{23}
+    \subitem {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Decay}, 
+		\hyperpage{23}
+    \subitem {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Mode}, 
+		\hyperpage{24}
+    \subitem {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Start}, 
+		\hyperpage{24}
+    \subitem {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Steps\discretionary {-}{}{}\_\discretionary {-}{}{}revol}, 
+		\hyperpage{25}
+    \subitem {Get\discretionary {-}{}{}Acceleration}, \hyperpage{25}
+    \subitem {Get\discretionary {-}{}{}Current\discretionary {-}{}{}Speed}, 
+		\hyperpage{26}
+    \subitem {Get\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}, 
+		\hyperpage{26}
+    \subitem {Get\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}, 
+		\hyperpage{27}
+    \subitem {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Acc}, 
+		\hyperpage{27}
+    \subitem {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}, 
+		\hyperpage{28}
+    \subitem {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}, 
+		\hyperpage{28}
+    \subitem {Helper\discretionary {-}{}{}Rto\discretionary {-}{}{}T}, 
+		\hyperpage{29}
+    \subitem {Helper\discretionary {-}{}{}Tto\discretionary {-}{}{}R}, 
+		\hyperpage{30}
+    \subitem {Home}, \hyperpage{31}
+    \subitem {Init\discretionary {-}{}{}Stepper}, \hyperpage{31}
+    \subitem {Mode}, \hyperpage{33}
+    \subitem {mode\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{18}
+    \subitem {Real\discretionary {-}{}{}To\discretionary {-}{}{}Time}, 
+		\hyperpage{34}
+    \subitem {Set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Steps\discretionary {-}{}{}\_\discretionary {-}{}{}revol}, 
+		\hyperpage{35}
+    \subitem {Set\discretionary {-}{}{}Acceleration}, \hyperpage{36}
+    \subitem {Set\discretionary {-}{}{}Current\discretionary {-}{}{}Speed}, 
+		\hyperpage{37}
+    \subitem {Set\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}, 
+		\hyperpage{37}
+    \subitem {Set\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}, 
+		\hyperpage{38}
+    \subitem {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Acc}, 
+		\hyperpage{39}
+    \subitem {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}, 
+		\hyperpage{39}
+    \subitem {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}, 
+		\hyperpage{40}
+    \subitem {Step}, \hyperpage{41}
+    \subitem {step\discretionary {-}{}{}\_\discretionary {-}{}{}type}, 
+		\hyperpage{18}
+    \subitem {Stop\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Motion\discretionary {-}{}{}\_\discretionary {-}{}{}fast}, 
+		\hyperpage{42}
+    \subitem {Stop\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Motion\discretionary {-}{}{}\_\discretionary {-}{}{}normal}, 
+		\hyperpage{42}
+    \subitem {store}, \hyperpage{43}
+    \subitem {Time\discretionary {-}{}{}To\discretionary {-}{}{}Real}, 
+		\hyperpage{44}
+    \subitem {Way\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Speed}, 
+		\hyperpage{46}
+  \item {D\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}
+    \subitem {config Library}, \hyperpage{12}
+  \item {D\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{12}
+  \item {data}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+  \item {Decay}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{21}
+  \item {decay\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{18}
+  \item {Disabled\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Stepper}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{22}
+  \item {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{85}
+    \subitem {Const\discretionary {-}{}{}Spd}, \hyperpage{88}
+    \subitem {Current\discretionary {-}{}{}Decay}, \hyperpage{88}
+    \subitem {Current\discretionary {-}{}{}Mode}, \hyperpage{88}
+    \subitem {I\discretionary {-}{}{}S\discretionary {-}{}{}R}, 
+		\hyperpage{87}
+    \subitem {Mode\discretionary {-}{}{}Start}, \hyperpage{88}
+    \subitem {Motion}, \hyperpage{88}
+    \subitem {Motor\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Parameters}, 
+		\hyperpage{87}
+    \subitem {P\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}M\discretionary {-}{}{}R}, 
+		\hyperpage{87}
+    \subitem {Real\discretionary {-}{}{}Speed}, \hyperpage{88}
+    \subitem {Step\discretionary {-}{}{}Dir}, \hyperpage{88}
+    \subitem {Steps\discretionary {-}{}{}Per\discretionary {-}{}{}Rev}, 
+		\hyperpage{89}
+    \subitem {T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T}, 
+		\hyperpage{87}
+    \subitem {Time\discretionary {-}{}{}Param}, \hyperpage{89}
+    \subitem {Working\discretionary {-}{}{}Param}, \hyperpage{89}
+  \item {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}h}, 
+		\hyperpage{89}
+
+  \indexspace
+
+  \item {E\-N\-A\-B\-L\-E}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}
+    \subitem {config Library}, \hyperpage{12}
+  \item {Enable\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Stepper}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{23}
+  \item {Errormssg}
+    \subitem {messages Library}, \hyperpage{52}
+
+  \indexspace
+
+  \item {F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {F\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U}
+    \subitem {main.\discretionary {-}{}{}c}, \hyperpage{98}
+  \item {F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}
+    \subitem {config Library}, \hyperpage{13}
+  \item {F\discretionary {-}{}{}Dec}
+    \subitem {messages Library}, \hyperpage{52}
+  \item {F\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {false}
+    \subitem {config Library}, \hyperpage{12}
+  \item {fillcount}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+  \item {Fstep}
+    \subitem {messages Library}, \hyperpage{53}
+
+  \indexspace
+
+  \item {G\-E\-T\-\_\-\-A\-C\-C}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-M\-A\-X\-\_\-\-S\-P\-E\-E\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-S\-P\-E\-E\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-R\-\_\-\-A\-C\-C}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-R\-\_\-\-M\-A\-X\-\_\-\-S\-P\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-R\-\_\-\-M\-I\-N\-\_\-\-S\-P\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-E\-T\-\_\-\-S\-T\-P\-\_\-\-R\-E\-V}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {G\-O\-T\-O}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Decay}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{23}
+  \item {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Mode}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{24}
+  \item {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Start}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{24}
+  \item {Get\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Steps\discretionary {-}{}{}\_\discretionary {-}{}{}revol}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{25}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}id}
+    \subitem {interpreter.\discretionary {-}{}{}c}, \hyperpage{91}
+    \subitem {interpreter.\discretionary {-}{}{}h}, \hyperpage{95}
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}name}
+    \subitem {interpreter.\discretionary {-}{}{}c}, \hyperpage{92}
+    \subitem {interpreter.\discretionary {-}{}{}h}, \hyperpage{95}
+  \item {Get\discretionary {-}{}{}Acceleration}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{25}
+  \item {Get\discretionary {-}{}{}Current\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{26}
+  \item {Get\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{26}
+  \item {Get\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{27}
+  \item {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Acc}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{27}
+  \item {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{28}
+  \item {Get\discretionary {-}{}{}Real\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {H\-E\-L\-P}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {config Library}, \hyperpage{13}
+  \item {H\discretionary {-}{}{}Step}
+    \subitem {messages Library}, \hyperpage{54}
+  \item {head}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+  \item {Helper\discretionary {-}{}{}Rto\discretionary {-}{}{}T}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{29}
+  \item {Helper\discretionary {-}{}{}Tto\discretionary {-}{}{}R}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{30}
+  \item {Home}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{31}
+
+  \indexspace
+
+  \item {I\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}
+    \subitem {config Library}, \hyperpage{13}
+  \item {I\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}
+    \subitem {config Library}, \hyperpage{14}
+  \item {I\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{14}
+  \item {I\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}
+    \subitem {config Library}, \hyperpage{14}
+  \item {I\discretionary {-}{}{}S\discretionary {-}{}{}R}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{87}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{109, 110}
+  \item {I\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}
+    \subitem {config Library}, \hyperpage{14}
+  \item {I\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{14}
+  \item {id}
+    \subitem {cmd\discretionary {-}{}{}\_\discretionary {-}{}{}struct}, 
+		\hyperpage{77}
+  \item {Init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Input\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Output}
+    \subitem {main Library}, \hyperpage{48}
+  \item {Init\discretionary {-}{}{}Stepper}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{31}
+  \item {int\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}string}
+    \subitem {utils Library}, \hyperpage{71}
+  \item {interpreter.\-h}
+    \subitem {C\-O\-N\-S\-T\-S\-P\-D}, \hyperpage{94}
+    \subitem {D\-I\-S\-A\-B\-L\-E}, \hyperpage{94}
+    \subitem {E\-N\-A\-B\-L\-E}, \hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-A\-C\-C}, \hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-M\-A\-X\-\_\-\-S\-P\-E\-E\-D}, 
+		\hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-M\-I\-N\-\_\-\-S\-P\-E\-E\-D}, 
+		\hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-R\-\_\-\-A\-C\-C}, \hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-R\-\_\-\-M\-A\-X\-\_\-\-S\-P\-D}, 
+		\hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-R\-\_\-\-M\-I\-N\-\_\-\-S\-P\-D}, 
+		\hyperpage{94}
+    \subitem {G\-E\-T\-\_\-\-S\-T\-P\-\_\-\-R\-E\-V}, \hyperpage{94}
+    \subitem {G\-O\-T\-O}, \hyperpage{94}
+    \subitem {H\-E\-L\-P}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-A\-C\-C}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-A\-U\-T\-O}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-F\-A\-S\-T}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-S\-L\-O\-W}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-H\-O\-M\-E}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-A\-X\-\_\-\-S\-P\-E\-E\-D}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-I\-N\-\_\-\-S\-P\-E\-E\-D}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-16}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-32}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-8}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-U\-L\-L}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-H\-A\-L\-F}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-R\-\_\-\-A\-C\-C}, \hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-R\-\_\-\-M\-A\-X\-\_\-\-S\-P\-D}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-R\-\_\-\-M\-I\-N\-\_\-\-S\-P\-D}, 
+		\hyperpage{94}
+    \subitem {S\-E\-T\-\_\-\-S\-T\-P\-\_\-\-R\-E\-V}, \hyperpage{94}
+    \subitem {S\-T\-A\-T\-U\-S}, \hyperpage{94}
+    \subitem {S\-T\-O\-P\-F}, \hyperpage{94}
+    \subitem {S\-T\-O\-P\-N}, \hyperpage{94}
+    \subitem {T\-E\-S\-T}, \hyperpage{94}
+    \subitem {V\-E\-R\-S\-I\-O\-N}, \hyperpage{94}
+  \item {interpreter.\discretionary {-}{}{}c}, \hyperpage{91}
+    \subitem {cmd\discretionary {-}{}{}\_\discretionary {-}{}{}tbl}, 
+		\hyperpage{93}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}id}, 
+		\hyperpage{91}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}name}, 
+		\hyperpage{92}
+  \item {interpreter.\discretionary {-}{}{}h}, \hyperpage{93}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}id}, 
+		\hyperpage{95}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}cmd\discretionary {-}{}{}\_\discretionary {-}{}{}name}, 
+		\hyperpage{95}
+
+  \indexspace
+
+  \item {M16\discretionary {-}{}{}Step}
+    \subitem {messages Library}, \hyperpage{54}
+  \item {M32\discretionary {-}{}{}Step}
+    \subitem {messages Library}, \hyperpage{55}
+  \item {M8\discretionary {-}{}{}Step}
+    \subitem {messages Library}, \hyperpage{55}
+  \item {M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}
+    \subitem {config Library}, \hyperpage{14}
+  \item {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}
+    \subitem {config Library}, \hyperpage{14}
+  \item {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}
+    \subitem {config Library}, \hyperpage{14}
+  \item {M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}
+    \subitem {config Library}, \hyperpage{14}
+  \item {M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}
+    \subitem {config Library}, \hyperpage{14}
+  \item {M\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}M0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {main}
+    \subitem {main.\discretionary {-}{}{}c}, \hyperpage{98}
+  \item {main Library}, \hyperpage{48}
+    \subitem {Init\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Input\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Output}, 
+		\hyperpage{48}
+    \subitem {test}, \hyperpage{49}
+  \item {main.\discretionary {-}{}{}c}, \hyperpage{97}
+    \subitem {F\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}U}, 
+		\hyperpage{98}
+    \subitem {main}, \hyperpage{98}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}, 
+		\hyperpage{98}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}str}, 
+		\hyperpage{105}
+  \item {main.\discretionary {-}{}{}h}, \hyperpage{106}
+  \item {Max\discretionary {-}{}{}Speed}
+    \subitem {Motor\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Parameters}, 
+		\hyperpage{80}
+  \item {Maxspeed}
+    \subitem {messages Library}, \hyperpage{56}
+  \item {messages Library}, \hyperpage{50}
+    \subitem {A\discretionary {-}{}{}Dec}, \hyperpage{51}
+    \subitem {Acc}, \hyperpage{50}
+    \subitem {Errormssg}, \hyperpage{52}
+    \subitem {F\discretionary {-}{}{}Dec}, \hyperpage{52}
+    \subitem {Fstep}, \hyperpage{53}
+    \subitem {H\discretionary {-}{}{}Step}, \hyperpage{54}
+    \subitem {M16\discretionary {-}{}{}Step}, \hyperpage{54}
+    \subitem {M32\discretionary {-}{}{}Step}, \hyperpage{55}
+    \subitem {M8\discretionary {-}{}{}Step}, \hyperpage{55}
+    \subitem {Maxspeed}, \hyperpage{56}
+    \subitem {Minspeed}, \hyperpage{57}
+    \subitem {Qstep}, \hyperpage{58}
+    \subitem {R\discretionary {-}{}{}Acc}, \hyperpage{59}
+    \subitem {R\discretionary {-}{}{}Max\discretionary {-}{}{}Spd}, 
+		\hyperpage{59}
+    \subitem {R\discretionary {-}{}{}Min\discretionary {-}{}{}Spd}, 
+		\hyperpage{60}
+    \subitem {S\discretionary {-}{}{}Dec}, \hyperpage{61}
+    \subitem {Spt\discretionary {-}{}{}Revol}, \hyperpage{62}
+    \subitem {Stop}, \hyperpage{62}
+  \item {messages.\discretionary {-}{}{}c}, \hyperpage{106}
+  \item {messages.\discretionary {-}{}{}h}, \hyperpage{107}
+  \item {Min\discretionary {-}{}{}Speed}
+    \subitem {Motor\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Parameters}, 
+		\hyperpage{80}
+  \item {Minspeed}
+    \subitem {messages Library}, \hyperpage{57}
+  \item {Mode}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{33}
+  \item {mode\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{18}
+  \item {Mode\discretionary {-}{}{}Start}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Motion}, \hyperpage{78}
+    \subitem {Current\discretionary {-}{}{}Speed}, \hyperpage{79}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+    \subitem {Steps\discretionary {-}{}{}Accel}, \hyperpage{79}
+    \subitem {Steps\discretionary {-}{}{}Const\discretionary {-}{}{}Speed}, 
+		\hyperpage{79}
+    \subitem {Steps\discretionary {-}{}{}Deaccel}, \hyperpage{79}
+  \item {Motor\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Parameters}, 
+		\hyperpage{79}
+    \subitem {Acceleration}, \hyperpage{80}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{87}
+    \subitem {Max\discretionary {-}{}{}Speed}, \hyperpage{80}
+    \subitem {Min\discretionary {-}{}{}Speed}, \hyperpage{80}
+
+  \indexspace
+
+  \item {name}
+    \subitem {cmd\discretionary {-}{}{}\_\discretionary {-}{}{}struct}, 
+		\hyperpage{78}
+  \item {nlines}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+
+  \indexspace
+
+  \item {P\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Y}
+    \subitem {config Library}, \hyperpage{14}
+  \item {P\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}485}
+    \subitem {config Library}, \hyperpage{14}
+  \item {P\discretionary {-}{}{}D\discretionary {-}{}{}I\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}A\discretionary {-}{}{}B\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}M\discretionary {-}{}{}R}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{87}
+  \item {P\discretionary {-}{}{}F\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}L\discretionary {-}{}{}T}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}H\discretionary {-}{}{}O\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}S\discretionary {-}{}{}O}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E0}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E1}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E2}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}I}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}L}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}
+    \subitem {config Library}, \hyperpage{15}
+  \item {P\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{16}
+  \item {putstring}
+    \subitem {utils Library}, \hyperpage{72}
+  \item {putstring\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P}
+    \subitem {utils Library}, \hyperpage{73}
+
+  \indexspace
+
+  \item {Qstep}
+    \subitem {messages Library}, \hyperpage{58}
+
+  \indexspace
+
+  \item {R\discretionary {-}{}{}Acc}
+    \subitem {messages Library}, \hyperpage{59}
+  \item {R\discretionary {-}{}{}Max\discretionary {-}{}{}Spd}
+    \subitem {messages Library}, \hyperpage{59}
+  \item {R\discretionary {-}{}{}Min\discretionary {-}{}{}Spd}
+    \subitem {messages Library}, \hyperpage{60}
+  \item {R\discretionary {-}{}{}X\discretionary {-}{}{}B80}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {R\discretionary {-}{}{}X\discretionary {-}{}{}C0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {R\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}I\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{112}
+  \item {R\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{16}
+  \item {R\discretionary {-}{}{}X\discretionary {-}{}{}E\discretionary {-}{}{}N0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {Real\discretionary {-}{}{}Speed}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Real\discretionary {-}{}{}To\discretionary {-}{}{}Time}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{34}
+  \item {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{81}
+    \subitem {data}, \hyperpage{82}
+    \subitem {fillcount}, \hyperpage{82}
+    \subitem {head}, \hyperpage{82}
+    \subitem {nlines}, \hyperpage{82}
+    \subitem {size}, \hyperpage{82}
+    \subitem {tail}, \hyperpage{82}
+  \item {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer\discretionary {-}{}{}\_\discretionary {-}{}{}t}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{109}
+
+  \indexspace
+
+  \item {S\-E\-T\-\_\-\-A\-C\-C}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-A\-U\-T\-O}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-F\-A\-S\-T}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-D\-E\-C\-\_\-\-S\-L\-O\-W}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-H\-O\-M\-E}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-A\-X\-\_\-\-S\-P\-E\-E\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-I\-N\-\_\-\-S\-P\-E\-E\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-16}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-32}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-8}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-F\-U\-L\-L}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-H\-A\-L\-F}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-R\-\_\-\-A\-C\-C}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-R\-\_\-\-M\-A\-X\-\_\-\-S\-P\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-R\-\_\-\-M\-I\-N\-\_\-\-S\-P\-D}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-E\-T\-\_\-\-S\-T\-P\-\_\-\-R\-E\-V}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{18}
+  \item {S\-T\-A\-T\-U\-S}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{19}
+  \item {S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}
+    \subitem {D\-R\-V8825 Library}, \hyperpage{19}
+  \item {S\-T\-O\-P\-F}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\-T\-O\-P\-N}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {S\discretionary {-}{}{}C\discretionary {-}{}{}L}
+    \subitem {config Library}, \hyperpage{16}
+  \item {S\discretionary {-}{}{}Dec}
+    \subitem {messages Library}, \hyperpage{61}
+  \item {S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P}
+    \subitem {config Library}, \hyperpage{16}
+  \item {Set\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Steps\discretionary {-}{}{}\_\discretionary {-}{}{}revol}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{35}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}as\discretionary {-}{}{}\_\discretionary {-}{}{}input}
+    \subitem {config Library}, \hyperpage{16}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}as\discretionary {-}{}{}\_\discretionary {-}{}{}output}
+    \subitem {config Library}, \hyperpage{16}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}bit}
+    \subitem {config Library}, \hyperpage{16}
+  \item {set\discretionary {-}{}{}\_\discretionary {-}{}{}port}
+    \subitem {config Library}, \hyperpage{16}
+  \item {Set\discretionary {-}{}{}Acceleration}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{36}
+  \item {Set\discretionary {-}{}{}Current\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{37}
+  \item {Set\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{37}
+  \item {Set\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{38}
+  \item {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Acc}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{39}
+  \item {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Max\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{39}
+  \item {Set\discretionary {-}{}{}Real\discretionary {-}{}{}Min\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{40}
+  \item {size}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+  \item {Spt\discretionary {-}{}{}Revol}
+    \subitem {messages Library}, \hyperpage{62}
+  \item {Step}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{41}
+  \item {step\discretionary {-}{}{}\_\discretionary {-}{}{}type}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{18}
+  \item {Step\discretionary {-}{}{}Dir}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{88}
+  \item {Steps\discretionary {-}{}{}Accel}
+    \subitem {Motion}, \hyperpage{79}
+  \item {Steps\discretionary {-}{}{}Const\discretionary {-}{}{}Speed}
+    \subitem {Motion}, \hyperpage{79}
+  \item {Steps\discretionary {-}{}{}Deaccel}
+    \subitem {Motion}, \hyperpage{79}
+  \item {Steps\discretionary {-}{}{}Per\discretionary {-}{}{}Rev}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{89}
+  \item {Stop}
+    \subitem {messages Library}, \hyperpage{62}
+  \item {Stop\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Motion\discretionary {-}{}{}\_\discretionary {-}{}{}fast}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{42}
+  \item {Stop\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Motion\discretionary {-}{}{}\_\discretionary {-}{}{}normal}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{42}
+  \item {store}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{43}
+
+  \indexspace
+
+  \item {T\-E\-S\-T}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{87}
+  \item {T\discretionary {-}{}{}X\discretionary {-}{}{}B80}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {T\discretionary {-}{}{}X\discretionary {-}{}{}C0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {T\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}I\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {T\discretionary {-}{}{}X\discretionary {-}{}{}D}
+    \subitem {config Library}, \hyperpage{16}
+  \item {T\discretionary {-}{}{}X\discretionary {-}{}{}E\discretionary {-}{}{}N0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {tail}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer}, 
+		\hyperpage{82}
+  \item {test}
+    \subitem {main Library}, \hyperpage{49}
+  \item {Time\discretionary {-}{}{}Param}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{89}
+  \item {Time\discretionary {-}{}{}To\discretionary {-}{}{}Real}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{44}
+  \item {true}
+    \subitem {config Library}, \hyperpage{16}
+
+  \indexspace
+
+  \item {U2\discretionary {-}{}{}X0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{64}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T}, 
+		\hyperpage{64}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}getchar}, 
+		\hyperpage{65}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
+		\hyperpage{66}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}putchar}, 
+		\hyperpage{67}
+    \subitem {V\discretionary {-}{}{}E\discretionary {-}{}{}O\discretionary {-}{}{}L}, 
+		\hyperpage{65}
+  \item {U\discretionary {-}{}{}B\discretionary {-}{}{}R\discretionary {-}{}{}R0\discretionary {-}{}{}H}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}B\discretionary {-}{}{}R\discretionary {-}{}{}R0\discretionary {-}{}{}L}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}A}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}B}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{113}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}C}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z00}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z01}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z02}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}D\discretionary {-}{}{}R0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}P\discretionary {-}{}{}E0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}P\discretionary {-}{}{}M00}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}P\discretionary {-}{}{}M01}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114}
+  \item {U\discretionary {-}{}{}R\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{114, 115}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}vect}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{115}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}vect}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{115}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}vect}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{115}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}
+    \subitem {main.\discretionary {-}{}{}c}, \hyperpage{98}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}C\discretionary {-}{}{}T}
+    \subitem {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{64}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}X\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{115}
+  \item {U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}S0}
+    \subitem {usartm8.\discretionary {-}{}{}h}, \hyperpage{115}
+  \item {usart.\discretionary {-}{}{}c}, \hyperpage{108}
+    \subitem {B1\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{109}
+    \subitem {B\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}Z\discretionary {-}{}{}E}, 
+		\hyperpage{109}
+    \subitem {brx}, \hyperpage{110}
+    \subitem {btx}, \hyperpage{110}
+    \subitem {I\discretionary {-}{}{}S\discretionary {-}{}{}R}, 
+		\hyperpage{109, 110}
+    \subitem {ring\discretionary {-}{}{}\_\discretionary {-}{}{}buffer\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{109}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}rx}, 
+		\hyperpage{110}
+    \subitem {usart\discretionary {-}{}{}\_\discretionary {-}{}{}tx}, 
+		\hyperpage{110}
+  \item {usart.\discretionary {-}{}{}h}, \hyperpage{111}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}getchar}
+    \subitem {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{65}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}init}
+    \subitem {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{66}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}putchar}
+    \subitem {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{67}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}rx}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{110}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}str}
+    \subitem {main.\discretionary {-}{}{}c}, \hyperpage{105}
+  \item {usart\discretionary {-}{}{}\_\discretionary {-}{}{}tx}
+    \subitem {usart.\discretionary {-}{}{}c}, \hyperpage{110}
+  \item {usartm8.\discretionary {-}{}{}h}, \hyperpage{111}
+    \subitem {D\discretionary {-}{}{}O\discretionary {-}{}{}R0}, 
+		\hyperpage{112}
+    \subitem {F\discretionary {-}{}{}E0}, \hyperpage{112}
+    \subitem {M\discretionary {-}{}{}P\discretionary {-}{}{}C\discretionary {-}{}{}M0}, 
+		\hyperpage{112}
+    \subitem {R\discretionary {-}{}{}X\discretionary {-}{}{}B80}, 
+		\hyperpage{112}
+    \subitem {R\discretionary {-}{}{}X\discretionary {-}{}{}C0}, 
+		\hyperpage{112}
+    \subitem {R\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}I\discretionary {-}{}{}E0}, 
+		\hyperpage{112}
+    \subitem {R\discretionary {-}{}{}X\discretionary {-}{}{}E\discretionary {-}{}{}N0}, 
+		\hyperpage{113}
+    \subitem {T\discretionary {-}{}{}X\discretionary {-}{}{}B80}, 
+		\hyperpage{113}
+    \subitem {T\discretionary {-}{}{}X\discretionary {-}{}{}C0}, 
+		\hyperpage{113}
+    \subitem {T\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}I\discretionary {-}{}{}E0}, 
+		\hyperpage{113}
+    \subitem {T\discretionary {-}{}{}X\discretionary {-}{}{}E\discretionary {-}{}{}N0}, 
+		\hyperpage{113}
+    \subitem {U2\discretionary {-}{}{}X0}, \hyperpage{113}
+    \subitem {U\discretionary {-}{}{}B\discretionary {-}{}{}R\discretionary {-}{}{}R0\discretionary {-}{}{}H}, 
+		\hyperpage{113}
+    \subitem {U\discretionary {-}{}{}B\discretionary {-}{}{}R\discretionary {-}{}{}R0\discretionary {-}{}{}L}, 
+		\hyperpage{113}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L0}, 
+		\hyperpage{113}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}A}, 
+		\hyperpage{113}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}B}, 
+		\hyperpage{113}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}R0\discretionary {-}{}{}C}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z00}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z01}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}C\discretionary {-}{}{}S\discretionary {-}{}{}Z02}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}D\discretionary {-}{}{}R0}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}E0}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}E0}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L0}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}P\discretionary {-}{}{}E0}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}P\discretionary {-}{}{}M00}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}P\discretionary {-}{}{}M01}, 
+		\hyperpage{114}
+    \subitem {U\discretionary {-}{}{}R\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}L0}, 
+		\hyperpage{114, 115}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}vect}, 
+		\hyperpage{115}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}vect}, 
+		\hyperpage{115}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}D\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}vect}, 
+		\hyperpage{115}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}X\discretionary {-}{}{}X\discretionary {-}{}{}X\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+		\hyperpage{115}
+    \subitem {U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}S0}, 
+		\hyperpage{115}
+  \item {utils Library}, \hyperpage{70}
+    \subitem {Convert\discretionary {-}{}{}A\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}Itouint64}, 
+		\hyperpage{70}
+    \subitem {int\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}string}, 
+		\hyperpage{71}
+    \subitem {putstring}, \hyperpage{72}
+    \subitem {putstring\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P}, 
+		\hyperpage{73}
+  \item {utils.\discretionary {-}{}{}c}, \hyperpage{115}
+    \subitem {buf}, \hyperpage{116}
+  \item {utils.\discretionary {-}{}{}h}, \hyperpage{116}
+
+  \indexspace
+
+  \item {V\-E\-R\-S\-I\-O\-N}
+    \subitem {interpreter.\-h}, \hyperpage{94}
+  \item {V\discretionary {-}{}{}E\discretionary {-}{}{}O\discretionary {-}{}{}L}
+    \subitem {U\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}T Library}, 
+		\hyperpage{65}
+
+  \indexspace
+
+  \item {Way\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Speed}
+    \subitem {D\discretionary {-}{}{}R\discretionary {-}{}{}V8825 Library}, 
+		\hyperpage{46}
+  \item {Working\discretionary {-}{}{}Param}
+    \subitem {drv\discretionary {-}{}{}\_\discretionary {-}{}{}8825.\discretionary {-}{}{}c}, 
+		\hyperpage{89}
+
+\end{theindex}

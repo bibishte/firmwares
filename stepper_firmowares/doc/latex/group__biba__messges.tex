@@ -1,0 +1,823 @@
+\hypertarget{group__biba__messges}{\section{messages Library}
+\label{group__biba__messges}\index{messages Library@{messages Library}}
+}
+
+
+This module contains functions that are printing messages.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615}{Acc} (void)
+\item 
+void \hyperlink{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5}{A\-Dec} (void)
+\item 
+void \hyperlink{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{Errormssg} (void)
+\item 
+void \hyperlink{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436}{F\-Dec} (void)
+\item 
+void \hyperlink{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a}{Fstep} (void)
+\item 
+void \hyperlink{group__biba__messges_ga53669298f54817f8d2b140050dc910f1}{H\-Step} (void)
+\item 
+void \hyperlink{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b}{M16\-Step} (void)
+\item 
+void \hyperlink{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158}{M32\-Step} (void)
+\item 
+void \hyperlink{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7}{M8\-Step} (void)
+\item 
+void \hyperlink{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112}{Maxspeed} (void)
+\item 
+void \hyperlink{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7}{Minspeed} (void)
+\item 
+void \hyperlink{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a}{Qstep} (void)
+\item 
+void \hyperlink{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5}{R\-Acc} (void)
+\item 
+void \hyperlink{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08}{R\-Max\-Spd} (void)
+\item 
+void \hyperlink{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b}{R\-Min\-Spd} (void)
+\item 
+void \hyperlink{group__biba__messges_gad5028f9e871f7e63759218b94a829f45}{S\-Dec} (void)
+\item 
+void \hyperlink{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1}{Spt\-Revol} (void)
+\item 
+void \hyperlink{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c}{Stop} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module contains functions that are printing messages. 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{messages_8h}{messages.h}>} 
+\end{DoxyCode}
+
+
+This module contains functions that are printing stuff
+
+\begin{DoxyNote}{Note}
+Typical functions that are saving me memory. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Bilyana Borisova \href{mailto:bibishte@gmail.com}{\tt bibishte@gmail.\-com} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615}{\index{messages Library@{messages Library}!Acc@{Acc}}
+\index{Acc@{Acc}!messages Library@{messages Library}}
+\subsubsection[{Acc}]{\setlength{\rightskip}{0pt plus 5cm}void Acc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615}
+
+
+Definition at line 77 of file messages.\-c.
+
+
+\begin{DoxyCode}
+78 \{
+79     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"Acc="} ) );
+80     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint64\_t ) ( 
+      \hyperlink{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}{GetAcceleration}( ) ) ) );
+81     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+82 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{group__biba__messges_ga6e96dc2b209da9d4eef98fb809f1f615_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5}{\index{messages Library@{messages Library}!A\-Dec@{A\-Dec}}
+\index{A\-Dec@{A\-Dec}!messages Library@{messages Library}}
+\subsubsection[{A\-Dec}]{\setlength{\rightskip}{0pt plus 5cm}void A\-Dec (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5}
+
+
+Definition at line 42 of file messages.\-c.
+
+
+\begin{DoxyCode}
+43 \{
+44     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"ADec\(\backslash\)r"} ) );
+45 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{group__biba__messges_ga4df90f192fc647ecf71806dc05b290b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}{\index{messages Library@{messages Library}!Errormssg@{Errormssg}}
+\index{Errormssg@{Errormssg}!messages Library@{messages Library}}
+\subsubsection[{Errormssg}]{\setlength{\rightskip}{0pt plus 5cm}void Errormssg (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc}
+
+
+Definition at line 91 of file messages.\-c.
+
+
+\begin{DoxyCode}
+92 \{
+93     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"ERROR\(\backslash\)r"} ) );
+94 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_gaa77012dc6d2b6aba302311b04e512abc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436}{\index{messages Library@{messages Library}!F\-Dec@{F\-Dec}}
+\index{F\-Dec@{F\-Dec}!messages Library@{messages Library}}
+\subsubsection[{F\-Dec}]{\setlength{\rightskip}{0pt plus 5cm}void F\-Dec (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436}
+
+
+Definition at line 37 of file messages.\-c.
+
+
+\begin{DoxyCode}
+38 \{
+39     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"FDec\(\backslash\)r"} ) );
+40 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{group__biba__messges_ga0dd076c947adc7f37ed9024c16def436_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a}{\index{messages Library@{messages Library}!Fstep@{Fstep}}
+\index{Fstep@{Fstep}!messages Library@{messages Library}}
+\subsubsection[{Fstep}]{\setlength{\rightskip}{0pt plus 5cm}void Fstep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a}
+
+
+Definition at line 47 of file messages.\-c.
+
+
+\begin{DoxyCode}
+48 \{
+49     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"full step\(\backslash\)r"} ) );
+50 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{group__biba__messges_ga6a0297ad8db89b689f7314473dd7cd7a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga53669298f54817f8d2b140050dc910f1}{\index{messages Library@{messages Library}!H\-Step@{H\-Step}}
+\index{H\-Step@{H\-Step}!messages Library@{messages Library}}
+\subsubsection[{H\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void H\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga53669298f54817f8d2b140050dc910f1}
+
+
+Definition at line 52 of file messages.\-c.
+
+
+\begin{DoxyCode}
+53 \{
+54     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"half step\(\backslash\)r"} ) );
+55 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga53669298f54817f8d2b140050dc910f1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{group__biba__messges_ga53669298f54817f8d2b140050dc910f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b}{\index{messages Library@{messages Library}!M16\-Step@{M16\-Step}}
+\index{M16\-Step@{M16\-Step}!messages Library@{messages Library}}
+\subsubsection[{M16\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void M16\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b}
+
+
+Definition at line 67 of file messages.\-c.
+
+
+\begin{DoxyCode}
+68 \{
+69     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"16 microsteps\(\backslash\)r"} ) );
+70 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__biba__messges_ga286e4f6b6038548b06d71fb6badfd28b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158}{\index{messages Library@{messages Library}!M32\-Step@{M32\-Step}}
+\index{M32\-Step@{M32\-Step}!messages Library@{messages Library}}
+\subsubsection[{M32\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void M32\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158}
+
+
+Definition at line 72 of file messages.\-c.
+
+
+\begin{DoxyCode}
+73 \{
+74     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"32 microsteps\(\backslash\)r"} ) );
+75 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__biba__messges_ga5b419cf59d479fba5c67c575b553e158_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7}{\index{messages Library@{messages Library}!M8\-Step@{M8\-Step}}
+\index{M8\-Step@{M8\-Step}!messages Library@{messages Library}}
+\subsubsection[{M8\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void M8\-Step (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7}
+
+
+Definition at line 62 of file messages.\-c.
+
+
+\begin{DoxyCode}
+63 \{
+64     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"8 microsteps\(\backslash\)r"} ) );
+65 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{group__biba__messges_ga40b8844aa998b3549f6194d437100ee7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112}{\index{messages Library@{messages Library}!Maxspeed@{Maxspeed}}
+\index{Maxspeed@{Maxspeed}!messages Library@{messages Library}}
+\subsubsection[{Maxspeed}]{\setlength{\rightskip}{0pt plus 5cm}void Maxspeed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112}
+
+
+Definition at line 96 of file messages.\-c.
+
+
+\begin{DoxyCode}
+97 \{
+98     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"MaxSPD="} ) );
+99     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint64\_t ) ( \hyperlink{group__biba__drv_ga356f958c8327643ae22d240493ae7747}{GetMaxSpeed}( ) ) ) );
+100     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+101 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{group__biba__messges_gaa5f13f30a59a97aca9198b06a0c90112_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7}{\index{messages Library@{messages Library}!Minspeed@{Minspeed}}
+\index{Minspeed@{Minspeed}!messages Library@{messages Library}}
+\subsubsection[{Minspeed}]{\setlength{\rightskip}{0pt plus 5cm}void Minspeed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7}
+
+
+Definition at line 84 of file messages.\-c.
+
+
+\begin{DoxyCode}
+85 \{
+86     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"MinSPD="} ) );
+87     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint64\_t ) ( \hyperlink{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}{GetMinSpeed}( ) ) ) );
+88     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+89 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{group__biba__messges_ga46822b53dd41e304ef1887ef7075ffd7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a}{\index{messages Library@{messages Library}!Qstep@{Qstep}}
+\index{Qstep@{Qstep}!messages Library@{messages Library}}
+\subsubsection[{Qstep}]{\setlength{\rightskip}{0pt plus 5cm}void Qstep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a}
+
+
+Definition at line 57 of file messages.\-c.
+
+
+\begin{DoxyCode}
+58 \{
+59     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"quater step\(\backslash\)r"} ) );
+60 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{group__biba__messges_ga11901ed666ca738e518ff569cf8d947a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5}{\index{messages Library@{messages Library}!R\-Acc@{R\-Acc}}
+\index{R\-Acc@{R\-Acc}!messages Library@{messages Library}}
+\subsubsection[{R\-Acc}]{\setlength{\rightskip}{0pt plus 5cm}void R\-Acc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5}
+
+
+Definition at line 124 of file messages.\-c.
+
+
+\begin{DoxyCode}
+125 \{
+126     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"RAcc="} ) );
+127     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint16\_t ) ( \hyperlink{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}{GetRealAcc}( ) ) ) );
+128     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+129 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{group__biba__messges_gad576f94f72a14d6cf14d7a3217d3fdb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08}{\index{messages Library@{messages Library}!R\-Max\-Spd@{R\-Max\-Spd}}
+\index{R\-Max\-Spd@{R\-Max\-Spd}!messages Library@{messages Library}}
+\subsubsection[{R\-Max\-Spd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-Max\-Spd (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08}
+
+
+Definition at line 117 of file messages.\-c.
+
+
+\begin{DoxyCode}
+118 \{
+119     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"RMaxSPD="} ) );
+120     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint64\_t ) ( 
+      \hyperlink{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}{GetRealMaxSpeed}( ) ) ) );
+121     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+122 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{group__biba__messges_ga1cee417b557775a8a769eb5bc2306f08_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b}{\index{messages Library@{messages Library}!R\-Min\-Spd@{R\-Min\-Spd}}
+\index{R\-Min\-Spd@{R\-Min\-Spd}!messages Library@{messages Library}}
+\subsubsection[{R\-Min\-Spd}]{\setlength{\rightskip}{0pt plus 5cm}void R\-Min\-Spd (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b}
+
+
+Definition at line 110 of file messages.\-c.
+
+
+\begin{DoxyCode}
+111 \{
+112     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"RMinSpd="} ) );
+113     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint16\_t ) ( 
+      \hyperlink{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}{GetRealMinSpeed}( ) ) ) );
+114     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+115 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__biba__messges_gaabc2b68cf794e6851e1826ba9e083c3b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_gad5028f9e871f7e63759218b94a829f45}{\index{messages Library@{messages Library}!S\-Dec@{S\-Dec}}
+\index{S\-Dec@{S\-Dec}!messages Library@{messages Library}}
+\subsubsection[{S\-Dec}]{\setlength{\rightskip}{0pt plus 5cm}void S\-Dec (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_gad5028f9e871f7e63759218b94a829f45}
+
+
+Definition at line 32 of file messages.\-c.
+
+
+\begin{DoxyCode}
+33 \{
+34     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"SDec\(\backslash\)r"} ) );
+35 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{group__biba__messges_gad5028f9e871f7e63759218b94a829f45_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{group__biba__messges_gad5028f9e871f7e63759218b94a829f45_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1}{\index{messages Library@{messages Library}!Spt\-Revol@{Spt\-Revol}}
+\index{Spt\-Revol@{Spt\-Revol}!messages Library@{messages Library}}
+\subsubsection[{Spt\-Revol}]{\setlength{\rightskip}{0pt plus 5cm}void Spt\-Revol (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1}
+
+
+Definition at line 103 of file messages.\-c.
+
+
+\begin{DoxyCode}
+104 \{
+105     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"SPR="} ) );
+106     \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring}( \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\_to\_string}( ( uint16\_t ) ( 
+      \hyperlink{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}{Get\_Steps\_revol}( ) ) ) );
+107     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"\(\backslash\)r"} ) );
+108 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{group__biba__messges_ga98ca8e64d40da656ab802f68b0eb84a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c}{\index{messages Library@{messages Library}!Stop@{Stop}}
+\index{Stop@{Stop}!messages Library@{messages Library}}
+\subsubsection[{Stop}]{\setlength{\rightskip}{0pt plus 5cm}void Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c}
+
+
+Definition at line 131 of file messages.\-c.
+
+
+\begin{DoxyCode}
+132 \{
+133     \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\_P}( PSTR( \textcolor{stringliteral}{"Stop"} ) );
+134 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{group__biba__messges_ga76c658dc5f4332e4b034419dca518c1c_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,117 @@
+\hypertarget{drv__8825_8h}{\section{drv\-\_\-8825.\-h File Reference}
+\label{drv__8825_8h}\index{drv\-\_\-8825.\-h@{drv\-\_\-8825.\-h}}
+}
+{\ttfamily \#include $<$stdint.\-h$>$}\\*
+Include dependency graph for drv\-\_\-8825.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{drv__8825_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{drv__8825_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \{ \hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8a05f6a902065ce2f3355101cf657f4ba4}{S\-L\-O\-W\-\_\-\-D\-E\-C\-A\-Y}, 
+\hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8af9716e06b54f75cbd7dedc154a7d49e2}{F\-A\-S\-T\-\_\-\-D\-E\-C\-A\-Y}, 
+\hyperlink{group__biba__drv_ggafe05744bd777532cf059c0d7293a7ab8abbe5a117b6da07d1a52741cfff2e927a}{A\-U\-T\-O\-\_\-\-D\-E\-C\-A\-Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for decay status. \end{DoxyCompactList}\item 
+enum \hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \{ \\*
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaed3032a935a3b2a2ab90e2500dee1177}{M\-O\-D\-E\-\_\-\-F\-U\-L\-L\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca7bf7cb276c55a5c4e13149d1e18b320f}{M\-O\-D\-E\-\_\-\-H\-A\-L\-F\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcaf16653dd137a6079ff5399de04861835}{M\-O\-D\-E\-\_\-\-Q\-U\-A\-T\-E\-R\-\_\-\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fca4db57f4a88897e48818d92a223cd72d7}{M\-O\-D\-E\-\_\-8\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+\\*
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcac75bcca2721976d5185711ca481ccbb0}{M\-O\-D\-E\-\_\-16\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}, 
+\hyperlink{group__biba__drv_gga19269c193c0c4866cdc4e5abd433f9fcacb3d9ffb67d18343290fe5474bc1b4d5}{M\-O\-D\-E\-\_\-32\-\_\-\-M\-I\-C\-R\-O\-S\-T\-E\-P}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for mode status. \end{DoxyCompactList}\item 
+enum \hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} \{ \hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356a05e804aea3cc6dd53f5d5a836d0365c9}{S\-T\-E\-P\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}, 
+\hyperlink{group__biba__drv_gga3af682b92aa259509aea217f6dc64356aafe6025725d6001f0b0a973f1e719cc4}{S\-T\-E\-P\-\_\-\-C\-L\-O\-C\-K\-W\-I\-S\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Type for the direction status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__biba__drv_ga3389079a7106f1e741c0bc447dfbcbca}{Cal\-Work\-Param} (void)
+\item 
+void \hyperlink{group__biba__drv_ga961e1c89176d3c56101bb4eddf6642dc}{Count\-\_\-\-Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step, uint64\-\_\-t step\-\_\-count)
+\item 
+void \hyperlink{group__biba__drv_gade0e100f335652e364c58ae4a5c89ba4}{Decay} (\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} decay)
+\item 
+void \hyperlink{group__biba__drv_ga5b763d9479149e1cd8843fa5f144a18a}{Disabled\-\_\-\-Stepper} (void)
+\item 
+void \hyperlink{group__biba__drv_gab1ea57d26402b13aaed719a4d11097d5}{Enable\-\_\-\-Stepper} (void)
+\item 
+\hyperlink{group__biba__drv_gafe05744bd777532cf059c0d7293a7ab8}{decay\-\_\-type} \hyperlink{group__biba__drv_ga20503ca831d18cf625abe0f6e98d281a}{Get\-\_\-\-Decay} (void)
+\item 
+\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} \hyperlink{group__biba__drv_ga51c375fddbfeaed5366cd0bf2f9a2dab}{Get\-\_\-\-Mode} (void)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gabdfa1389f4c68fca40077275f7727fea}{Get\-\_\-\-Start} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga5591760e7dd32c026ec449f0d516af28}{Get\-\_\-\-Steps\-\_\-revol} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6202c4fd41a45376809e5940428467b9}{Get\-Acceleration} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga56c30e2b82a23aed1c9febd704166090}{Get\-Current\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga356f958c8327643ae22d240493ae7747}{Get\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_gab0cfe10ce4af9fb931391f171566fef2}{Get\-Min\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga819f85ff37467b16c6e6e31ffc858619}{Get\-Real\-Acc} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga20bfcaca6af265d5f8b2dc50f3a26779}{Get\-Real\-Max\-Speed} (void)
+\item 
+uint16\-\_\-t \hyperlink{group__biba__drv_ga6fdcb3b4ad128890ee607c75a92e63a8}{Get\-Real\-Min\-Speed} (void)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_ga8f3808b2e4aa3b2a8f6467a2aaa31995}{Helper\-Rto\-T} (uint64\-\_\-t)
+\item 
+uint64\-\_\-t \hyperlink{group__biba__drv_gabc1e78364b977fdff7ae3b642e720f58}{Helper\-Tto\-R} (uint64\-\_\-t)
+\item 
+uint8\-\_\-t \hyperlink{group__biba__drv_gaf24afdf808aa610fe7471985b03ea134}{Home} (void)
+\item 
+void \hyperlink{group__biba__drv_gad7c735bb7a3e49bba5cb72962f045d10}{Init\-Stepper} (void)
+\item 
+void \hyperlink{group__biba__drv_gafe73070875f7ba05536a1eeb83258c91}{Mode} (\hyperlink{group__biba__drv_ga19269c193c0c4866cdc4e5abd433f9fc}{mode\-\_\-type} mode)
+\item 
+void \hyperlink{group__biba__drv_gad23127bea36c997c0b1c767f2421db6a}{Real\-To\-Time} (void)
+\item 
+void \hyperlink{group__biba__drv_ga0c630286eeb4f2b49bfe96670dafd65c}{Set\-\_\-\-Steps\-\_\-revol} (uint16\-\_\-t step\-\_\-rev)
+\item 
+void \hyperlink{group__biba__drv_ga746cb11e60c877a82b3ecbdbaa375f5e}{Set\-Acceleration} (uint16\-\_\-t accel)
+\item 
+void \hyperlink{group__biba__drv_ga91f64f1e8f2b67bfcf24f6d2a2249373}{Set\-Current\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf56c9e829e6f40a75e89bd16f5051c63}{Set\-Max\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_ga39d145b6dc7b1fa19582960613440fd4}{Set\-Min\-Speed} (uint16\-\_\-t spd)
+\item 
+void \hyperlink{group__biba__drv_gaf272b22659980a7a5b9be13378963f67}{Set\-Real\-Acc} (uint16\-\_\-t realacc)
+\item 
+void \hyperlink{group__biba__drv_ga544f7d7cdcd1fc93afaaa833d1086654}{Set\-Real\-Max\-Speed} (uint16\-\_\-t maxspd)
+\item 
+void \hyperlink{group__biba__drv_gaf589e1659ecdbe47a83571e1368dc0e2}{Set\-Real\-Min\-Speed} (uint16\-\_\-t minspd)
+\item 
+void \hyperlink{group__biba__drv_ga7920069eba0a349a19a7e5af32321ad8}{Step} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\item 
+void \hyperlink{group__biba__drv_ga1db502f9943a62943380a04ba0bd52cb}{Stop\-\_\-\-Motion\-\_\-fast} (void)
+\item 
+void \hyperlink{group__biba__drv_ga95c2965416e69e644b9f5a482707ae9f}{Stop\-\_\-\-Motion\-\_\-normal} (void)
+\item 
+void \hyperlink{group__biba__drv_gaaefaac2ed4c54f2008d8d236392c7261}{store} (void)
+\item 
+void \hyperlink{group__biba__drv_gaec239a01fef85140bc7c12fa612f421b}{Time\-To\-Real} (void)
+\item 
+void \hyperlink{group__biba__drv_ga102f936b773a4a26032cc6b8cd1a273d}{Way\-\_\-\-Speed} (\hyperlink{group__biba__drv_ga3af682b92aa259509aea217f6dc64356}{step\-\_\-type} step)
+\end{DoxyCompactItemize}

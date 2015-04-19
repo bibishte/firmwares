@@ -1,0 +1,41 @@
+\hypertarget{utils_8c}{\section{utils.\-c File Reference}
+\label{utils_8c}\index{utils.\-c@{utils.\-c}}
+}
+{\ttfamily \#include \char`\"{}utils.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\-h$>$}\\*
+Include dependency graph for utils.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint64\-\_\-t \hyperlink{group__biba__utils_gade0d11aaaeeeb0b4369bcef0819dd8f9}{Convert\-A\-S\-C\-Itouint64} (char $\ast$in)
+\item 
+char $\ast$ \hyperlink{group__biba__utils_ga3d33c2ff89043a4bf00d652d182dfc27}{int\-\_\-to\-\_\-string} (uint64\-\_\-t i)
+\item 
+void \hyperlink{group__biba__utils_ga354be7728c1265a82ba2510f1800cea4}{putstring} (const char $\ast$putc)
+\item 
+void \hyperlink{group__biba__utils_gaf1b54c4c5b890362b485636395859b3d}{putstring\-\_\-\-P} (const char $\ast$putc)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{utils_8c_a9b2c184788fa540108d86ce03be4d11c}{buf} \mbox{[}20\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{utils_8c_a9b2c184788fa540108d86ce03be4d11c}{\index{utils.\-c@{utils.\-c}!buf@{buf}}
+\index{buf@{buf}!utils.c@{utils.\-c}}
+\subsubsection[{buf}]{\setlength{\rightskip}{0pt plus 5cm}char buf\mbox{[}20\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}}\label{utils_8c_a9b2c184788fa540108d86ce03be4d11c}
+Temporarry buffer for converting uint64\-\_\-t to string 
+
+Definition at line 37 of file utils.\-c.
+
