@@ -1,0 +1,76 @@
+* EESchema Netlist Version 1.1 (Spice format) creation date: 19.04.2015 (нд) 19,32,19 EEST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+*Sheet Name:/
+XU4  35 39 42 51 34 40 38 37 41 36 51 74 74 0 50 56 67 68 72 70 66 69 32 73 58 71 65 0 0 DRV8825PWP		
+XIC1  17 15 16 19 29 63 7 0 22 21 66 30 31 1 68 70 76 77 75 7 28 0 69 72 65 73 58 71 ATMEGA8-P		
+XU1  4 2 3 6 5 14 23 12 15 25 16 26 27 13 0 7 MAX232		
+XIC2  15 1 1 16 0 12 13 7 SP485		
+XIC8  61 49 0 7 0 LM2575_PENTAWATT_D2PAK		
+P4  51 0 HD-515R 2P		
+C11  7 0 220n		
+C15  61 0 220n		
+C17  61 0 220u		
+C10  7 0 330u		
+L1  7 49 330u		
+D1  0 49 1N5819GLX		
+D2  51 61 1N4001		
+P5  34 38 37 36 HD-515R 4P		
+C14  35 39 10n		
+C16  51 42 100n		
+R18  51 42 1M		
+R20  40 0 0.2		
+R19  41 0 0.2		
+R15  55 50 50k		
+RV1  55 74 0 30k		
+C8  50 0 220n		
+C9  55 0 220n		
+C12  51 0 220n		
+C13  51 0 220u		
+JP1  72 7 JUMPER		
+JP3  71 7 JUMPER		
+JP4  58 7 JUMPER		
+JP5  73 7 JUMPER		
+JP2  72 0 JUMPER		
+XU2  62 54 44 64 0 69 7 7 6N137		
+XU3  78 53 44 79 0 70 7 7 6N137		
+XIC4  59 44 0 66 LTV-814		
+XIC5  60 44 0 67 LTV-814		
+XIC3  57 44 0 56 LTV-814		
+XIC6  65 0 44 52 LTV-814		
+XIC7  68 0 44 9 LTV-814		
+R9  11 60 4.7k		
+R8  10 59 4.7k		
+R7  18 57 4.7k		
+R5  20 54 4.7k		
+R6  43 53 4.7k		
+R10  80 52 4.7k		
+R11  80 9 4.7k		
+P3  18 11 9 43 44 10 20 52 HD-515R 8P		
+R17  7 56 4.7k		
+R16  7 66 4.7k		
+R14  7 65 4.7k		
+R13  7 67 4.7k		
+R12  7 68 4.7k		
+P2  76 77 75 17 0 7 HN1X6		
+C1  22 0 12p		
+C2  0 21 12p		
+R1  7 17 10k		
+C5  17 0 680n		
+C4  6 5 10u		
+C3  4 3 10u		
+C6  2 0 10u		
+C7  14 0 10u		
+R2  12 13 120		
+R3  0 13 820		
+R4  12 7 820		
+X1  22 21 QUARTZ		
+P1  24 13 12 7 0 80 CONN_6		
+P6  45 3mm		
+P7  46 3mm		
+P8  47 3mm		
+P9  48 3mm		
+
+.end
