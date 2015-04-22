@@ -25,6 +25,35 @@
 
 #ifndef MESSAGES_H
 #define	MESSAGES_H
+
+
+#include <stdint.h>
+
+#define SDEC 0
+#define FDEC 1
+#define ADEC 2
+#define FSTEP 3
+#define HSTEP 4
+#define QSTEP 5
+#define M8 6
+#define M16 7
+#define M32 8
+#define ACC 9
+#define MINSPD 10
+#define ERROR 11
+#define MAXSPD 12
+#define SPR 13
+#define RMINSPD 14
+#define RMAXSPD 15
+#define RACC 16
+#define STOP 17
+#define ENBL 18
+#define DISBL 19
+#define NSM 20
+#define NSD 21
+#define DONE 22
+#define STEPMSG 23
+
 /** 
  *  @defgroup biba_messges messages Library
  *  @code #include <messages.h> @endcode
@@ -40,25 +69,28 @@
 /**@{*/
 
 
-void SDec(void);
-void FDec(void);
-void ADec(void);
-void Fstep(void);
-void HStep(void);
-void Qstep(void);
-void M8Step(void);
-void M16Step(void);
-void M32Step(void);
-void Acc(void);
-void Minspeed(void);
-void Errormssg(void);
-void Maxspeed(void);
-void SptRevol(void);
-void RMinSpd(void);
-void RMaxSpd(void);
-void RAcc(void);
-void Stop(void);
 
+//void SDec(void);
+//void FDec(void);
+//void ADec(void);
+//void Fstep(void);
+//void HStep(void);
+//void Qstep(void);
+//void M8Step(void);
+//void M16Step(void);
+//void M32Step(void);
+//void Acc(void);
+//void Minspeed(void);
+//void Errormssg(void);
+//void Maxspeed(void);
+//void SptRevol(void);
+//void RMinSpd(void);
+//void RMaxSpd(void);
+//void RAcc(void);
+//void Stop(void);
+//void Microstep(void);
+void Message(uint8_t a);
+void Message_xcall(uint8_t a, uint16_t (*func)(void));
 
 #endif	/* MESSAGES_H */
 

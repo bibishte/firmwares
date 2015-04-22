@@ -764,7 +764,7 @@ void CalWorkParam( void )
 			break;
 
 		default:
-			Errormssg( );
+			//Errormssg( );
 
 			break;
 	}

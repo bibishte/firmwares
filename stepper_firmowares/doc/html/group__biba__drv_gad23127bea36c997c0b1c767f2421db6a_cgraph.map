@@ -1,8 +1,8 @@
 <map id="RealToTime" name="RealToTime">
-<area shape="rect" id="node3" href="$group__biba__drv.html#ga8f3808b2e4aa3b2a8f6467a2aaa31995" title="HelperRtoT" alt="" coords="163,5,256,33"/>
-<area shape="rect" id="node5" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="152,55,267,83"/>
-<area shape="rect" id="node13" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="183,106,236,134"/>
-<area shape="rect" id="node7" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="316,55,401,83"/>
-<area shape="rect" id="node9" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="451,55,544,83"/>
-<area shape="rect" id="node11" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="593,55,700,83"/>
+<area shape="rect" id="node3" href="$group__biba__drv.html#ga8f3808b2e4aa3b2a8f6467a2aaa31995" title="HelperRtoT" alt="" coords="167,5,268,35"/>
+<area shape="rect" id="node5" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="159,59,276,88"/>
+<area shape="rect" id="node13" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="187,112,248,141"/>
+<area shape="rect" id="node7" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="327,59,420,88"/>
+<area shape="rect" id="node9" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="471,59,580,88"/>
+<area shape="rect" id="node11" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="631,59,756,88"/>
 </map>

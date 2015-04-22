@@ -1,4 +1,4 @@
 <map id="Qstep" name="Qstep">
-<area shape="rect" id="node3" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="112,5,205,33"/>
-<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="255,5,361,33"/>
+<area shape="rect" id="node3" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="119,5,228,35"/>
+<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="279,5,404,35"/>
 </map>

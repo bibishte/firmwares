@@ -1,9 +1,9 @@
 <map id="SetRealMinSpeed" name="SetRealMinSpeed">
-<area shape="rect" id="node3" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="189,55,288,83"/>
-<area shape="rect" id="node5" href="$group__biba__drv.html#ga8f3808b2e4aa3b2a8f6467a2aaa31995" title="HelperRtoT" alt="" coords="347,5,440,33"/>
-<area shape="rect" id="node7" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="336,55,451,83"/>
-<area shape="rect" id="node15" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="367,106,420,134"/>
-<area shape="rect" id="node9" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="500,55,585,83"/>
-<area shape="rect" id="node11" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="635,55,728,83"/>
-<area shape="rect" id="node13" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="777,55,884,83"/>
+<area shape="rect" id="node3" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="199,59,300,88"/>
+<area shape="rect" id="node5" href="$group__biba__drv.html#ga8f3808b2e4aa3b2a8f6467a2aaa31995" title="HelperRtoT" alt="" coords="359,5,460,35"/>
+<area shape="rect" id="node7" href="$group__biba__drv.html#ga3389079a7106f1e741c0bc447dfbcbca" title="CalWorkParam" alt="" coords="351,59,468,88"/>
+<area shape="rect" id="node15" href="$group__biba__drv.html#gaaefaac2ed4c54f2008d8d236392c7261" title="store" alt="" coords="379,112,440,141"/>
+<area shape="rect" id="node9" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="519,59,612,88"/>
+<area shape="rect" id="node11" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="663,59,772,88"/>
+<area shape="rect" id="node13" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="823,59,948,88"/>
 </map>

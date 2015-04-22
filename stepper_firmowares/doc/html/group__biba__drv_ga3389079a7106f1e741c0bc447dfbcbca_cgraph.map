@@ -1,5 +1,5 @@
 <map id="CalWorkParam" name="CalWorkParam">
-<area shape="rect" id="node3" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="169,5,255,33"/>
-<area shape="rect" id="node5" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="304,5,397,33"/>
-<area shape="rect" id="node7" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="447,5,553,33"/>
+<area shape="rect" id="node3" href="$group__biba__messges.html#gaa77012dc6d2b6aba302311b04e512abc" title="Errormssg" alt="" coords="175,5,268,35"/>
+<area shape="rect" id="node5" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="319,5,428,35"/>
+<area shape="rect" id="node7" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="479,5,604,35"/>
 </map>

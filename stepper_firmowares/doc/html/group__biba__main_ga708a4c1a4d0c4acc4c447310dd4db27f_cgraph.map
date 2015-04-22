@@ -1,4 +1,4 @@
 <map id="test" name="test">
-<area shape="rect" id="node3" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="99,5,192,33"/>
-<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="241,5,348,33"/>
+<area shape="rect" id="node3" href="$group__biba__utils.html#gaf1b54c4c5b890362b485636395859b3d" title="putstring_P" alt="" coords="111,5,220,35"/>
+<area shape="rect" id="node5" href="$group__pfleury__uart.html#ga5db1b15d2f108232a6162b87c9fb352e" title="Put byte to ringbuffer for transmitting via UART. " alt="" coords="271,5,396,35"/>
 </map>

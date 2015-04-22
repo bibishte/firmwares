@@ -1,8 +1,8 @@
 <map id="HelperRtoT" name="HelperRtoT">
-<area shape="rect" id="node3" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="149,81,248,109"/>
-<area shape="rect" id="node5" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="296,5,435,33"/>
-<area shape="rect" id="node9" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="299,55,432,83"/>
-<area shape="rect" id="node12" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="319,106,412,134"/>
-<area shape="rect" id="node15" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="320,157,411,185"/>
-<area shape="rect" id="node7" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="483,81,533,109"/>
+<area shape="rect" id="node3" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="159,85,260,115"/>
+<area shape="rect" id="node5" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="311,5,452,35"/>
+<area shape="rect" id="node9" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="311,59,452,88"/>
+<area shape="rect" id="node12" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="331,112,432,141"/>
+<area shape="rect" id="node15" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="327,165,436,195"/>
+<area shape="rect" id="node7" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="503,85,556,115"/>
 </map>

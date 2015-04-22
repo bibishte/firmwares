@@ -109,7 +109,6 @@ int16_t main( void ) //Main Loop
 
 
 				case HELP:
-					//	putstring_P( PSTR( "help?\r" ) );
 
 					i = 0;
 
@@ -132,47 +131,47 @@ int16_t main( void ) //Main Loop
 
 				case SET_DEC_SLOW:
 					Decay( SLOW_DECAY );
-					SDec( );
+					Message(SDEC);
 					break;
 
 				case SET_DEC_FAST:
 					Decay( FAST_DECAY );
-					FDec( );
+					Message(FDEC);
 					break;
 
 				case SET_DEC_AUTO:
 					Decay( AUTO_DECAY );
-					ADec( );
+					Message(ADEC);
 					break;
 
 				case SET_MODE_FULL:
 					Mode( MODE_FULL_STEP );
-					Fstep( );
+					Message(FSTEP);
 					break;
 
 				case SET_MODE_HALF:
 					Mode( MODE_HALF_STEP );
-					HStep( );
+					Message(HSTEP);
 					break;
 
 				case SET_MODE_QUATER:
 					Mode( MODE_QUATER_STEP );
-					Qstep( );
+					Message(QSTEP);
 					break;
 
 				case SET_MODE_8:
 					Mode( MODE_8_MICROSTEP );
-					M8Step( );
+					Message(M8);
 					break;
 
 				case SET_MODE_16:
 					Mode( MODE_16_MICROSTEP );
-					M16Step( );
+					Message(M16);
 					break;
 
 				case SET_MODE_32:
 					Mode( MODE_32_MICROSTEP );
-					M32Step( );
+					Message(M32);
 					break;
 
 				case SET_HOME:
@@ -185,7 +184,7 @@ int16_t main( void ) //Main Loop
 					{
 						putstring_P( PSTR( "FALSE" ) );
 					}
-					//				putstring(ConvertASCItouint64(Home()));
+					//putstring(ConvertASCItouint64(Home()));
 					putstring_P( PSTR( "\r" ) );
 
 					break;
@@ -199,11 +198,11 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							SetAcceleration( ch );
-							Acc( );
+							Message_xcall(ACC, GetAcceleration);
 							break;
 						} else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -218,11 +217,11 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							SetMinSpeed( ch );
-							Minspeed( );
+						Message_xcall(MINSPD, GetMinSpeed);
 							break;
 						} else
 						{
-							Errormssg( );
+						Message(ERROR);
 							break;
 						}
 					}
@@ -237,11 +236,11 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							SetMaxSpeed( ch );
-							Maxspeed( );
+						Message_xcall(MAXSPD, GetMaxSpeed);
 							break;
 						} else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -257,12 +256,12 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							Set_Steps_revol( ch );
-							SptRevol();
+							Message_xcall(SPR, Get_Steps_revol);
 							break;
 						}
 						else
 						{
-							Errormssg( );
+						Message(ERROR);
 							break;
 						}
 					}
@@ -279,12 +278,12 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							SetRealMinSpeed( ch );
-							RMinSpd();
+							Message_xcall(RMINSPD, GetRealMinSpeed);
 							break;
 						}
 						else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -303,12 +302,12 @@ int16_t main( void ) //Main Loop
 
 
 							SetRealMaxSpeed( ch );
-							RMaxSpd();
+							Message_xcall(RMAXSPD, GetRealMaxSpeed);
 							break;
 						}
 						else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -326,11 +325,11 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							SetRealAcc( ch );
-							RAcc();
+							Message_xcall(RACC, GetRealAcc);
 							break;
 						} else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -339,45 +338,45 @@ int16_t main( void ) //Main Loop
 
 
 				case GET_ACC:
-					Acc( );
+					Message_xcall(ACC, GetAcceleration);
 					break;
 
 				case GET_MIN_SPEED:
-					Minspeed( );
+					Message_xcall(MINSPD, GetMinSpeed);
 					break;
 
 				case GET_MAX_SPEED:
-					Maxspeed( );
+					Message_xcall(MAXSPD, GetMaxSpeed);
 					break;
 
 
 				case GET_STP_REV:
-					SptRevol();
+					Message_xcall(SPR, Get_Steps_revol);
 					break;
 
 
 				case GET_R_MIN_SPD:
-					RMinSpd();
+					Message_xcall(RMINSPD, GetRealMinSpeed);
 					break;
 
 				case GET_R_MAX_SPD:
-					RMaxSpd();
+					Message_xcall(RMAXSPD, GetRealMaxSpeed);
 					break;
 
 				case GET_R_ACC:
-					RAcc();
+					Message_xcall(RACC, GetRealAcc);
 					break;
 
 
 					
 				case STOPF:
 					Stop_Motion_fast();
-					Stop();
+					Message(STOP);
 					break;
 					
 				case STOPN:
 					Stop_Motion_normal();
-					Stop();
+					Message(STOP);
 					break;
 					
 				case CONSTSPD:
@@ -399,18 +398,18 @@ int16_t main( void ) //Main Loop
 							break;
 					}
 					
-					Errormssg();
+					Message(ERROR);
 					break;
 
 
 				case ENABLE:
 					Enable_Stepper( );
-					//putstring_P( PSTR( "Enable\r" ) );
+					Message(ENBL);
 					break;
 
 				case DISABLE:
 					Disabled_Stepper( );
-					//putstring_P( PSTR( "Disable\r" ) );
+					Message(DISBL);
 					break;
 
 
@@ -427,15 +426,13 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							Count_Step( STEP_CLOCKWISE, ch );
-/*
-							putstring_P( PSTR( "DONE " ) );
+							Message(DONE);
 							putstring( int_to_string( ch ) );
-							putstring_P( PSTR( " steps\r" ) );
-*/
+							Message(STEPMSG);
 							break;
 						} else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -448,15 +445,13 @@ int16_t main( void ) //Main Loop
 						if ( ch > 0 )
 						{
 							Count_Step( STEP_COUNTER_CLOCKWISE, ch );
-/*
-							putstring_P( PSTR( "DONE " ) );
+							Message(DONE);
 							putstring( int_to_string( ch ) );
-							putstring_P( PSTR( " steps\r" ) );
-*/
+							Message(STEPMSG);
 							break;
 						} else
 						{
-							Errormssg( );
+							Message(ERROR);
 							break;
 						}
 					}
@@ -466,20 +461,20 @@ int16_t main( void ) //Main Loop
 					switch ( Get_Decay( ) )
 					{
 						case SLOW_DECAY:
-							SDec( );
+							Message(SDEC);
 							break;
 
 						case FAST_DECAY:
-							FDec( );
+							Message(FDEC);
 							break;
 
 						case AUTO_DECAY:
-							ADec( );
+							Message(ADEC);
 							break;
 
 						default:
 						{
-							//putstring_P( PSTR( "Not set decay\r" ) );
+							Message(NSD);
 							break;
 						}
 					}
@@ -487,32 +482,32 @@ int16_t main( void ) //Main Loop
 					switch ( Get_Mode( ) )
 					{
 						case MODE_FULL_STEP:
-							Fstep( );
+							Message(FSTEP);
 							break;
 
 						case MODE_HALF_STEP:
-							HStep( );
+							Message(HSTEP);
 							break;
 
 						case MODE_QUATER_STEP:
-							Qstep( );
+							Message(QSTEP);
 							break;
 
 						case MODE_8_MICROSTEP:
-							M8Step( );
+							Message(M8);
 							break;
 
 						case MODE_16_MICROSTEP:
-							M16Step( );
+							Message(M16);
 							break;
 
 						case MODE_32_MICROSTEP:
-							M32Step( );
+							Message(M32);
 							break;
 
 						default:
 						{
-							//putstring_P( PSTR( "Not set mode\r" ) );
+							Message(NSM);
 							break;
 						}
 
@@ -521,11 +516,11 @@ int16_t main( void ) //Main Loop
 
 					if ( Get_Start( ) )
 					{
-						//putstring_P( PSTR( "Enable\r" ) );
+						Message(ENBL);
 					}
 					else
 					{
-						//putstring_P( PSTR( "Disable\r" ) );
+						Message(DISBL);
 					}
 
 					break;
@@ -603,7 +598,9 @@ void Init_Input_Output( void )
 void test( void )
 {
 	putstring_P( PSTR( "Test?" ) );
-
+	Message(0);
+	Message_xcall(12, (GetMaxSpeed));
+	
 }
 
 

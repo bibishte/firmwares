@@ -1,14 +1,14 @@
 <map id="store" name="store">
-<area shape="rect" id="node3" href="$group__biba__drv.html#gade0e100f335652e364c58ae4a5c89ba4" title="Decay" alt="" coords="128,17,189,45"/>
-<area shape="rect" id="node10" href="$group__biba__drv.html#gafe73070875f7ba05536a1eeb83258c91" title="Mode" alt="" coords="131,68,187,96"/>
-<area shape="rect" id="node14" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="109,119,208,147"/>
-<area shape="rect" id="node26" href="$group__biba__drv.html#gaec239a01fef85140bc7c12fa612f421b" title="TimeToReal" alt="" coords="109,296,208,324"/>
-<area shape="rect" id="node5" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="280,68,371,96"/>
-<area shape="rect" id="node7" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="443,169,493,197"/>
-<area shape="rect" id="node16" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="256,119,395,147"/>
-<area shape="rect" id="node19" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="259,169,392,197"/>
-<area shape="rect" id="node22" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="279,220,372,248"/>
-<area shape="rect" id="node28" href="$group__biba__drv.html#gaf56c9e829e6f40a75e89bd16f5051c63" title="SetMaxSpeed" alt="" coords="271,271,380,299"/>
-<area shape="rect" id="node31" href="$group__biba__drv.html#ga39d145b6dc7b1fa19582960613440fd4" title="SetMinSpeed" alt="" coords="272,321,379,349"/>
-<area shape="rect" id="node34" href="$group__biba__drv.html#ga746cb11e60c877a82b3ecbdbaa375f5e" title="SetAcceleration" alt="" coords="265,372,385,400"/>
+<area shape="rect" id="node3" href="$group__biba__drv.html#gade0e100f335652e364c58ae4a5c89ba4" title="Decay" alt="" coords="139,18,200,47"/>
+<area shape="rect" id="node10" href="$group__biba__drv.html#gafe73070875f7ba05536a1eeb83258c91" title="Mode" alt="" coords="143,71,196,100"/>
+<area shape="rect" id="node14" href="$group__biba__drv.html#gad23127bea36c997c0b1c767f2421db6a" title="RealToTime" alt="" coords="119,124,220,154"/>
+<area shape="rect" id="node26" href="$group__biba__drv.html#gaec239a01fef85140bc7c12fa612f421b" title="TimeToReal" alt="" coords="119,311,220,340"/>
+<area shape="rect" id="node5" href="$group__biba__drv.html#gad7c735bb7a3e49bba5cb72962f045d10" title="InitStepper" alt="" coords="287,71,396,100"/>
+<area shape="rect" id="node7" href="$main_8c.html#aec570f4ab450e8224be63b7dcfa62b35" title="main loop " alt="" coords="463,178,516,207"/>
+<area shape="rect" id="node16" href="$group__biba__drv.html#ga544f7d7cdcd1fc93afaaa833d1086654" title="SetRealMaxSpeed" alt="" coords="271,124,412,154"/>
+<area shape="rect" id="node19" href="$group__biba__drv.html#gaf589e1659ecdbe47a83571e1368dc0e2" title="SetRealMinSpeed" alt="" coords="271,178,412,207"/>
+<area shape="rect" id="node22" href="$group__biba__drv.html#gaf272b22659980a7a5b9be13378963f67" title="SetRealAcc" alt="" coords="291,231,392,260"/>
+<area shape="rect" id="node28" href="$group__biba__drv.html#gaf56c9e829e6f40a75e89bd16f5051c63" title="SetMaxSpeed" alt="" coords="287,284,396,314"/>
+<area shape="rect" id="node31" href="$group__biba__drv.html#ga39d145b6dc7b1fa19582960613440fd4" title="SetMinSpeed" alt="" coords="287,338,396,367"/>
+<area shape="rect" id="node34" href="$group__biba__drv.html#ga746cb11e60c877a82b3ecbdbaa375f5e" title="SetAcceleration" alt="" coords="271,391,412,420"/>
 </map>
